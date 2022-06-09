@@ -68,4 +68,4 @@ CREATE TABLE sucursal(
  */
 ALTER TABLE personaPiso ADD CONSTRAINT personaPiso_fkeySucursal FOREIGN KEY(idSucursal)
 REFERENCES sucursal(idSucursal) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT personaPiso_fkeySucursal ON personaPiso IS 'La llave foranea de la mascota que hace referencia a la sucursal';
+COMMENT ON CONSTRAINT personaPiso_fkeySucursal ON personaPiso IS 'La llave foranea de persona piso que hace referencia a la sucursal';
