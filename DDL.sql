@@ -147,10 +147,26 @@ CREATE TABLE ticket(
     total int NOT NULL,
     nombreSucursal VARCHAR(40) NOT NULL,
     rfcMesero VARCHAR(10) NOT NULL,
-    /*tipoConsumo() NOT NULL;*/
+    /*tipoConsumo VARCHAR(30) NOT NULL;*/
     esConsumoPresencial BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL
 );
+
+/*
+ * Documentación de ticket.
+ */
+COMMENT ON TABLE ticket IS 'Tabla que contiene informacion de los tickets';
+COMMENT ON COLUMN ticket.idTicket IS 'Identificador del ticket';
+COMMENT ON COLUMN ticket.idSucursal IS 'Identificador de la sucursal';
+COMMENT ON COLUMN ticket.idPersona IS 'Identificador de la persona';
+COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
+COMMENT ON COLUMN ticket.detalle IS 'Detalles de la compra';
+COMMENT ON COLUMN ticket.total IS 'Total a pagar';
+COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';
+COMMENT ON COLUMN ticket.rfcMesero IS 'RFC del mesero';
+/*COMMENT ON COLUMN ticket.tipoConsumo IS 'Tipo del consumo';*/
+COMMENT ON COLUMN ticket.esConsumoPresencial IS 'True si la compra fue en un establecimiento de manera presencial';
+COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';
 
 /*
  * =================================[ Tabla de salsa ]===================================
@@ -160,10 +176,22 @@ CREATE TABLE salsa(
     idTicket VARCHAR(10) NOT NULL,
     nivelPicor VARCHAR(30) NOT NULL,
     platillo VARCHAR(40) NOT NULL,
-    presentación VARCHAR(50) NOT NULL,
+    presentacion VARCHAR(50) NOT NULL,
     precio INT NOT NULL,
     fecha DATE NOT NULL
 );
+
+/*
+ * Documentación de salsa.
+ */
+COMMENT ON TABLE salsa IS 'Tabla que contiene informacion de las salsas';
+COMMENT ON COLUMN salsa.idProducto IS 'Identificador de la salsa';
+COMMENT ON COLUMN salsa.idTicket IS 'Identificador del ticket';
+COMMENT ON COLUMN salsa.nivelPicor IS 'Que tan picosa es la salsa';
+COMMENT ON COLUMN salsa.platillo IS 'Platillo con el que se recomienda la salsa';
+COMMENT ON COLUMN salsa.presentacion IS 'La presentación de la salsa';
+COMMENT ON COLUMN salsa.precio IS 'El precio de la salsa';
+COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/
 
 /*
  * =================================[ Tabla de platillo ]===================================
@@ -175,6 +203,16 @@ CREATE TABLE platillo(
     precio INT NOT NULL,
     fecha DATE NOT NULL
 );
+
+/*
+ * Documentación de platillo.
+ */
+COMMENT ON TABLE platillo IS 'Tabla que contiene informacion de los platillos';
+COMMENT ON COLUMN platillo.idProducto IS 'Identificador del platillo';
+COMMENT ON COLUMN platillo.idTicket IS 'Identificador del ticket';
+COMMENT ON COLUMN platillo.tipoPlatillo IS 'Tipo de platillo';
+COMMENT ON COLUMN platillo.precio IS 'El precio del platillo';
+COMMENT ON COLUMN platillo.fecha IS 'La fecha del platillo'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/
 
 /*
  * =================================[ Tabla de insumo ]===================================
@@ -190,6 +228,18 @@ CREATE TABLE insumo(
     marca VARCHAR(30) NOT NULL,
     caducidad DATE NOT NULL
 );
+
+/*
+ * Documentación de insumo.
+ */
+COMMENT ON TABLE insumo IS 'Tabla que contiene informacion de los insumos';
+COMMENT ON COLUMN insumo.idInsumo IS 'Identificador del insumo';
+COMMENT ON COLUMN insumo.nombre IS 'Nombre del insumo';
+COMMENT ON COLUMN insumo.fechaCompra IS 'Fecha de compra del insumo';
+COMMENT ON COLUMN insumo.precio IS 'Precio del insumo';
+COMMENT ON COLUMN insumo.cantidad IS 'Cantidad del insumo';
+COMMENT ON COLUMN insumo.marca IS 'La marca del insumo';
+COMMENT ON COLUMN insumo.caducidad IS 'La caducidad del insumo';
 
 /*-----------------------------------------------------------------------------------------
  *-------------------------------------[ Relaciones ]--------------------------------------
