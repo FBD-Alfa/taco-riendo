@@ -76,9 +76,17 @@ CREATE TABLE ticket(
 CREATE TABLE salsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
-    nivelPicor VARCHAR(20) NOT NULL,
+    nivelPicor VARCHAR(30) NOT NULL,
     platillo VARCHAR(40) NOT NULL,
     presentación VARCHAR(50) NOT NULL,
+    precio INT NOT NULL,
+    fecha DATE NOT NULL
+);
+
+CREATE TABLE platillo(
+    idProducto VARCHAR(12) NOT NULL UNIQUE,
+    idTicket VARCHAR(10) NOT NULL,
+    tipoPlatillo VARCHAR(50) NOT NULL,
     precio INT NOT NULL,
     fecha DATE NOT NULL
 );
@@ -125,6 +133,12 @@ CREATE TABLE manejar(
  */
  ALTER TABLE salsa ADD CONSTRAINT salsa_pkey PRIMARY KEY(idProducto);
  COMMENT ON CONSTRAINT salsa_pkey ON salsa IS 'La llave primaria de salsa';
+ 
+/*
+ * Llave de platillo.
+ */
+ ALTER TABLE platillo ADD CONSTRAINT platillo_pkey PRIMARY KEY(idProducto);
+ COMMENT ON CONSTRAINT platillo_pkey ON platillo IS 'La llave primaria de platillo';
 
 /*----------------------------------------------------------------------------------------
  *-----------------------------[ Llaves Foraneas Entidades ]------------------------------
