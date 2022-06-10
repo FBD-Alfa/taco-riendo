@@ -96,7 +96,9 @@ CREATE TABLE insumo(
     nombre VARCHAR(50) NOT NULL,
     fechaCompra DATE NOT NULL,
     precio INT NOT NULL,
-    cantidad VARCHAR(50) NOT NULL,
+    /* La cantidad no sé si sea varchar o int porque podría medirse
+     * las cantidades de forma distinta dependiendo del producto.*/
+    cantidad INT NOT NULL, 
     marca VARCHAR(30) NOT NULL,
     caducidad DATE NOT NULL
 );
@@ -112,6 +114,12 @@ CREATE TABLE manejar(
 CREATE TABLE proveer(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     idProveedor VARCHAR(10) NOT NULL UNIQUE
+);
+
+CREATE TABLE contenerSalsa(
+    idProducto VARCHAR(12) NOT NULL UNIQUE,
+    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    porcion INT NOT NULL
 );
 
 /*-----------------------------------------------------------------------------------------
