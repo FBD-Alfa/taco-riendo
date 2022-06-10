@@ -4,7 +4,11 @@ CREATE SCHEMA public;
 /*-----------------------------------------------------------------------------------------
  *-------------------------------------[ Entidades ]---------------------------------------
  *---------------------------------------------------------------------------------------*/
-CREATE TABLE personaPiso(
+
+/*
+ * =================================[ Tabla de persona ]===================================
+ */
+CREATE TABLE persona(
     idPersona VARCHAR(10) NOT NULL UNIQUE,
     idSucursal VARCHAR(10) NOT NULL,
     nombre VARCHAR(50) NOT NULL,
@@ -38,8 +42,49 @@ CREATE TABLE personaPiso(
     fechaIngreso DATE NOT NULL
 );
 
+/*
+ * Documentación de persona.
+ */
+COMMENT ON TABLE persona IS 'Tabla que contiene informacion de las personas';
+COMMENT ON COLUMN persona.idPersona IS 'Identificador de la persona';
+COMMENT ON COLUMN persona.idSucursal IS 'Identificador de la sucursal';
+COMMENT ON COLUMN persona.nombre IS 'Nombre de la persona';
+COMMENT ON COLUMN persona.apellidoP IS 'Apellido paterno de la persona';
+COMMENT ON COLUMN persona.apellidoM IS 'Apellido materno de la persona';
+COMMENT ON COLUMN persona.correo IS 'Correo electronico de la persona';
+COMMENT ON COLUMN persona.telefono IS 'Telefono de la persona';
+COMMENT ON COLUMN persona.idSucursal IS 'Apellido paterno de la persona';
+/*COMMENT ON COLUMN persona.direccion IS 'La dirección de la persona';*/
+COMMENT ON COLUMN persona.estado IS 'Estado donde vive la persona';
+COMMENT ON COLUMN persona.calle IS 'Calle donde vive la persona';
+COMMENT ON COLUMN persona.municipio IS 'Municipio donde vive la persona';
+COMMENT ON COLUMN persona.numero IS 'Numero de la casa donde vive la persona';
+COMMENT ON COLUMN persona.cp IS 'Codigo postal de donde vive la persona';
+COMMENT ON COLUMN persona.rfc IS 'rfc de la persona';
+COMMENT ON COLUMN persona.esEmpleado IS 'True si la persona es empleado, falso en otro caso';
+COMMENT ON COLUMN persona.edad IS 'Edad de la persona';
+COMMENT ON COLUMN persona.salario IS 'Salario donde vive la persona';   
+COMMENT ON COLUMN persona.antiguedad IS 'Cuanto tiempo a trabajado en la empresa la persona';
+COMMENT ON COLUMN persona.nss IS 'Número del seguro social de la persona';
+COMMENT ON COLUMN persona.esCliente IS 'True si la persona es cliente, falso en otro caso';    
+COMMENT ON COLUMN persona.curp IS 'La CURP de la persona';
+COMMENT ON COLUMN persona.noPuntos IS 'El número de puntos con los que cuenta la persona';
+COMMENT ON COLUMN persona.esProveedor IS 'True si la persona es proveedor, falso en otro caso';
+COMMENT ON COLUMN persona.pagoP IS 'El pago de la persona'; /* Tengo duda si es el pago resultante :(*/
+COMMENT ON COLUMN persona.esParrillero IS 'True si la persona es Parrillero, falso en otro caso';
+COMMENT ON COLUMN persona.esTaquero IS 'True si la persona es Taquero, falso en otro caso';
+COMMENT ON COLUMN persona.esMesero IS 'True si la persona es Mesero, falso en otro caso';
+COMMENT ON COLUMN persona.esCajero IS 'True si la persona es Cajero, falso en otro caso';
+COMMENT ON COLUMN persona.esTortillero IS 'True si la persona es Tortillero, falso en otro caso';
+COMMENT ON COLUMN persona.esRepartidor IS 'True si la persona es Repartidor, falso en otro caso';
+COMMENT ON COLUMN persona.fechaIngreso IS 'La fecha de ingreso de la persona a la empresa';
+
+/*
+ * =================================[ Tabla de sucursal ]===================================
+ */
 CREATE TABLE sucursal(
     idSucursal VARCHAR(10) NOT NULL UNIQUE,
+    nombreSucursal VARCHAR(40) NOT NULL,
     rfc VARCHAR(10) NOT NULL,
     correo VARCHAR(50) NOT NULL,
     telefono BIGINT NOT NULL,
@@ -50,15 +95,49 @@ CREATE TABLE sucursal(
     cp INT NOT NULL
 );
 
+/*
+ * Documentación de sucursal.
+ */
+COMMENT ON TABLE sucursal IS 'Tabla que contiene informacion de las sucursales';
+COMMENT ON COLUMN sucursal.idSucursal IS 'Identificador de la sucursal';
+COMMENT ON COLUMN sucursal.nombreSucursal IS 'Nombre de la sucursal';
+COMMENT ON COLUMN sucursal.rfc IS 'El RFC de la sucursal';
+COMMENT ON COLUMN sucursal.correo IS 'El correo de la sucursal';
+COMMENT ON COLUMN sucursal.telefono IS 'El telefono de la sucursal';
+COMMENT ON COLUMN sucursal.estado IS 'Estado donde se encuentra la sucursal';
+COMMENT ON COLUMN sucursal.calle IS 'Calle donde se encuentra la sucursal';
+COMMENT ON COLUMN sucursal.municipio IS 'Municipio donde se encuentra la sucursal';
+COMMENT ON COLUMN sucursal.numero IS 'Número donde se encuentra la sucursal';
+COMMENT ON COLUMN sucursal.cp IS 'El codigo postal donde se encuentra la sucursal';
+
+/*
+ * =================================[ Tabla de transporte ]===================================
+ */
 CREATE TABLE transporte(
     idTransporte VARCHAR(10) NOT NULL UNIQUE,
     marca VARCHAR(30) NOT NULL,
     modelo VARCHAR(20) NOT NULL,
     esMotocicleta BOOLEAN NOT NULL,
-    esBicicleta BOOLEAN NOT NULL,
+    /* No creo que sea necesaria, podemos asumir 
+     * que si el transporte no es una motocicleta es una bicicleta.
+     * esBicicleta BOOLEAN NOT NULL,*/ 
     noLicencia VARCHAR(10) NOT NULL
 );
 
+/*
+ * Documentación de transporte.
+ */
+COMMENT ON TABLE transporte IS 'Tabla que contiene informacion de los transportes';
+COMMENT ON COLUMN transporte.idTransporte IS 'Identificador del transporte';
+COMMENT ON COLUMN transporte.marca IS 'La marca del transporte'; 
+COMMENT ON COLUMN transporte.modelo IS 'El modelo del transporte';
+COMMENT ON COLUMN transporte.esMotocicleta IS 'True si el transporte es una motocicleta, false en otro caso';
+/*COMMENT ON COLUMN transporte.esBicicleta IS 'True si el transporte es una bicicleta, false en otro caso';*/
+COMMENT ON COLUMN transporte.noLicencia IS 'Número de licencia para manejar el transporte';
+
+/*
+ * =================================[ Tabla de ticket ]===================================
+ */
 CREATE TABLE ticket(
     idTicket VARCHAR(10) NOT NULL UNIQUE,
     idSucursal VARCHAR(10) NOT NULL UNIQUE,
@@ -73,6 +152,9 @@ CREATE TABLE ticket(
     tipoPago VARCHAR(20) NOT NULL
 );
 
+/*
+ * =================================[ Tabla de salsa ]===================================
+ */
 CREATE TABLE salsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
@@ -83,6 +165,9 @@ CREATE TABLE salsa(
     fecha DATE NOT NULL
 );
 
+/*
+ * =================================[ Tabla de platillo ]===================================
+ */
 CREATE TABLE platillo(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
@@ -91,6 +176,9 @@ CREATE TABLE platillo(
     fecha DATE NOT NULL
 );
 
+/*
+ * =================================[ Tabla de insumo ]===================================
+ */
 CREATE TABLE insumo(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     nombre VARCHAR(50) NOT NULL,
@@ -106,22 +194,35 @@ CREATE TABLE insumo(
 /*-----------------------------------------------------------------------------------------
  *-------------------------------------[ Relaciones ]--------------------------------------
  *---------------------------------------------------------------------------------------*/
+ 
+/*
+ * =================================[ Tabla de manejar ]===================================
+ */
 CREATE TABLE manejar(
     idPersona VARCHAR(10) NOT NULL UNIQUE,
     idTransporte VARCHAR(10) NOT NULL UNIQUE
 );
 
+/*
+ * =================================[ Tabla de proveer ]===================================
+ */
 CREATE TABLE proveer(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     idProveedor VARCHAR(10) NOT NULL UNIQUE
 );
 
+/*
+ * ==============================[ Tabla de contenerSalsa ]==============================
+ */
 CREATE TABLE contenerSalsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     porcion INT NOT NULL
 );
 
+/*
+ * ==============================[ Tabla de contenerPlatillo ]==============================
+ */
 CREATE TABLE contenerPlatillo(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
@@ -135,8 +236,8 @@ CREATE TABLE contenerPlatillo(
 /*
  * Llave de persona piso.
  */
- ALTER TABLE personaPiso ADD CONSTRAINT personaPiso_pkey PRIMARY KEY(idPersona);
- COMMENT ON CONSTRAINT personaPiso_pkey ON personaPiso IS 'La llave primaria de personaPiso';
+ ALTER TABLE persona ADD CONSTRAINT persona_pkey PRIMARY KEY(idPersona);
+ COMMENT ON CONSTRAINT persona_pkey ON persona IS 'La llave primaria de persona';
 
 /*
  * Llave de sucursal.
@@ -179,11 +280,11 @@ CREATE TABLE contenerPlatillo(
  *---------------------------------------------------------------------------------------*/
 
 /*
- * Llaves de personaPiso.
+ * Llaves de persona.
  */
-ALTER TABLE personaPiso ADD CONSTRAINT personaPiso_fkeySucursal FOREIGN KEY(idSucursal)
+ALTER TABLE persona ADD CONSTRAINT persona_fkeySucursal FOREIGN KEY(idSucursal)
 REFERENCES sucursal(idSucursal) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT personaPiso_fkeySucursal ON personaPiso IS 'La llave foranea de personaPiso que hace referencia a sucursal';
+COMMENT ON CONSTRAINT persona_fkeySucursal ON persona IS 'La llave foranea de persona que hace referencia a sucursal';
 
 /*
  * Llaves de ticket.
@@ -192,8 +293,8 @@ ALTER TABLE ticket ADD CONSTRAINT ticket_fkeySucursal FOREIGN KEY(idSucursal)
 REFERENCES sucursal(idSucursal) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT ticket_fkeySucursal ON ticket IS 'La llave foranea de ticket que hace referencia a sucursal';
 ALTER TABLE ticket ADD CONSTRAINT ticket_fkeyPersona FOREIGN KEY(idPersona)
-REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT ticket_fkeyPersona ON ticket IS 'La llave foranea de ticket que hace referencia a personaPiso';
+REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT ticket_fkeyPersona ON ticket IS 'La llave foranea de ticket que hace referencia a persona';
 
 /*
  * Llaves de salsa.
@@ -217,8 +318,8 @@ COMMENT ON CONSTRAINT platillo_fkeyTicket ON platillo IS 'La llave foranea de pl
  * Llaves de manejar.
  */
 ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyPersona FOREIGN KEY (idPersona) 
-REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT manejar_fkeyPersona ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idPersona de personaPiso';
+REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT manejar_fkeyPersona ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idPersona de persona';
 ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyTransporte FOREIGN KEY (idTransporte) 
 REFERENCES transporte(idTransporte) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT manejar_fkeyTransporte ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idTransporte de transporte';
@@ -230,7 +331,7 @@ ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyInsumo FOREIGN KEY (idInsumo)
 REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT proveer_fkeyInsumo ON proveer IS 'llave foranea de la tabla proveer que hace referencia a insumo';
 ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyProveedor FOREIGN KEY (idProveedor) 
-REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
+REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT proveer_fkeyProveedor ON proveer IS 'llave foranea de la tabla proveer que hace referencia al id del proveedor';
 
 /*
