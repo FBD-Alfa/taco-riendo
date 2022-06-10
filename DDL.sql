@@ -52,7 +52,7 @@ CREATE TABLE sucursal(
 
 CREATE TABLE transporte(
     idTransporte VARCHAR(10) NOT NULL UNIQUE,
-    marca VARCHAR(20) NOT NULL,
+    marca VARCHAR(30) NOT NULL,
     modelo VARCHAR(20) NOT NULL,
     esMotocicleta BOOLEAN NOT NULL,
     esBicicleta BOOLEAN NOT NULL,
@@ -91,6 +91,15 @@ CREATE TABLE platillo(
     fecha DATE NOT NULL
 );
 
+CREATE TABLE insumo(
+    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    nombre VARCHAR(50) NOT NULL,
+    fechaCompra DATE NOT NULL,
+    precio INT NOT NULL,
+    cantidad VARCHAR(50) NOT NULL,
+    marca VARCHAR(30) NOT NULL,
+    caducidad DATE NOT NULL
+);
 
 /*-----------------------------------------------------------------------------------------
  *-------------------------------------[ Relaciones ]--------------------------------------
@@ -98,6 +107,11 @@ CREATE TABLE platillo(
 CREATE TABLE manejar(
     idPersona VARCHAR(10) NOT NULL UNIQUE,
     idTransporte VARCHAR(10) NOT NULL UNIQUE
+);
+
+CREATE TABLE proveer(
+    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    idProveedor VARCHAR(10) NOT NULL UNIQUE
 );
 
 /*-----------------------------------------------------------------------------------------
@@ -139,6 +153,12 @@ CREATE TABLE manejar(
  */
  ALTER TABLE platillo ADD CONSTRAINT platillo_pkey PRIMARY KEY(idProducto);
  COMMENT ON CONSTRAINT platillo_pkey ON platillo IS 'La llave primaria de platillo';
+ 
+ /*
+ * Llave de insumo.
+ */
+ ALTER TABLE insumo ADD CONSTRAINT insumo_pkey PRIMARY KEY(idInsumo);
+ COMMENT ON CONSTRAINT insumo_pkey ON insumo IS 'La llave primaria de insumo';
 
 /*----------------------------------------------------------------------------------------
  *-----------------------------[ Llaves Foraneas Entidades ]------------------------------
@@ -168,6 +188,13 @@ ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyTicket FOREIGN KEY(idTicket)
 REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT salsa_fkeyTicket ON salsa IS 'La llave foranea de salsa que hace referencia a ticket';
 
+/*
+ * Llaves de platillo.
+ */
+ALTER TABLE platillo ADD CONSTRAINT platillo_fkeyTicket FOREIGN KEY(idTicket)
+REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT platillo_fkeyTicket ON platillo IS 'La llave foranea de platillo que hace referencia a ticket';
+
 /*----------------------------------------------------------------------------------------
  *---------------------------[ Llaves Foraneas de Relaciones ]----------------------------
  *---------------------------------------------------------------------------------------*/
@@ -181,3 +208,13 @@ COMMENT ON CONSTRAINT manejar_fkeyPersona ON manejar IS 'llave foranea de la tab
 ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyTransporte FOREIGN KEY (idTransporte) 
 REFERENCES transporte(idTransporte) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT manejar_fkeyTransporte ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idTransporte de transporte';
+
+/*
+ * Llaves de Proveer.
+ */
+ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyInsumo FOREIGN KEY (idInsumo) 
+REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT proveer_fkeyInsumo ON proveer IS 'llave foranea de la tabla proveer que hace referencia a insumo';
+ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyProveedor FOREIGN KEY (idProveedor) 
+REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT proveer_fkeyProveedor ON proveer IS 'llave foranea de la tabla proveer que hace referencia al id del proveedor';
