@@ -254,12 +254,26 @@ CREATE TABLE manejar(
 );
 
 /*
+ * Documentación de la relación manejar.
+ */
+COMMENT ON TABLE manejar IS 'Tabla que contiene información sobre la relación de manejar entre personas y transportes';
+COMMENT ON COLUMN manejar.idPersona IS 'Identificador de la persona que maneja';
+COMMENT ON COLUMN manejar.idTransporte IS 'Identificador del transporte que es manejado';
+
+/*
  * =================================[ Tabla de proveer ]===================================
  */
 CREATE TABLE proveer(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     idProveedor VARCHAR(10) NOT NULL UNIQUE
 );
+
+/*
+ * Documentación de la relación proveer.
+ */
+COMMENT ON TABLE proveer IS 'Tabla que contiene información sobre la relación de proveer entre insumos y proveedores';
+COMMENT ON COLUMN proveer.idInsumo IS 'Identificador del insumo provisto';
+COMMENT ON COLUMN proveer.idProveedor IS 'Identificador del proveedor que provee el insumo';
 
 /*
  * ==============================[ Tabla de contenerSalsa ]==============================
@@ -271,6 +285,15 @@ CREATE TABLE contenerSalsa(
 );
 
 /*
+ * Documentación de la contenerSalsa.
+ */
+COMMENT ON TABLE contenerSalsa IS 'Tabla que contiene información sobre la relación contenerSalsa';
+COMMENT ON COLUMN contenerSalsa.idProducto IS 'Identificador del producto';
+COMMENT ON COLUMN contenerSalsa.idInsumo IS 'Identificador del insumo';
+COMMENT ON COLUMN contenerSalsa.porcion IS 'Porción de la salsa';
+
+
+/*
  * ==============================[ Tabla de contenerPlatillo ]==============================
  */
 CREATE TABLE contenerPlatillo(
@@ -278,6 +301,14 @@ CREATE TABLE contenerPlatillo(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     porcion INT NOT NULL
 );
+
+/*
+ * Documentación de la contenerPlatillo.
+ */
+COMMENT ON TABLE contenerPlatillo IS 'Tabla que contiene información sobre la relación contenerPlatillo';
+COMMENT ON COLUMN contenerPlatillo.idProducto IS 'Identificador del producto';
+COMMENT ON COLUMN contenerPlatillo.idInsumo IS 'Identificador del insumo';
+COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
 
 /*-----------------------------------------------------------------------------------------
  *----------------------------------[ Llaves Primarias ]-----------------------------------
