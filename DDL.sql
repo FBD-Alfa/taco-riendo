@@ -72,6 +72,18 @@ CREATE TABLE ticket(
     esConsumoPresencial BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL
 );
+
+CREATE TABLE salsa(
+    idProducto VARCHAR(12) NOT NULL UNIQUE,
+    idTicket VARCHAR(10) NOT NULL,
+    nivelPicor VARCHAR(20) NOT NULL,
+    platillo VARCHAR(40) NOT NULL,
+    presentación VARCHAR(50) NOT NULL,
+    precio INT NOT NULL,
+    fecha DATE NOT NULL
+);
+
+
 /*-----------------------------------------------------------------------------------------
  *-------------------------------------[ Relaciones ]--------------------------------------
  *---------------------------------------------------------------------------------------*/
@@ -107,6 +119,12 @@ CREATE TABLE manejar(
  */
  ALTER TABLE ticket ADD CONSTRAINT ticket_pkey PRIMARY KEY(idTicket);
  COMMENT ON CONSTRAINT ticket_pkey ON ticket IS 'La llave primaria de ticket';
+ 
+/*
+ * Llave de salsa.
+ */
+ ALTER TABLE salsa ADD CONSTRAINT salsa_pkey PRIMARY KEY(idProducto);
+ COMMENT ON CONSTRAINT salsa_pkey ON salsa IS 'La llave primaria de salsa';
 
 /*----------------------------------------------------------------------------------------
  *-----------------------------[ Llaves Foraneas Entidades ]------------------------------
@@ -128,6 +146,14 @@ COMMENT ON CONSTRAINT ticket_fkeySucursal ON ticket IS 'La llave foranea de tick
 ALTER TABLE ticket ADD CONSTRAINT ticket_fkeyPersona FOREIGN KEY(idPersona)
 REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT ticket_fkeyPersona ON ticket IS 'La llave foranea de ticket que hace referencia a personaPiso';
+
+/*
+ * Llaves de salsa.
+ */
+ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyTicket FOREIGN KEY(idTicket)
+REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT salsa_fkeyTicket ON salsa IS 'La llave foranea de salsa que hace referencia a ticket';
+
 /*----------------------------------------------------------------------------------------
  *---------------------------[ Llaves Foraneas de Relaciones ]----------------------------
  *---------------------------------------------------------------------------------------*/
