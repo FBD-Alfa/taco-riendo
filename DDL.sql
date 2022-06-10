@@ -122,6 +122,12 @@ CREATE TABLE contenerSalsa(
     porcion INT NOT NULL
 );
 
+CREATE TABLE contenerPlatillo(
+    idProducto VARCHAR(12) NOT NULL UNIQUE,
+    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    porcion INT NOT NULL
+);
+
 /*-----------------------------------------------------------------------------------------
  *----------------------------------[ Llaves Primarias ]-----------------------------------
  *---------------------------------------------------------------------------------------*/
@@ -218,7 +224,7 @@ REFERENCES transporte(idTransporte) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT manejar_fkeyTransporte ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idTransporte de transporte';
 
 /*
- * Llaves de Proveer.
+ * Llaves de proveer.
  */
 ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyInsumo FOREIGN KEY (idInsumo) 
 REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
@@ -226,3 +232,23 @@ COMMENT ON CONSTRAINT proveer_fkeyInsumo ON proveer IS 'llave foranea de la tabl
 ALTER TABLE proveer ADD CONSTRAINT proveer_fkeyProveedor FOREIGN KEY (idProveedor) 
 REFERENCES personaPiso(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT proveer_fkeyProveedor ON proveer IS 'llave foranea de la tabla proveer que hace referencia al id del proveedor';
+
+/*
+ * Llaves de contenerSalsa.
+ */
+ALTER TABLE contenerSalsa ADD CONSTRAINT contenerSalsa_fkeyProducto FOREIGN KEY (idProducto) 
+REFERENCES salsa(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT contenerSalsa_fkeyProducto ON contenerSalsa IS 'llave foranea de la tabla contenerSalsa que hace referencia al producto';
+ALTER TABLE contenerSalsa ADD CONSTRAINT contenerSalsa_fkeyInsumo FOREIGN KEY (idInsumo) 
+REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT contenerSalsa_fkeyInsumo ON contenerSalsa IS 'llave foranea de la tabla contenerSalsa que hace referencia a insumo';
+
+/*
+ * Llaves de contenerPlatillo.
+ */
+ALTER TABLE contenerPlatillo ADD CONSTRAINT contenerPlatillo_fkeyProducto FOREIGN KEY (idProducto) 
+REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT contenerPlatillo_fkeyProducto ON contenerPlatillo IS 'llave foranea de la tabla contenerPlatillo que hace referencia al producto';
+ALTER TABLE contenerPlatillo ADD CONSTRAINT contenerPlatillo_fkeyInsumo FOREIGN KEY (idInsumo) 
+REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT contenerPlatillo_fkeyInsumo ON contenerPlatillo IS 'llave foranea de la tabla contenerPlatillo que hace referencia a insumo';
