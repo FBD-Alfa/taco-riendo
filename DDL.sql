@@ -225,7 +225,7 @@ CREATE TABLE insumo(
     fechaCompra DATE NOT NULL,
     precio FLOAT NOT NULL,
     cantidad INT NOT NULL, 
-    marca VARCHAR(30) NOT NULL,
+    marca VARCHAR(100) NOT NULL,
     caducidad DATE NOT NULL
 );
 
