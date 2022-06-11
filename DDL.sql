@@ -146,7 +146,7 @@ CREATE TABLE ticket(
     detalle VARCHAR(100) NOT NULL,  /*que va en AQUI*/
     rfcMesero VARCHAR(13) NOT NULL,
     /*tipoConsumo VARCHAR(30) NOT NULL;*/
-    tipoConsumo BOOLEAN NOT NULL,
+    aDomicilio BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL
 );
 
@@ -161,7 +161,7 @@ COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
 COMMENT ON COLUMN ticket.detalle IS 'Detalles de la compra';
 /*COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';*/
 COMMENT ON COLUMN ticket.rfcMesero IS 'RFC del mesero';
-COMMENT ON COLUMN ticket.tipoConsumo IS 'Tipo del consumo'; /*True=1 si la compra fue en el establecimiento*/
+COMMENT ON COLUMN ticket.aDomicilio IS 'Tipo del consumo'; /*True=1 si la compra fue en el establecimiento*/
 /*COMMENT ON COLUMN ticket.esConsumoPresencial IS 'True si la compra fue en un establecimiento de manera presencial';*/
 COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';/*1 Efectivo, TarjetaD,TarjetaC, Puntos*/
 
@@ -171,11 +171,11 @@ COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';/*1 Efectivo,
 CREATE TABLE salsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
+    idPlatillo VARCHAR(12) NOT NULL,
     nivelPicor VARCHAR(30) NOT NULL,
-    platilloAcom VARCHAR(40) NOT NULL,
     presentacion VARCHAR(50) NOT NULL,
-    precio float NOT NULL,
-    fecha DATE NOT NULL
+    precio float NOT NULL
+    /*fecha DATE NOT NULL*/
 );
 
 /*
@@ -183,12 +183,12 @@ CREATE TABLE salsa(
  */
 COMMENT ON TABLE salsa IS 'Tabla que contiene informacion de las salsas';
 COMMENT ON COLUMN salsa.idProducto IS 'Identificador de la salsa';
+COMMENT ON COLUMN salsa.idPlatillo IS 'Identificador del platillo con el que se acompaña la salsa';
 COMMENT ON COLUMN salsa.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN salsa.nivelPicor IS 'Que tan picosa es la salsa';
-COMMENT ON COLUMN salsa.platilloAcom IS 'Platillo con el que se recomienda la salsa';
 COMMENT ON COLUMN salsa.presentacion IS 'La presentación de la salsa';
 COMMENT ON COLUMN salsa.precio IS 'El precio de la salsa';
-COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/
+/*COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/*/
 
 /*
  * =================================[ Tabla de platillo ]===================================
@@ -198,8 +198,8 @@ CREATE TABLE platillo(
     idTicket VARCHAR(10) NOT NULL,
     categoriaPlatillo VARCHAR(10) NOT NULL,
     tipoPlatillo VARCHAR(50) NOT NULL,
-    precio INT NOT NULL,
-    fecha DATE NOT NULL
+    precio INT NOT NULL
+    /*fecha DATE NOT NULL*/
 );
 
 /*
@@ -210,7 +210,7 @@ COMMENT ON COLUMN platillo.idProducto IS 'Identificador del platillo';
 COMMENT ON COLUMN platillo.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN platillo.tipoPlatillo IS 'Tipo de platillo';
 COMMENT ON COLUMN platillo.precio IS 'El precio del platillo';
-COMMENT ON COLUMN platillo.fecha IS 'La fecha del platillo'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/
+/*COMMENT ON COLUMN platillo.fecha IS 'La fecha del platillo'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/*/
 
 /*
  * =================================[ Tabla de insumo ]===================================
@@ -381,6 +381,12 @@ COMMENT ON CONSTRAINT ticket_fkeyPersona ON ticket IS 'La llave foranea de ticke
 ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyTicket FOREIGN KEY(idTicket)
 REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT salsa_fkeyTicket ON salsa IS 'La llave foranea de salsa que hace referencia a ticket';
+
+ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyPlatillo FOREIGN KEY(idPlatillo)
+REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT salsa_fkeyPlatillo ON salsa IS 'La llave foranea de salsa que hace referencia a Platillo';
+
+
 
 /*
  * Llaves de platillo.
