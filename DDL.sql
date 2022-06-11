@@ -32,7 +32,6 @@ CREATE TABLE persona(
     curp CHAR(18) NOT NULL,
     noPuntos INT NOT NULL,
     esProveedor BOOLEAN NOT NULL,
-    pagoP float NOT NULL,
     esParrillero BOOLEAN NOT NULL,
     esTaquero BOOLEAN NOT NULL,
     esMesero BOOLEAN NOT NULL,
@@ -70,7 +69,6 @@ COMMENT ON COLUMN persona.esCliente IS 'True si la persona es cliente, falso en 
 COMMENT ON COLUMN persona.curp IS 'La CURP de la persona';
 COMMENT ON COLUMN persona.noPuntos IS 'El número de puntos con los que cuenta la persona';
 COMMENT ON COLUMN persona.esProveedor IS 'True si la persona es proveedor, falso en otro caso';
-COMMENT ON COLUMN persona.pagoP IS 'El pago a los proveedores'; /**/
 COMMENT ON COLUMN persona.esParrillero IS 'True si la persona es Parrillero, falso en otro caso';
 COMMENT ON COLUMN persona.esTaquero IS 'True si la persona es Taquero, falso en otro caso';
 COMMENT ON COLUMN persona.esMesero IS 'True si la persona es Mesero, falso en otro caso';
@@ -143,7 +141,6 @@ CREATE TABLE ticket(
     idSucursal VARCHAR(10) NOT NULL UNIQUE,
     idPersona VARCHAR(10) NOT NULL UNIQUE,
     fecha DATE NOT NULL,
-    detalle VARCHAR(100) NOT NULL,  /*que va en AQUI*/
     rfcMesero VARCHAR(13) NOT NULL,
     /*tipoConsumo VARCHAR(30) NOT NULL;*/
     aDomicilio BOOLEAN NOT NULL,
@@ -158,7 +155,6 @@ COMMENT ON COLUMN ticket.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN ticket.idSucursal IS 'Identificador de la sucursal';
 COMMENT ON COLUMN ticket.idPersona IS 'Identificador de la persona';
 COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
-COMMENT ON COLUMN ticket.detalle IS 'Detalles de la compra';
 /*COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';*/
 COMMENT ON COLUMN ticket.rfcMesero IS 'RFC del mesero';
 COMMENT ON COLUMN ticket.aDomicilio IS 'Tipo del consumo'; /*True=1 si la compra fue en el establecimiento*/
