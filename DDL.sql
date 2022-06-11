@@ -188,7 +188,20 @@ COMMENT ON COLUMN salsa.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN salsa.nivelPicor IS 'Que tan picosa es la salsa';
 COMMENT ON COLUMN salsa.presentacion IS 'La presentación de la salsa';
 COMMENT ON COLUMN salsa.precio IS 'El precio de la salsa';
-/*COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/*/
+
+CREATE TABLE precioSalsa(
+    idProducto VARCHAR(12) NOT NULL,
+    precio FLOAT NOT NULL,
+    fecha DATE NOT NULL
+);
+
+/*
+ * Documentación de precioSalsa.
+ */
+COMMENT ON TABLE precioSalsa IS 'Tabla que contiene el hitórico de precios de las salsas.';
+COMMENT ON COLUMN precioSalsa.idProducto IS 'Identificador de la salsa';
+COMMENT ON COLUMN precioSalsa.precio IS 'Un precio de la salsa';
+COMMENT ON COLUMN precioSalsa.fecha IS 'Fecha en la que se moficó el precio';
 
 /*
  * =================================[ Tabla de platillo ]===================================
@@ -211,6 +224,20 @@ COMMENT ON COLUMN platillo.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN platillo.tipoPlatillo IS 'Tipo de platillo';
 COMMENT ON COLUMN platillo.precio IS 'El precio del platillo';
 /*COMMENT ON COLUMN platillo.fecha IS 'La fecha del platillo'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/*/
+
+CREATE TABLE precioPlatillo(
+    idProducto VARCHAR(12) NOT NULL,
+    precio FLOAT NOT NULL,
+    fecha DATE NOT NULL
+);
+
+/*
+ * Documentación de precioSalsa.
+ */
+COMMENT ON TABLE precioPlatillo IS 'Tabla que contiene el hitórico de precios de los platillos.';
+COMMENT ON COLUMN precioPlatillo.idProducto IS 'Identificador del platillo';
+COMMENT ON COLUMN precioPlatillo.precio IS 'Un precio del platillo';
+COMMENT ON COLUMN precioPlatillo.fecha IS 'Fecha en la que se moficó el precio';
 
 /*
  * =================================[ Tabla de insumo ]===================================
@@ -342,11 +369,23 @@ COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
  ALTER TABLE salsa ADD CONSTRAINT salsa_pkey PRIMARY KEY(idProducto);
  COMMENT ON CONSTRAINT salsa_pkey ON salsa IS 'La llave primaria de salsa';
  
+ /*
+ * Llave de precioSalsa.
+ */
+ ALTER TABLE precioSalsa ADD CONSTRAINT precioSalsa_pkey PRIMARY KEY(idProducto,fecha);
+ COMMENT ON CONSTRAINT precioSalsa_pkey ON precioSalsa IS 'La llave primaria de precioSalsa';
+ 
 /*
  * Llave de platillo.
  */
  ALTER TABLE platillo ADD CONSTRAINT platillo_pkey PRIMARY KEY(idProducto);
  COMMENT ON CONSTRAINT platillo_pkey ON platillo IS 'La llave primaria de platillo';
+ 
+ /*
+ * Llave de precioSalsa.
+ */
+ ALTER TABLE precioPlatillo ADD CONSTRAINT precioPlatillo_pkey PRIMARY KEY(idProducto,fecha);
+ COMMENT ON CONSTRAINT precioPlatillo_pkey ON precioPlatillo IS 'La llave primaria de precioPlatillo';
  
  /*
  * Llave de insumo.
@@ -386,7 +425,9 @@ ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyPlatillo FOREIGN KEY(idPlatillo)
 REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT salsa_fkeyPlatillo ON salsa IS 'La llave foranea de salsa que hace referencia a Platillo';
 
-
+ALTER TABLE precioSalsa ADD CONSTRAINT precioSalsa_fkeySalsa FOREIGN KEY(idProducto)
+REFERENCES salsa(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT precioSalsa_fkeySalsa ON precioSalsa IS 'La llave foranea de precioSalsa que hace referencia a Salsa';
 
 /*
  * Llaves de platillo.
@@ -394,6 +435,10 @@ COMMENT ON CONSTRAINT salsa_fkeyPlatillo ON salsa IS 'La llave foranea de salsa 
 ALTER TABLE platillo ADD CONSTRAINT platillo_fkeyTicket FOREIGN KEY(idTicket)
 REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT platillo_fkeyTicket ON platillo IS 'La llave foranea de platillo que hace referencia a ticket';
+
+ALTER TABLE precioPlatillo ADD CONSTRAINT precioPlatillo_fkeyPlatillo FOREIGN KEY(idProducto)
+REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT precioPlatillo_fkeyPlatillo ON precioPlatillo IS 'La llave foranea de precioSalsa que hace referencia a Platillo';
 
 /*----------------------------------------------------------------------------------------
  *---------------------------[ Llaves Foraneas de Relaciones ]----------------------------
