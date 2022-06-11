@@ -22,17 +22,17 @@ CREATE TABLE persona(
     municipio VARCHAR(50) NOT NULL,
     numero INT NOT NULL,
     cp INT NOT NULL,
-    rfc VARCHAR(10) NOT NULL,
-    esEmpleado INT NOT NULL,
+    rfc VARCHAR(13) NOT NULL,
+    esEmpleado BOOLEAN NOT NULL,
     edad INT NOT NULL,
-    salario INT NOT NULL,
+    salario float NOT NULL, /**/
     antiguedad INT NOT NULL,
-    nss BIGINT NOT NULL,
+    nss BIGINT NOT NULL, 
     esCliente BOOLEAN NOT NULL,
     curp CHAR(18) NOT NULL,
     noPuntos INT NOT NULL,
     esProveedor BOOLEAN NOT NULL,
-    pagoP INT NOT NULL,
+    pagoP float NOT NULL,
     esParrillero BOOLEAN NOT NULL,
     esTaquero BOOLEAN NOT NULL,
     esMesero BOOLEAN NOT NULL,
@@ -70,7 +70,7 @@ COMMENT ON COLUMN persona.esCliente IS 'True si la persona es cliente, falso en 
 COMMENT ON COLUMN persona.curp IS 'La CURP de la persona';
 COMMENT ON COLUMN persona.noPuntos IS 'El número de puntos con los que cuenta la persona';
 COMMENT ON COLUMN persona.esProveedor IS 'True si la persona es proveedor, falso en otro caso';
-COMMENT ON COLUMN persona.pagoP IS 'El pago de la persona'; /* Tengo duda si es el pago resultante :(*/
+COMMENT ON COLUMN persona.pagoP IS 'El pago a los proveedores'; /**/
 COMMENT ON COLUMN persona.esParrillero IS 'True si la persona es Parrillero, falso en otro caso';
 COMMENT ON COLUMN persona.esTaquero IS 'True si la persona es Taquero, falso en otro caso';
 COMMENT ON COLUMN persona.esMesero IS 'True si la persona es Mesero, falso en otro caso';
@@ -114,7 +114,7 @@ COMMENT ON COLUMN sucursal.cp IS 'El codigo postal donde se encuentra la sucursa
  * =================================[ Tabla de transporte ]===================================
  */
 CREATE TABLE transporte(
-    idTransporte VARCHAR(10) NOT NULL UNIQUE,
+    noPlacas VARCHAR(10) NOT NULL UNIQUE, /*No Placas*/
     marca VARCHAR(30) NOT NULL,
     modelo VARCHAR(20) NOT NULL,
     esMotocicleta BOOLEAN NOT NULL,
@@ -128,7 +128,7 @@ CREATE TABLE transporte(
  * Documentación de transporte.
  */
 COMMENT ON TABLE transporte IS 'Tabla que contiene informacion de los transportes';
-COMMENT ON COLUMN transporte.idTransporte IS 'Identificador del transporte';
+COMMENT ON COLUMN transporte.noPlacas IS 'Identificador del transporte por medio de sus placas';
 COMMENT ON COLUMN transporte.marca IS 'La marca del transporte'; 
 COMMENT ON COLUMN transporte.modelo IS 'El modelo del transporte';
 COMMENT ON COLUMN transporte.esMotocicleta IS 'True si el transporte es una motocicleta, false en otro caso';
@@ -143,12 +143,10 @@ CREATE TABLE ticket(
     idSucursal VARCHAR(10) NOT NULL UNIQUE,
     idPersona VARCHAR(10) NOT NULL UNIQUE,
     fecha DATE NOT NULL,
-    detalle VARCHAR(100) NOT NULL,
-    total int NOT NULL,
-    nombreSucursal VARCHAR(40) NOT NULL,
-    rfcMesero VARCHAR(10) NOT NULL,
+    detalle VARCHAR(100) NOT NULL,  /*que va en AQUI*/
+    rfcMesero VARCHAR(13) NOT NULL,
     /*tipoConsumo VARCHAR(30) NOT NULL;*/
-    esConsumoPresencial BOOLEAN NOT NULL,
+    tipoConsumo BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL
 );
 
@@ -161,12 +159,11 @@ COMMENT ON COLUMN ticket.idSucursal IS 'Identificador de la sucursal';
 COMMENT ON COLUMN ticket.idPersona IS 'Identificador de la persona';
 COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
 COMMENT ON COLUMN ticket.detalle IS 'Detalles de la compra';
-COMMENT ON COLUMN ticket.total IS 'Total a pagar';
-COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';
+/*COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';*/
 COMMENT ON COLUMN ticket.rfcMesero IS 'RFC del mesero';
-/*COMMENT ON COLUMN ticket.tipoConsumo IS 'Tipo del consumo';*/
-COMMENT ON COLUMN ticket.esConsumoPresencial IS 'True si la compra fue en un establecimiento de manera presencial';
-COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';
+COMMENT ON COLUMN ticket.tipoConsumo IS 'Tipo del consumo'; /*True=1 si la compra fue en el establecimiento*/
+/*COMMENT ON COLUMN ticket.esConsumoPresencial IS 'True si la compra fue en un establecimiento de manera presencial';*/
+COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';/*1 Efectivo, TarjetaD,TarjetaC, Puntos*/
 
 /*
  * =================================[ Tabla de salsa ]===================================
@@ -175,9 +172,9 @@ CREATE TABLE salsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
     nivelPicor VARCHAR(30) NOT NULL,
-    platillo VARCHAR(40) NOT NULL,
+    platilloAcom VARCHAR(40) NOT NULL,
     presentacion VARCHAR(50) NOT NULL,
-    precio INT NOT NULL,
+    precio float NOT NULL,
     fecha DATE NOT NULL
 );
 
@@ -188,7 +185,7 @@ COMMENT ON TABLE salsa IS 'Tabla que contiene informacion de las salsas';
 COMMENT ON COLUMN salsa.idProducto IS 'Identificador de la salsa';
 COMMENT ON COLUMN salsa.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN salsa.nivelPicor IS 'Que tan picosa es la salsa';
-COMMENT ON COLUMN salsa.platillo IS 'Platillo con el que se recomienda la salsa';
+COMMENT ON COLUMN salsa.platilloAcom IS 'Platillo con el que se recomienda la salsa';
 COMMENT ON COLUMN salsa.presentacion IS 'La presentación de la salsa';
 COMMENT ON COLUMN salsa.precio IS 'El precio de la salsa';
 COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/
@@ -199,6 +196,7 @@ COMMENT ON COLUMN salsa.fecha IS 'La fecha de la salsa'; /* No sé si haga refer
 CREATE TABLE platillo(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idTicket VARCHAR(10) NOT NULL,
+    categoriaPlatillo VARCHAR(10) NOT NULL,
     tipoPlatillo VARCHAR(50) NOT NULL,
     precio INT NOT NULL,
     fecha DATE NOT NULL
@@ -221,10 +219,10 @@ CREATE TABLE insumo(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     nombre VARCHAR(50) NOT NULL,
     fechaCompra DATE NOT NULL,
-    precio INT NOT NULL,
+    precio float NOT NULL,
     /* La cantidad no sé si sea varchar o int porque podría medirse
      * las cantidades de forma distinta dependiendo del producto.*/
-    cantidad INT NOT NULL, 
+    cantidad float NOT NULL, 
     marca VARCHAR(30) NOT NULL,
     caducidad DATE NOT NULL
 );
@@ -250,7 +248,7 @@ COMMENT ON COLUMN insumo.caducidad IS 'La caducidad del insumo';
  */
 CREATE TABLE manejar(
     idPersona VARCHAR(10) NOT NULL UNIQUE,
-    idTransporte VARCHAR(10) NOT NULL UNIQUE
+    noPlacas VARCHAR(10) NOT NULL UNIQUE
 );
 
 /*
@@ -258,7 +256,7 @@ CREATE TABLE manejar(
  */
 COMMENT ON TABLE manejar IS 'Tabla que contiene información sobre la relación de manejar entre personas y transportes';
 COMMENT ON COLUMN manejar.idPersona IS 'Identificador de la persona que maneja';
-COMMENT ON COLUMN manejar.idTransporte IS 'Identificador del transporte que es manejado';
+COMMENT ON COLUMN manejar.noPlacas IS 'Identificador del transporte que es manejado';
 
 /*
  * =================================[ Tabla de proveer ]===================================
@@ -281,7 +279,7 @@ COMMENT ON COLUMN proveer.idProveedor IS 'Identificador del proveedor que provee
 CREATE TABLE contenerSalsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
-    porcion INT NOT NULL
+    porcion float NOT NULL
 );
 
 /*
@@ -329,7 +327,7 @@ COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
 /*
  * Llave de transporte.
  */
- ALTER TABLE transporte ADD CONSTRAINT transporte_pkey PRIMARY KEY(idTransporte);
+ ALTER TABLE transporte ADD CONSTRAINT transporte_pkey PRIMARY KEY(noPlacas);
  COMMENT ON CONSTRAINT transporte_pkey ON transporte IS 'La llave primaria de transporte';
 
 /*
@@ -401,9 +399,9 @@ COMMENT ON CONSTRAINT platillo_fkeyTicket ON platillo IS 'La llave foranea de pl
 ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyPersona FOREIGN KEY (idPersona) 
 REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT manejar_fkeyPersona ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idPersona de persona';
-ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyTransporte FOREIGN KEY (idTransporte) 
-REFERENCES transporte(idTransporte) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT manejar_fkeyTransporte ON manejar IS 'llave foranea de la tabla manejar que hace referencia al idTransporte de transporte';
+ALTER TABLE manejar ADD CONSTRAINT manejar_fkeyTransporte FOREIGN KEY (noPlacas) 
+REFERENCES transporte(noPlacas) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT manejar_fkeyTransporte ON manejar IS 'llave foranea de la tabla manejar que hace referencia al noPlacas del transporte';
 
 /*
  * Llaves de proveer.
