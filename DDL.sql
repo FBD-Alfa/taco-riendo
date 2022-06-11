@@ -10,13 +10,12 @@ CREATE SCHEMA public;
  */
 CREATE TABLE persona(
     idPersona VARCHAR(10) NOT NULL UNIQUE,
-    idSucursal VARCHAR(10) NOT NULL,
+    idSucursal VARCHAR(10),
     nombre VARCHAR(50) NOT NULL,
     apellidoP VARCHAR(50) NOT NULL,
     apellidoM VARCHAR(50) NOT NULL,
     correo VARCHAR(50) NOT NULL,
     telefono BIGINT NOT NULL,
-    /*direccion VARCHAR(70) NOT NULL,*/
     estado VARCHAR(50) NOT NULL,
     calle VARCHAR(50) NOT NULL,
     municipio VARCHAR(50) NOT NULL,
@@ -24,13 +23,13 @@ CREATE TABLE persona(
     cp INT NOT NULL,
     rfc VARCHAR(13) NOT NULL,
     esEmpleado BOOLEAN NOT NULL,
-    edad INT NOT NULL,
-    salario float NOT NULL, /**/
-    antiguedad INT NOT NULL,
-    nss BIGINT NOT NULL, 
+    edad INT,
+    salario float,
+    antiguedad INT,
+    nss BIGINT, 
     esCliente BOOLEAN NOT NULL,
-    curp CHAR(18) NOT NULL,
-    noPuntos INT NOT NULL,
+    curp CHAR(18),
+    noPuntos INT,
     esProveedor BOOLEAN NOT NULL,
     esParrillero BOOLEAN NOT NULL,
     esTaquero BOOLEAN NOT NULL,
@@ -38,7 +37,7 @@ CREATE TABLE persona(
     esCajero BOOLEAN NOT NULL,
     esTortillero BOOLEAN NOT NULL,
     esRepartidor BOOLEAN NOT NULL,
-    fechaIngreso DATE NOT NULL
+    fechaIngreso DATE
 );
 
 /*
@@ -53,7 +52,6 @@ COMMENT ON COLUMN persona.apellidoM IS 'Apellido materno de la persona';
 COMMENT ON COLUMN persona.correo IS 'Correo electronico de la persona';
 COMMENT ON COLUMN persona.telefono IS 'Telefono de la persona';
 COMMENT ON COLUMN persona.idSucursal IS 'Apellido paterno de la persona';
-/*COMMENT ON COLUMN persona.direccion IS 'La dirección de la persona';*/
 COMMENT ON COLUMN persona.estado IS 'Estado donde vive la persona';
 COMMENT ON COLUMN persona.calle IS 'Calle donde vive la persona';
 COMMENT ON COLUMN persona.municipio IS 'Municipio donde vive la persona';
@@ -112,14 +110,12 @@ COMMENT ON COLUMN sucursal.cp IS 'El codigo postal donde se encuentra la sucursa
  * =================================[ Tabla de transporte ]===================================
  */
 CREATE TABLE transporte(
-    noPlacas VARCHAR(10) NOT NULL UNIQUE, /*No Placas*/
+    noPlacas VARCHAR(10) NOT NULL UNIQUE,
     marca VARCHAR(30) NOT NULL,
     modelo VARCHAR(20) NOT NULL,
     esMotocicleta BOOLEAN NOT NULL,
-    /* No creo que sea necesaria, podemos asumir 
-     * que si el transporte no es una motocicleta es una bicicleta.
-     * esBicicleta BOOLEAN NOT NULL,*/ 
-    noLicencia VARCHAR(10) NOT NULL
+	esBicicleta BOOLEAN NOT NULL,
+    noLicencia VARCHAR(10)
 );
 
 /*
@@ -130,7 +126,7 @@ COMMENT ON COLUMN transporte.noPlacas IS 'Identificador del transporte por medio
 COMMENT ON COLUMN transporte.marca IS 'La marca del transporte'; 
 COMMENT ON COLUMN transporte.modelo IS 'El modelo del transporte';
 COMMENT ON COLUMN transporte.esMotocicleta IS 'True si el transporte es una motocicleta, false en otro caso';
-/*COMMENT ON COLUMN transporte.esBicicleta IS 'True si el transporte es una bicicleta, false en otro caso';*/
+COMMENT ON COLUMN transporte.esBicicleta IS 'True si el transporte es una bicicleta, false en otro caso';
 COMMENT ON COLUMN transporte.noLicencia IS 'Número de licencia para manejar el transporte';
 
 /*
@@ -138,13 +134,12 @@ COMMENT ON COLUMN transporte.noLicencia IS 'Número de licencia para manejar el 
  */
 CREATE TABLE ticket(
     idTicket VARCHAR(10) NOT NULL UNIQUE,
-    idSucursal VARCHAR(10) NOT NULL UNIQUE,
-    idPersona VARCHAR(10) NOT NULL UNIQUE,
+    idSucursal VARCHAR(10) NOT NULL,
+    idPersona VARCHAR(10) NOT NULL,
+	idMesero VARCHAR(13),
     fecha DATE NOT NULL,
-    rfcMesero VARCHAR(13) NOT NULL,
-    /*tipoConsumo VARCHAR(30) NOT NULL;*/
     aDomicilio BOOLEAN NOT NULL,
-    tipoPago VARCHAR(20) NOT NULL
+    tipoPago VARCHAR(20) NOT NULL CHECK (tipoPago IN ('Efectivo','Tarjeta','Puntos'))
 );
 
 /*
@@ -155,23 +150,18 @@ COMMENT ON COLUMN ticket.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN ticket.idSucursal IS 'Identificador de la sucursal';
 COMMENT ON COLUMN ticket.idPersona IS 'Identificador de la persona';
 COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
-/*COMMENT ON COLUMN ticket.nombreSucursal IS 'Nombre de la sucursal donde se expidio el ticket';*/
-COMMENT ON COLUMN ticket.rfcMesero IS 'RFC del mesero';
-COMMENT ON COLUMN ticket.aDomicilio IS 'Tipo del consumo'; /*True=1 si la compra fue en el establecimiento*/
-/*COMMENT ON COLUMN ticket.esConsumoPresencial IS 'True si la compra fue en un establecimiento de manera presencial';*/
-COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente';/*1 Efectivo, TarjetaD,TarjetaC, Puntos*/
+COMMENT ON COLUMN ticket.idMesero IS 'Identificador del mesero que atendió el ticket';
+COMMENT ON COLUMN ticket.aDomicilio IS 'Tipo del consumo';
+COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente. Puede ser Efectivo, Tarjeta o Puntos';
 
 /*
  * =================================[ Tabla de salsa ]===================================
  */
 CREATE TABLE salsa(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
-    idTicket VARCHAR(10) NOT NULL,
     idPlatillo VARCHAR(12) NOT NULL,
     nivelPicor VARCHAR(30) NOT NULL,
-    presentacion VARCHAR(50) NOT NULL,
-    precio float NOT NULL
-    /*fecha DATE NOT NULL*/
+    presentacion VARCHAR(50) NOT NULL
 );
 
 /*
@@ -180,10 +170,8 @@ CREATE TABLE salsa(
 COMMENT ON TABLE salsa IS 'Tabla que contiene informacion de las salsas';
 COMMENT ON COLUMN salsa.idProducto IS 'Identificador de la salsa';
 COMMENT ON COLUMN salsa.idPlatillo IS 'Identificador del platillo con el que se acompaña la salsa';
-COMMENT ON COLUMN salsa.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN salsa.nivelPicor IS 'Que tan picosa es la salsa';
 COMMENT ON COLUMN salsa.presentacion IS 'La presentación de la salsa';
-COMMENT ON COLUMN salsa.precio IS 'El precio de la salsa';
 
 CREATE TABLE precioSalsa(
     idProducto VARCHAR(12) NOT NULL,
@@ -204,11 +192,7 @@ COMMENT ON COLUMN precioSalsa.fecha IS 'Fecha en la que se moficó el precio';
  */
 CREATE TABLE platillo(
     idProducto VARCHAR(12) NOT NULL UNIQUE,
-    idTicket VARCHAR(10) NOT NULL,
-    categoriaPlatillo VARCHAR(10) NOT NULL,
-    tipoPlatillo VARCHAR(50) NOT NULL,
-    precio INT NOT NULL
-    /*fecha DATE NOT NULL*/
+    tipoPlatillo VARCHAR(50) NOT NULL
 );
 
 /*
@@ -216,10 +200,7 @@ CREATE TABLE platillo(
  */
 COMMENT ON TABLE platillo IS 'Tabla que contiene informacion de los platillos';
 COMMENT ON COLUMN platillo.idProducto IS 'Identificador del platillo';
-COMMENT ON COLUMN platillo.idTicket IS 'Identificador del ticket';
 COMMENT ON COLUMN platillo.tipoPlatillo IS 'Tipo de platillo';
-COMMENT ON COLUMN platillo.precio IS 'El precio del platillo';
-/*COMMENT ON COLUMN platillo.fecha IS 'La fecha del platillo'; /* No sé si haga referencia a la fecha de caducidad o a la de creación*/*/
 
 CREATE TABLE precioPlatillo(
     idProducto VARCHAR(12) NOT NULL,
@@ -242,10 +223,8 @@ CREATE TABLE insumo(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
     nombre VARCHAR(50) NOT NULL,
     fechaCompra DATE NOT NULL,
-    precio float NOT NULL,
-    /* La cantidad no sé si sea varchar o int porque podría medirse
-     * las cantidades de forma distinta dependiendo del producto.*/
-    cantidad float NOT NULL, 
+    precio FLOAT NOT NULL,
+    cantidad INT NOT NULL, 
     marca VARCHAR(30) NOT NULL,
     caducidad DATE NOT NULL
 );
@@ -286,7 +265,7 @@ COMMENT ON COLUMN manejar.noPlacas IS 'Identificador del transporte que es manej
  */
 CREATE TABLE proveer(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
-    idProveedor VARCHAR(10) NOT NULL UNIQUE
+    idProveedor VARCHAR(10) NOT NULL
 );
 
 /*
@@ -300,8 +279,8 @@ COMMENT ON COLUMN proveer.idProveedor IS 'Identificador del proveedor que provee
  * ==============================[ Tabla de contenerSalsa ]==============================
  */
 CREATE TABLE contenerSalsa(
-    idProducto VARCHAR(12) NOT NULL UNIQUE,
-    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    idProducto VARCHAR(12) NOT NULL,
+    idInsumo VARCHAR(12) NOT NULL,
     porcion float NOT NULL
 );
 
@@ -313,13 +292,27 @@ COMMENT ON COLUMN contenerSalsa.idProducto IS 'Identificador del producto';
 COMMENT ON COLUMN contenerSalsa.idInsumo IS 'Identificador del insumo';
 COMMENT ON COLUMN contenerSalsa.porcion IS 'Porción de la salsa';
 
+/*
+ * ==============================[ Tabla de incluirSalsa ]==============================
+ */
+CREATE TABLE incluirSalsa(
+    idProducto VARCHAR(12) NOT NULL,
+    idTicket VARCHAR(10) NOT NULL
+);
+
+/*
+ * Documentación de la incluirSalsa.
+ */
+COMMENT ON TABLE incluirSalsa IS 'Tabla que contiene información sobre las salsas vendidas.';
+COMMENT ON COLUMN incluirSalsa.idProducto IS 'Identificador del producto';
+COMMENT ON COLUMN incluirSalsa.idTicket IS 'Identificador del ticket';
 
 /*
  * ==============================[ Tabla de contenerPlatillo ]==============================
  */
 CREATE TABLE contenerPlatillo(
-    idProducto VARCHAR(12) NOT NULL UNIQUE,
-    idInsumo VARCHAR(12) NOT NULL UNIQUE,
+    idProducto VARCHAR(12) NOT NULL,
+    idInsumo VARCHAR(12) NOT NULL,
     porcion INT NOT NULL
 );
 
@@ -330,6 +323,21 @@ COMMENT ON TABLE contenerPlatillo IS 'Tabla que contiene información sobre la r
 COMMENT ON COLUMN contenerPlatillo.idProducto IS 'Identificador del producto';
 COMMENT ON COLUMN contenerPlatillo.idInsumo IS 'Identificador del insumo';
 COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
+
+/*
+ * ==============================[ Tabla de incluirPlatillo ]==============================
+ */
+CREATE TABLE incluirPlatillo(
+    idProducto VARCHAR(12) NOT NULL,
+    idTicket VARCHAR(10) NOT NULL
+);
+
+/*
+ * Documentación de la incluirPlatillo.
+ */
+COMMENT ON TABLE incluirPlatillo IS 'Tabla que contiene información sobre los platillos vendidos.';
+COMMENT ON COLUMN incluirPlatillo.idProducto IS 'Identificador del producto';
+COMMENT ON COLUMN incluirPlatillo.idTicket IS 'Identificador del ticket';
 
 /*-----------------------------------------------------------------------------------------
  *----------------------------------[ Llaves Primarias ]-----------------------------------
@@ -368,7 +376,7 @@ COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
  /*
  * Llave de precioSalsa.
  */
- ALTER TABLE precioSalsa ADD CONSTRAINT precioSalsa_pkey PRIMARY KEY(idProducto,fecha);
+ ALTER TABLE precioSalsa ADD CONSTRAINT precioSalsa_pkey PRIMARY KEY(idProducto,fecha,precio);
  COMMENT ON CONSTRAINT precioSalsa_pkey ON precioSalsa IS 'La llave primaria de precioSalsa';
  
 /*
@@ -378,9 +386,9 @@ COMMENT ON COLUMN contenerPlatillo.porcion IS 'Porción del producto';
  COMMENT ON CONSTRAINT platillo_pkey ON platillo IS 'La llave primaria de platillo';
  
  /*
- * Llave de precioSalsa.
+ * Llave de precioPlatillo.
  */
- ALTER TABLE precioPlatillo ADD CONSTRAINT precioPlatillo_pkey PRIMARY KEY(idProducto,fecha);
+ ALTER TABLE precioPlatillo ADD CONSTRAINT precioPlatillo_pkey PRIMARY KEY(idProducto,fecha,precio);
  COMMENT ON CONSTRAINT precioPlatillo_pkey ON precioPlatillo IS 'La llave primaria de precioPlatillo';
  
  /*
@@ -406,17 +414,18 @@ COMMENT ON CONSTRAINT persona_fkeySucursal ON persona IS 'La llave foranea de pe
 ALTER TABLE ticket ADD CONSTRAINT ticket_fkeySucursal FOREIGN KEY(idSucursal)
 REFERENCES sucursal(idSucursal) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT ticket_fkeySucursal ON ticket IS 'La llave foranea de ticket que hace referencia a sucursal';
+
 ALTER TABLE ticket ADD CONSTRAINT ticket_fkeyPersona FOREIGN KEY(idPersona)
 REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT ticket_fkeyPersona ON ticket IS 'La llave foranea de ticket que hace referencia a persona';
 
+ALTER TABLE ticket ADD CONSTRAINT ticket_fkeyMesero FOREIGN KEY(idMesero)
+REFERENCES persona(idPersona) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT ticket_fkeyMesero ON ticket IS 'La llave foranea de ticket que hace referencia al mesero';
+
 /*
  * Llaves de salsa.
  */
-ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyTicket FOREIGN KEY(idTicket)
-REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT salsa_fkeyTicket ON salsa IS 'La llave foranea de salsa que hace referencia a ticket';
-
 ALTER TABLE salsa ADD CONSTRAINT salsa_fkeyPlatillo FOREIGN KEY(idPlatillo)
 REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT salsa_fkeyPlatillo ON salsa IS 'La llave foranea de salsa que hace referencia a Platillo';
@@ -428,10 +437,6 @@ COMMENT ON CONSTRAINT precioSalsa_fkeySalsa ON precioSalsa IS 'La llave foranea 
 /*
  * Llaves de platillo.
  */
-ALTER TABLE platillo ADD CONSTRAINT platillo_fkeyTicket FOREIGN KEY(idTicket)
-REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
-COMMENT ON CONSTRAINT platillo_fkeyTicket ON platillo IS 'La llave foranea de platillo que hace referencia a ticket';
-
 ALTER TABLE precioPlatillo ADD CONSTRAINT precioPlatillo_fkeyPlatillo FOREIGN KEY(idProducto)
 REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT precioPlatillo_fkeyPlatillo ON precioPlatillo IS 'La llave foranea de precioSalsa que hace referencia a Platillo';
@@ -479,3 +484,25 @@ COMMENT ON CONSTRAINT contenerPlatillo_fkeyProducto ON contenerPlatillo IS 'llav
 ALTER TABLE contenerPlatillo ADD CONSTRAINT contenerPlatillo_fkeyInsumo FOREIGN KEY (idInsumo) 
 REFERENCES insumo(idInsumo) ON UPDATE CASCADE ON DELETE CASCADE;
 COMMENT ON CONSTRAINT contenerPlatillo_fkeyInsumo ON contenerPlatillo IS 'llave foranea de la tabla contenerPlatillo que hace referencia a insumo';
+
+/*
+ * Llaves de incluirSalsa.
+ */
+ALTER TABLE incluirSalsa ADD CONSTRAINT incluirSalsa_fkeyTicket FOREIGN KEY(idTicket)
+REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT incluirSalsa_fkeyTicket ON incluirSalsa IS 'La llave foranea de incluirSalsa que hace referencia al ticket';
+
+ALTER TABLE incluirSalsa ADD CONSTRAINT incluirSalsa_fkeySalsa FOREIGN KEY(idProducto)
+REFERENCES salsa(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT incluirSalsa_fkeySalsa ON incluirSalsa IS 'La llave foranea de incluirSalsa que hace referencia a Salsa';
+
+/*
+ * Llaves de inlcuirPlatillo.
+ */
+ALTER TABLE incluirPlatillo ADD CONSTRAINT incluirPlatillo_fkeyTicket FOREIGN KEY(idTicket)
+REFERENCES ticket(idTicket) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT incluirPlatillo_fkeyTicket ON incluirPlatillo IS 'La llave foranea de incluirPlatillo que hace referencia al ticket';
+
+ALTER TABLE incluirPlatillo ADD CONSTRAINT incluirPlatillo_fkeyPlatillo FOREIGN KEY(idProducto)
+REFERENCES platillo(idProducto) ON UPDATE CASCADE ON DELETE CASCADE;
+COMMENT ON CONSTRAINT incluirPlatillo_fkeyPlatillo ON incluirPlatillo IS 'La llave foranea de incluirPlatillo que hace referencia a Platillo';
