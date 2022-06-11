@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T05:21:59.161Z" agent="5.0 (X11)" etag="HRYGICFS4Y-fL2maIV7O" version="19.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-11T06:03:54.067Z" agent="5.0 (X11)" etag="XUSpa-d7OZBIb3spw3PK" version="19.0.2" type="github">
   <diagram id="u_mYsZftPLxaitnnNMeE" name="Page-1">
-    <mxGraphModel dx="1447" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="827" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -252,11 +252,10 @@
         <mxCell id="_CULSkSqQlY8-LVSlBSp-406" value="nss" style="ellipse;whiteSpace=wrap;html=1;align=center;rotation=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="707.5" y="1337.5" width="61.25" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_CULSkSqQlY8-LVSlBSp-407" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="_CULSkSqQlY8-LVSlBSp-408" target="_CULSkSqQlY8-LVSlBSp-372" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="_CULSkSqQlY8-LVSlBSp-408" value="antiguedad" style="ellipse;whiteSpace=wrap;html=1;align=center;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="570" y="1325" width="90" height="30" as="geometry" />
+        <mxCell id="_CULSkSqQlY8-LVSlBSp-407" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;exitX=0.79;exitY=0.921;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="cys0PzD_Poah5IU1Xp4--3" target="_CULSkSqQlY8-LVSlBSp-372" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="632.5893133113905" y="1353.8066652874354" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="_CULSkSqQlY8-LVSlBSp-409" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;shape=link;" parent="1" source="_CULSkSqQlY8-LVSlBSp-411" target="_CULSkSqQlY8-LVSlBSp-372" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -591,6 +590,9 @@
         </mxCell>
         <mxCell id="cys0PzD_Poah5IU1Xp4--1" value="precios" style="ellipse;shape=doubleEllipse;margin=3;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1650" y="1336.25" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cys0PzD_Poah5IU1Xp4--3" value="antiguedad" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="577.81" y="1330" width="84.38" height="27.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
