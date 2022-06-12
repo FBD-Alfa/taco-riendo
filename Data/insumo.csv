@@ -1,0 +1,501 @@
+idInsumo,nombre,fechaCompra,precio,cantidad,marca,caducidad
+OI1957263,sprite,2019-01-23,68.28,1,West-ward Pharmaceutical Corp,2021-10-11
+TL1384767,ajo,2020-02-13,69.21,4,"X-GEN Pharmaceuticals, Inc.",2021-03-31
+KD6425910,arrachera,2020-01-24,95.88,5,Eli Lilly and Company,2020-11-11
+WE4053701,pierna,2019-08-20,89.01,9,MEGASOL COSMETIC GMBH,2021-08-25
+NW4314470,sidral,2020-03-01,24.37,2,"Morton Grove Pharmaceuticals, Inc.",2022-06-03
+GV8885871,frijol,2018-02-26,50.11,10,China Ningbo Shangge Cosmetic Technology Corp,2021-11-18
+GF1612694,sesos,2019-03-07,56.33,10,Tri-Coastal Design Company Inc.,2020-09-17
+FE4782228,cebolla,2018-09-07,27.75,10,"Quinnova Pharmaceuticals, LLC",2022-02-02
+WV3594519,bolillos,2020-01-28,5.74,5,Gurwitch Products,2021-06-22
+LC7856802,queso panela,2020-04-14,34.9,5,Unit Dose Services,2021-03-04
+JO8347297,refrigeradores,2018-08-27,40.78,6,"Blacksmith Brands, Inc.",2021-05-22
+UC5856487,boing de mango,2019-10-07,70.38,7,"Lil' Drug Store Products, Inc",2022-02-01
+YW0492062,bolillos,2020-03-18,34.43,1,"Antigen Laboratories, Inc.",2022-04-30
+VB6252949,papa,2020-04-19,96.26,5,"UCB, Inc.",2021-01-14
+QW3050480,longaniza,2019-08-15,39.91,10,Pfizer Laboratories Div Pfizer Inc,2021-10-20
+YB8261003,pimiento verde,2020-02-11,20.47,3,"AvKARE, Inc.",2020-07-24
+QG8913706,laurel,2018-04-21,92.87,10,Crosstex International Inc.,2022-01-22
+UQ5750971,chicharrón prensado,2019-12-29,34.5,7,"Blacksmith Brands, Inc.",2021-04-23
+DY1147496,longaniza,2018-11-22,45.95,6,"Church & Dwight Co., Inc.",2020-08-06
+SF1706108,sal,2019-10-03,38.65,2,AMOREPACIFIC,2021-06-29
+NY2040514,epazote,2018-03-05,33.68,5,"Humanwell PuraCap Pharmaceutical (Wuhan), Ltd.",2020-12-11
+XT9782493,leche,2020-04-22,65.16,2,Heritage Pharmaceuticals Inc.,2021-11-26
+WY0002876,milanesa,2019-10-13,60.29,7,Rebel Distributors Corp,2022-01-31
+BT2645275,gas,2018-03-31,7.74,9,"Caraco Pharmaceutical Laboratories, Ltd.",2021-03-20
+KT2888414,laurel,2020-01-05,59.24,2,AstraZeneca Pharmaceuticals LP,2021-06-13
+UC8391387,sal,2019-12-09,84.68,7,"NATURE REPUBLIC CO., LTD.",2021-10-04
+TV2591615,papa,2019-06-14,24.6,3,Aqua Pharmaceuticals,2021-06-15
+TX6269275,chile guajillo,2019-06-23,61.82,1,"Nelco Laboratories, Inc.",2021-04-17
+ZB6466414,maiz pozolero,2018-12-08,15.58,8,"Caraco Pharmaceutical Laboratories, Ltd.",2020-10-19
+HN1699702,aceite vegetal,2019-05-20,2.16,10,Carilion Materials Management,2021-10-03
+TN7436654,pierna pollo,2019-12-06,37.51,1,"Antigen Laboratories, Inc.",2021-02-19
+KB6467374,crema,2019-02-22,44.95,5,Ventura Corporation LTD.,2020-08-15
+JR0102239,chiles verdes,2020-01-05,42.85,2,Colgate-Palmolive Company,2022-06-10
+CN8185762,boing de mango,2020-06-01,28.01,2,STAT RX USA LLC,2021-10-17
+RZ3269042,cafe,2019-07-03,52.53,1,Western Family Foods Inc,2020-08-09
+HY6861435,sprite,2018-10-28,38.53,10,Barr Laboratories Inc.,2021-07-21
+XI6149956,maiz pozolero,2018-06-28,12.01,3,Empack Spraytech Inc,2022-02-13
+SL8481380,perejil,2019-05-10,61.62,9,"Greenbrier International, Inc.",2022-01-09
+NN7855470,gas,2018-08-10,8.65,4,Orsini Home Medical Equipment Inc.,2022-01-07
+MR0113813,sesos,2020-05-26,91.03,1,"Native Remedies, LLC",2021-05-11
+LF6564457,ajo,2018-02-05,68.56,2,"Golden State Medical Supply, Inc.",2020-11-23
+LH4944177,epazote,2019-05-18,24.68,2,"Genentech, Inc.",2021-01-14
+XU2564622,tocino,2018-02-05,40.08,10,"Native Remedies, LLC",2020-08-01
+GL1552048,electricidad,2018-05-24,74.59,2,General Air Service & Supply Co,2020-09-28
+UE1760757,zanahorias,2019-11-26,89.46,8,Major Pharmaceuticals,2022-07-03
+BI9132545,pierna,2019-02-28,3.27,2,"Taro Pharmaceuticals U.S.A., Inc.",2022-04-18
+ZL5151602,refrigeradores,2018-05-04,75.13,8,"Teva Parenteral Medicines, Inc.",2022-03-01
+BU1145245,milanesa,2019-02-02,96.32,4,REMEDYREPACK INC.,2021-08-08
+GY3753140,chile serrano,2019-09-10,12.95,5,Jubilant HollisterStier LLC,2021-02-24
+FY1705658,papa,2018-10-13,34.86,1,Rebel Distributors Corp,2021-06-25
+QA4322522,fanta,2019-09-25,44.33,5,"ALK-Abello, Inc.",2022-02-12
+WE8905238,chile guajillo,2018-08-31,66.93,2,"PD-Rx Pharmaceuticals, Inc.",2021-08-10
+UP4753161,laurel,2018-03-10,35.6,7,Aidarex Pharmaceuticals LLC,2021-03-23
+MT7505137,ajo,2019-04-18,93.05,9,Supervalu Inc,2021-12-28
+WF2106308,chiles verdes,2020-02-26,54.71,5,"Pack Pharmaceuticals, LLC",2022-03-12
+NM5523870,crema,2019-01-13,38.8,2,"PD-Rx Pharmaceuticals, Inc.",2021-08-30
+ZR0547423,sillas,2019-04-08,73.33,7,KAISER FOUNDATION HOSPITALS,2021-05-09
+UT7912791,sesos,2019-06-13,16.24,9,"Upsher-Smith Laboratories, Inc.",2021-07-22
+ZQ7578637,sillas,2020-01-31,13.34,10,Cardinal Health,2021-04-17
+YV3531657,electricidad,2018-12-19,88.33,2,Topco Associates LLC,2022-06-19
+GX7709996,costilla,2018-10-13,63.26,7,Aidarex Pharmaceuticals LLC,2021-05-14
+TY1610388,nopales,2019-10-19,26.97,6,Mylan Pharmaceuticals Inc.,2022-04-16
+TB8211720,tomates rojos,2020-01-31,30.6,9,Cardinal Health,2021-09-30
+PL3057560,tostadas,2019-04-24,1.19,10,Perrigo New York Inc,2020-10-03
+KJ0734315,limon,2019-08-08,36.91,7,L. Perrigo Company,2021-07-12
+OR6463986,servilletas,2018-11-18,64.82,7,Raani Corporation,2021-05-09
+QS3538932,jamaica,2019-06-29,31.04,8,Major Pharmaceuticals,2021-10-06
+TX8214916,cafe,2018-10-01,66.98,4,"SJ Creations, Inc.",2020-10-28
+HM4589163,zanahorias,2019-10-15,51.71,10,WIZCOZ CORPORATION LTD,2021-09-22
+YX0193110,tomates verdes,2019-06-26,96.21,4,Cardinal Health,2021-07-09
+BM7021012,leche,2020-01-29,49.86,10,Galentic Pharma (India) Priva Te Limited,2020-07-19
+WX2704609,epazote,2018-05-03,57.05,9,"Shopko Stores Operating Co., LLC",2021-05-31
+MH2626559,aguacate,2018-02-10,44.81,6,BIO-VED Pharmaceuticals,2021-02-14
+IS2786947,perejil,2019-07-04,58.62,2,"Antigen Laboratories, Inc.",2022-03-27
+UM8948292,papa,2018-01-04,6.94,10,Sandoz Inc,2021-01-09
+KQ6738080,arrachera,2018-12-27,78.14,6,"Scarguard Labs, LLC",2022-04-02
+KH3018894,adobo,2019-10-21,1.95,1,"Caraco Pharmaceutical Laboratories, Ltd.",2021-11-08
+LQ4605117,aceite vegetal,2018-09-16,2.44,1,REMEDY MAKERS,2022-04-12
+LP7324419,crema,2019-10-13,86.75,5,Meijer Distribution Inc,2021-12-07
+YV9388620,azucar,2018-11-19,18.94,3,"Amneal-Agila, LLC",2021-09-05
+XK3725569,huevos,2019-09-22,93.81,3,"Covis Pharmaceuticals, Inc.",2022-02-09
+JE2200357,electricidad,2018-05-03,83.95,1,"Medical Products Laboratories, Inc.",2021-11-21
+ZS5815773,chile guajillo,2019-02-10,8.28,1,Pharmacia and Upjohn Company,2021-11-28
+PL9323532,chicharrón prensado,2018-02-08,24.93,7,Ben E. Keith Foods,2021-07-02
+FU0337125,servilletas,2018-07-25,45.55,8,"Nelco Laboratories, Inc.",2020-12-26
+CX1906434,servilletas,2020-05-04,47.68,6,Genoma Lab USA Inc,2021-07-09
+TF3446919,leche,2018-01-18,35.58,5,"KVK-Tech, Inc.",2021-12-02
+CL9012452,rabanos,2018-01-12,10.56,1,Hikma Pharmaceutical,2022-05-23
+YY7665191,sillas,2019-02-04,93.56,4,REMEDYREPACK INC.,2021-07-21
+ZJ8070326,mesas,2020-03-21,83.7,5,"Monarch Pharmaceuticals, Inc",2022-02-19
+FK4819412,ajo,2020-04-29,84.03,8,"Stephen L. LaFrance Pharmacy, Inc.",2020-10-05
+DK6101882,servilletas,2018-05-15,62.73,4,International Beauty Exchange,2022-01-14
+KO4996027,zanahorias,2018-05-01,40.06,6,"Physicians Total Care, Inc.",2020-11-08
+OZ2583172,jamaica,2018-06-21,91.0,9,REMEDYREPACK INC.,2021-10-16
+PT0674460,cebolla,2019-10-23,84.68,2,REMEDYREPACK INC.,2021-07-01
+RJ7051285,agua,2018-02-20,65.47,3,Fresenius Medical Care North America,2020-10-01
+DX2992391,fanta,2019-05-27,78.4,3,"SKINFOOD CO., LTD.",2022-06-05
+QC6780372,chile serrano,2019-12-05,43.86,3,DIRECT RX,2021-01-22
+GK4090351,longaniza,2019-04-14,40.32,5,"Physicians Total Care, Inc.",2020-12-09
+RS6379706,bolillos,2020-01-02,75.23,10,HOMEOLAB USA INC.,2022-04-27
+WZ9662023,nopales,2019-01-10,44.73,2,"CLINIQUE LABORATORIES, INC.",2022-02-07
+AB5502757,platos,2019-01-20,28.71,9,"Antigen Laboratories, Inc.",2021-02-06
+SF7141990,lechuga,2019-09-20,12.69,5,Mylan Pharmaceuticals Inc.,2021-01-17
+FB0510761,tripas,2019-12-19,72.2,1,Dr. Reddy's Laboratories Inc,2022-04-12
+OZ7554064,rabanos,2018-10-22,8.12,2,"Lippmann Enterprises, LLC",2020-08-13
+KF6126889,perejil,2019-04-16,15.14,8,Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC,2022-01-19
+VT7768110,pierna,2019-02-06,72.81,2,CVS Pharmacy,2022-01-06
+UJ6790341,muslo pollo,2018-05-05,4.7,7,King Bio Inc.,2022-02-11
+CW4407262,jamon,2020-03-12,45.85,6,Gerimedix Incorporated,2021-08-15
+DY0465793,tomates rojos,2018-08-20,34.69,8,Massco Dental A Division of Dunagin Pharmaceuticals,2020-09-01
+IM8300887,costilla,2018-03-19,11.56,7,Procter & Gamble Manufacturing Company,2020-07-30
+VX9261158,laurel,2018-06-23,37.7,2,McKesson,2021-05-24
+SJ1191664,longaniza,2018-08-29,99.72,1,Perfumeria Lemaitre S.A.,2021-06-30
+BB0803595,cubiertos,2018-08-11,48.39,3,"Lupin Pharmaceuticals, Inc.",2021-08-08
+IK9394551,chile guajillo,2019-02-07,46.12,10,SPAI-SONS PHAMACEUTICAL INTERNATIONAL COSMETICS,2020-08-11
+UV4462286,jamon,2020-06-04,99.81,9,Mylan Pharmaceuticals Inc.,2021-02-20
+MD1442297,coca cola,2018-12-27,8.11,8,"Allergan, Inc.",2021-07-09
+QQ5629140,tocino,2018-04-09,9.57,5,"Physicians Total Care, Inc.",2020-11-05
+YO6279822,tortillas de maiz,2019-12-08,61.66,4,"Bare Escentuals Beauty, Inc.",2021-08-19
+CN8936364,fanta,2020-07-11,68.1,6,Rebel Distributors Corp.,2021-12-12
+AG7206958,bolillos,2018-10-10,72.96,1,REMEDYREPACK INC.,2020-10-07
+LO9817596,aceite vegetal,2019-10-26,57.07,5,"IVAX Pharmaceuticals, Inc.",2021-11-08
+ZF9166526,mesas,2018-07-08,79.58,10,Stratus Pharamceuticals,2021-02-13
+YC3729846,ajo,2018-05-18,65.73,4,Major Pharmaceuticals,2021-05-01
+KB8429802,carne de puerco,2020-04-26,47.98,4,"Rising Pharmaceuticals, Inc.",2021-07-16
+SU3836448,frijol,2020-01-31,56.98,2,Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC,2021-12-30
+ER6546305,tostadas,2018-10-31,9.04,1,"Roxane Laboratories, Inc.",2022-07-01
+ET4762057,agua,2019-06-27,40.31,1,Target Corporation,2021-01-29
+FE8669263,adobo,2019-05-21,49.03,2,Best Choice (Valu Merchandisers Company),2021-10-31
+OZ4655622,cebolla,2018-04-04,67.74,5,"Mallinckrodt, Inc.",2020-07-15
+KN4697146,aguacate,2018-07-13,18.98,8,"Nelco Laboratories, Inc.",2021-10-07
+CP2983812,costilla,2018-06-20,99.43,5,Northwind Pharmaceuticals,2021-07-21
+DR3896945,horchata,2020-07-07,4.18,2,A-S Medication Solutions LLC,2021-11-12
+FP1889275,pierna pollo,2018-12-02,22.27,3,PureTek Corporation,2022-06-09
+BW9005329,bistec,2019-06-23,51.86,6,Uriel Pharmacy Inc.,2020-11-15
+TZ0297902,cebolla,2019-09-16,54.81,1,"ZION SYNTHETIC FIBER CO., LTD.",2021-08-13
+YV1411390,zanahorias,2018-08-04,54.62,7,Community Home Health Services,2021-09-03
+HD9646099,tortillas de harina,2019-10-29,68.92,10,Unit Dose Services,2022-02-15
+OT8969976,piña,2019-01-28,99.37,1,Lake Erie Medical DBA Quality Care Products LLC,2022-02-28
+BU6193425,longaniza,2019-03-10,10.22,2,"Medac Pharma, Inc",2021-12-08
+OD7391460,sillas,2019-11-21,98.4,10,"TAI GUK PHARM. CO., LTD.",2020-09-02
+OB3897421,sal,2018-06-10,81.43,3,"Allermed Laboratories, Inc.",2021-10-29
+XH3820263,laurel,2018-02-26,38.68,9,Wockhardt USA LLC.,2021-01-20
+NX0113968,sidral,2018-04-19,96.19,1,REMEDYREPACK INC.,2020-09-21
+OS5298546,azucar,2020-04-30,74.2,9,Sanum Kehlbeck GmbH & Co. KG,2020-11-03
+PR7734190,sal,2020-06-05,21.15,5,BluePoint Laboratories,2021-08-27
+WI7308950,adobo,2018-06-14,62.7,8,"Avon Products, Inc",2022-06-11
+HB7621307,milanesa,2018-04-07,3.56,4,Bryant Ranch Prepack,2021-08-19
+DF1682593,tripas,2020-02-08,88.32,3,"SJ Creations, Inc.",2020-08-09
+XD0878547,ajo,2018-10-13,24.69,9,Supervalu Inc,2022-06-23
+NI3338311,platos,2020-02-09,82.02,10,"WH Nutritionals, LLC",2021-05-31
+OM4221032,tomates verdes,2018-05-01,12.68,1,Advanced Generic Corporation,2021-08-21
+OK0548206,pierna,2019-12-19,88.03,6,American Health Packaging,2022-03-29
+HV8763154,cafe,2019-09-10,10.19,7,J. A. Cosmetics U.S. INC,2021-07-17
+FM2284203,queso oaxaca,2019-05-31,93.23,9,American Sales Company,2021-09-22
+VG1913021,gas,2020-07-01,19.55,9,Coty US LLC,2021-01-08
+RD2705147,platos,2020-02-27,53.68,3,"Dasan E&T Co., Ltd.",2022-02-15
+SK3132411,pechuga pollo,2018-01-16,26.67,7,"Mallinckrodt, Inc.",2020-09-30
+OK7023128,piña,2019-10-29,78.41,10,"Watson Laboratories, Inc.",2021-07-06
+JE9137998,longaniza,2018-12-28,74.21,10,DermaRite Industries LLC,2021-11-11
+VQ5078818,fanta,2020-06-17,79.78,2,"Ventura Corporation, LTD",2021-06-26
+UM6759101,cafe,2019-08-01,10.71,3,McKesson,2021-09-14
+FT9742845,chile guajillo,2018-03-06,38.43,5,Virtus Pharmaceuticals,2021-10-01
+XZ9309502,agua,2018-04-05,40.62,2,"NexAir, LLC",2021-01-12
+MQ7304074,pimiento verde,2019-11-02,74.94,6,Bayer HealthCare LLC,2022-03-21
+CW9475157,oregano,2020-05-05,41.23,2,Lake Erie Medical Surgical & Supply DBA Quality Care Products LLC,2020-07-15
+NJ9687301,nopales,2019-05-21,1.05,4,"Antigen Laboratories, Inc.",2020-12-23
+HZ9292000,platos,2018-07-02,91.18,6,Citron Pharma LLC,2020-09-25
+RY8015023,epazote,2018-05-14,70.77,9,Cardinal Health,2020-10-01
+SJ1574065,agua,2020-04-22,56.55,6,"Janssen Pharmaceuticals, Inc.",2021-04-30
+TK4469475,milanesa,2020-05-25,36.21,8,Neutrogena Corporation,2021-07-13
+BK9026437,oregano,2019-06-07,6.81,4,"Hawthorn Pharmaceuticals, Inc.",2021-07-08
+KL9282691,boing de guayaba,2019-01-15,72.75,8,"Hospira, Inc.",2022-04-07
+XI2563654,sprite,2018-08-07,7.24,2,BJWC,2021-12-11
+TG3697280,agua,2019-02-27,53.02,9,Proficient Rx LP,2022-04-23
+AA4373144,tripas,2019-05-19,94.07,3,Winthrop U.S.,2021-07-01
+MT9433979,adobo,2020-05-20,70.35,4,RITE AID CORPORATION,2022-03-02
+OM2778626,adobo,2019-04-27,75.22,6,"Mediceutical Laboratories, LTD",2022-04-23
+BA4581940,queso panela,2020-03-12,96.45,8,"Owen Biosciences, Inc.",2020-09-11
+JP6652403,arrachera,2018-12-13,5.08,2,Topco Associates LLC,2021-03-22
+BF6455377,electricidad,2019-06-24,28.68,10,"Nelco Laboratories, Inc.",2021-03-05
+QB4306698,sesos,2020-07-14,12.62,7,"Breckenridge Pharmaceutical, Inc.",2021-01-29
+SA8933059,coca cola,2020-06-05,97.69,4,Greenstone LLC,2021-02-25
+BR8446291,crema,2018-03-16,25.69,4,Aidarex Pharmaceuticals LLC,2021-09-09
+DR2184321,sal,2020-05-09,96.75,8,Mylan Pharmaceuticals Inc.,2021-10-05
+HR6105798,tomates verdes,2020-06-28,67.99,6,Jubilant HollisterStier LLC,2022-05-23
+AK4015236,carne de puerco,2018-11-07,21.67,9,Parfums Christian Dior,2021-01-19
+EP8475255,arrachera,2018-06-16,1.65,5,"Physicians Total Care, Inc.",2021-09-17
+YS4339161,frijol,2019-07-26,66.05,2,CVS Pharmacy,2020-08-11
+WS3721261,queso oaxaca,2020-03-23,74.12,4,A-S Medication Solutions LLC,2022-04-11
+ZL4691696,queso oaxaca,2018-08-05,62.53,1,Family Dollar Services Inc.,2022-04-23
+HK5139500,gas,2019-03-26,44.97,5,Rebel Distributors Corp,2021-11-23
+QI3971946,rabanos,2018-03-30,77.71,4,Validus Pharmaceuticals LLC,2020-12-08
+ZK1721777,cilantro,2020-03-30,16.25,5,"Quinnova Pharmaceuticals, Inc.",2021-07-28
+DZ8003211,boing de uva,2019-09-30,64.2,10,Northwind Pharmaceuticals,2021-11-18
+UJ7429507,lechuga,2018-08-25,64.08,7,Rebel Distributors Corp,2022-06-22
+DX4434898,sesos,2018-02-16,11.77,4,"Johnson & Johnson Consumer Products Company, Division of Johnson & Johnson Consumer Companies, Inc.",2021-08-07
+LM1312459,piña,2018-09-22,72.89,4,Bryant Ranch Prepack,2021-02-02
+TJ5528620,carne de puerco,2020-05-13,1.78,7,Cadila Healthcare Limited,2022-04-26
+SR4021986,tomates rojos,2019-06-27,37.03,6,Atlantic Biologicals Corps,2021-02-28
+BN4529997,chiles verdes,2018-05-21,90.99,8,Shionogi Inc.,2020-12-18
+QO3506149,chiles verdes,2020-05-24,28.91,3,Clinical Solutions Wholesale,2021-04-28
+VL2250008,jamaica,2018-08-04,44.59,4,"AvKARE, Inc.",2020-12-04
+VS3557515,piña,2020-04-20,48.85,2,Peaceful Mountain,2020-07-22
+JQ5103170,chile serrano,2018-03-24,95.48,9,Apotex Corp.,2021-03-15
+GH9974100,huevos,2020-01-23,30.66,9,"NCS HealthCare of KY, Inc dba Vangard Labs",2021-05-22
+IK8537600,chile guajillo,2019-08-02,73.64,3,Lancaster S.A.M.,2020-11-15
+IQ7705847,mesas,2019-02-01,28.43,2,Apotex Corp.,2021-07-30
+TD2186528,papa,2019-03-18,81.5,2,Cache Valley Oxygen,2021-07-16
+UN8235772,longaniza,2019-11-19,74.38,3,Meijer Distribution Inc,2022-01-27
+KK1053833,tostadas,2019-01-21,96.71,5,"NCS HealthCare of KY, Inc dba Vangard Labs",2021-08-18
+DO2046812,boing de mango,2019-10-20,86.18,1,Cardinal Health,2020-11-02
+ZO5837587,queso panela,2019-08-04,19.98,3,KMART CORPORATION,2021-02-27
+GP3452719,cafe,2019-10-02,24.86,10,Physicians Formula Inc,2020-08-05
+YB5884146,boing de uva,2018-04-04,43.77,8,Amerisource Bergen,2020-08-23
+OT3256935,agua,2019-04-29,92.72,9,"Nelco Laboratories, Inc.",2021-09-11
+KG4350133,maiz pozolero,2020-05-22,97.18,7,American Health Packaging,2020-07-25
+RY7684040,rabanos,2018-02-17,90.96,8,The Mentholatum Company,2021-07-19
+TT1860811,coca cola,2018-06-29,90.05,10,HOMEOLAB USA INC,2022-02-16
+UW8402482,crema,2018-04-11,50.51,1,Cardinal Health,2021-07-29
+RM0422650,yerba santa,2020-03-20,54.96,3,L'Oreal USA Products Inc,2022-01-12
+CT0355599,queso panela,2019-04-03,99.31,6,AuroMedics Pharma LLC,2020-12-20
+VH5857684,queso panela,2018-04-26,57.98,5,"Paddock Laboratories, LLC",2021-01-24
+ZI3331117,boing de mango,2018-06-11,9.97,10,Uriel Pharmacy Inc.,2022-02-20
+LV8403554,nopales,2020-07-07,55.69,9,"NCS HealthCare of KY, Inc dba Vangard Labs",2021-02-11
+LG8249952,oregano,2020-01-23,39.31,4,Citron Pharma LLC,2021-10-11
+ZN6980009,boing de mango,2018-05-20,1.19,6,Western Family Foods Inc,2020-09-10
+GY2825352,adobo,2018-07-20,49.63,4,Qualitest Pharmaceuticals,2020-07-25
+XE9583277,azucar,2018-10-15,54.67,10,"Deseret Biologicals, Inc.",2021-12-08
+RQ7694607,cilantro,2019-01-21,72.94,8,Accord Healthcare Inc.,2020-09-26
+YD5893665,cafe,2019-07-20,55.05,5,"Jazz Pharmaceuticals, Inc.",2021-07-21
+ER2874518,laurel,2018-07-17,83.95,8,Unit Dose Services,2022-06-23
+CV8862953,tocino,2019-03-13,92.73,8,"Nelco Laboratories, Inc.",2020-12-02
+JV7214432,chiles verdes,2019-03-16,47.11,2,Uriel Pharmacy Inc.,2020-08-30
+HB2946738,sidral,2018-02-13,42.38,8,Apotheca Company,2020-12-14
+CD7279013,sesos,2018-05-14,99.07,9,REMEDYREPACK INC.,2021-07-05
+YB4438479,jamon,2018-11-01,22.98,2,A-S Medication Solutions LLC,2022-04-19
+IQ2101593,papa,2020-01-13,64.59,6,AuroMedics Pharma LLC,2022-05-28
+PJ7144397,tocino,2018-11-02,54.28,9,"The Wellness Center for Research and Education, Inc.",2021-08-20
+HJ3077479,pimiento verde,2019-09-05,5.05,1,REMEDYREPACK INC.,2022-07-11
+MC0445937,sprite,2020-05-25,71.35,9,E. Fougera & Co. a division of Fougera Pharmaceuticals Inc.,2021-08-12
+XE5538763,tomates rojos,2019-06-24,64.36,6,"Prestium Pharma, Inc.",2022-03-12
+RF4063356,muslo pollo,2019-11-16,7.42,10,Legacy Pharmaceutical Packaging,2022-02-14
+WW2295066,papa,2018-08-01,91.21,10,L Perrigo Company,2020-12-03
+DR1280415,queso oaxaca,2019-10-06,85.18,8,AmerisourceBergen Drug Corp,2021-05-04
+QW0198018,boing de uva,2019-11-07,30.68,2,REMEDYREPACK INC.,2020-07-29
+OI4983093,longaniza,2019-05-06,9.95,8,Sandoz Inc,2020-09-02
+JW4265574,sesos,2018-02-06,60.46,5,Wal-Mart Stores Inc,2021-03-20
+HX7441982,longaniza,2020-04-15,10.51,6,"Nelco Laboratories, Inc.",2021-12-10
+IJ6384898,epazote,2018-01-14,63.63,1,Health and Harmony Products,2022-03-05
+TT7723865,tostadas,2019-02-13,63.72,2,"International Labs, Inc.",2020-09-14
+HJ0825666,tortillas de harina,2018-05-18,9.4,7,Lake Erie Medical DBA Quality Care Products LLC,2021-06-24
+AY6564862,gas,2019-12-29,52.13,3,The Body Shop Wake Forest,2022-02-08
+FA9240203,sprite,2018-04-17,35.2,5,REMEDYREPACK INC.,2021-03-10
+DL1374127,costilla,2020-02-23,53.8,8,REMEDYREPACK INC.,2020-11-28
+HV1824275,manteles,2018-03-31,63.27,6,"Physicians Total Care, Inc.",2021-09-21
+JY9142466,epazote,2019-03-29,18.82,7,Cardinal Health,2022-04-04
+DS9299452,muslo pollo,2019-04-13,90.47,4,"Allergy Laboratories, Inc.",2022-05-25
+XN4470288,huevos,2020-04-04,51.43,10,"Antigen Laboratories, Inc.",2021-09-16
+KN7762319,muslo pollo,2018-04-06,32.1,8,"Hi-Tech Pharmacal Co., Inc.",2020-10-26
+OU1094705,servilletas,2018-03-09,70.46,10,Conopco Inc. d/b/a Unilever,2020-10-12
+FB7635996,crema,2018-11-07,29.31,3,Rx Pak Division of McKesson Corporation,2021-05-06
+SS1472051,horchata,2018-12-01,24.31,7,Mylan Pharmaceuticals Inc.,2022-05-15
+PO5416313,queso panela,2018-02-21,25.16,9,Cardinal Health,2022-02-25
+TZ7870847,costilla,2020-02-06,50.53,1,Rebel Distributors Corp,2022-06-07
+MN8930065,aguacate,2018-07-24,9.79,1,Colgate-Palmolive Canada,2021-09-26
+UK6021492,tostadas,2020-06-22,6.42,1,REMEDYREPACK INC.,2021-10-14
+OB1873168,carne de puerco,2018-06-03,90.16,3,"Johnson & Johnson Healthcare Products, Division of McNEIL-PPC, Inc",2021-09-26
+UT9170644,tortillas de maiz,2020-01-03,67.48,4,"Breckenridge Pharmaceutical, Inc.",2020-08-15
+KY3003192,sprite,2019-10-12,65.62,7,Skin Deep,2021-03-25
+SV3923561,boing de mango,2019-07-02,20.24,5,Rebel Distributors Corp.,2021-07-31
+AH4425702,tomates rojos,2018-09-04,97.4,5,Dollar General,2021-03-24
+MP0387613,muslo pollo,2019-11-04,3.07,5,"ALK-Abello, Inc.",2021-08-10
+ZE5877418,perejil,2018-11-16,75.0,6,Neutrogena Corporation,2022-02-24
+MP2408752,cafe,2020-03-30,9.64,4,Aurobindo Pharma Limited,2021-02-02
+RG5470512,pechuga pollo,2019-03-13,23.69,2,CHARMZONE CO LTD,2022-02-11
+WU0782000,tortillas de harina,2020-04-17,50.4,6,Novartis Pharmaceuticals Corporation,2020-11-26
+ZH1356292,longaniza,2019-01-22,32.65,6,"Eon Labs, Inc.",2021-03-25
+KS1796200,boing de uva,2020-01-06,15.35,7,Apotheca Company,2022-02-15
+RI4290326,coca cola,2019-12-21,31.41,10,Par Pharmaceutical Inc.,2021-01-24
+OK1160442,huevos,2020-02-10,97.64,9,CVS Pharmacy,2021-07-14
+AX5689194,leche,2018-06-20,25.86,10,"Nelco Laboratories, Inc.",2020-10-31
+YQ6154485,papa,2020-05-04,2.72,7,"Newton Laboratories, Inc.",2020-11-16
+IB8727504,tortillas de maiz,2018-04-29,71.7,2,"Native Remedies, LLC",2021-12-04
+WX2495969,boing de mango,2019-03-04,92.48,3,Wal-Mart Stores Inc,2021-04-25
+YF7759051,tortillas de maiz,2018-10-01,2.95,6,MEGASOL COSMETIC GMBH,2021-12-30
+KV9496058,manteles,2020-05-09,80.95,8,Major Pharmaceuticals,2020-08-07
+WE4194246,costilla,2019-03-25,8.32,3,REMEDYREPACK INC.,2021-04-17
+EB5350688,epazote,2018-08-03,27.16,2,REMEDYREPACK INC.,2021-12-04
+CZ4393691,tripas,2019-01-23,4.42,3,KAISER FOUNDATION HOSPITALS,2021-10-01
+DA0315958,aceite vegetal,2020-02-16,91.41,7,Kosan Kozmetik Sanayi ve Ticaret A.S.,2020-11-15
+FZ8918926,agua,2018-02-16,72.49,8,"Bath & Body Works, Inc.",2020-12-19
+MH8317584,epazote,2019-08-29,7.03,9,"Patriot Pharmaceuticals, LLC",2022-05-18
+EI2482817,bolillos,2019-12-14,90.08,5,Indiana Botanic Gardens,2021-02-04
+MO4764216,limon,2020-01-08,49.4,2,Cardinal Health,2022-06-06
+XA7504526,mesas,2018-03-05,30.68,5,"Antigen Laboratories, Inc.",2021-01-26
+DC3869774,boing de guayaba,2020-01-14,20.52,7,Pharmacia and Upjohn Company,2021-11-04
+VS7779220,adobo,2018-05-31,29.94,8,Pure Source,2021-03-24
+NK5002317,nopales,2018-01-11,41.81,1,Sunrider Manufacturing L.P.,2021-05-02
+ME6923618,aguacate,2019-11-02,4.15,1,Aidarex Pharmaceuticals LLC,2022-04-02
+SF8337084,lechuga,2020-03-07,7.87,3,Vagabond Welding Supply,2021-02-09
+UY5010826,jamaica,2018-09-24,7.23,5,Dolgencorp Inc,2021-06-20
+ST2212928,aguacate,2018-06-18,15.51,10,Mylan Pharmaceuticals Inc.,2021-12-12
+DC9335866,piña,2018-08-10,13.76,5,Dr. Reddy's Laboratories Limited,2020-08-21
+MP9575353,yerba santa,2019-06-12,53.78,7,Torrent Pharmaceuticals Limited,2022-01-17
+FE4139088,queso oaxaca,2019-09-11,68.5,7,"Blenheim Pharmacal, Inc.",2021-03-14
+OC7846393,muslo pollo,2019-12-13,77.96,8,Uriel Pharmacy Inc.,2021-12-13
+MZ0992512,boing de guayaba,2019-11-28,73.79,7,"Antigen Laboratories, Inc.",2022-04-02
+YQ9548737,rabanos,2019-06-10,47.4,4,Guthy-Renker LLC,2020-09-01
+IA7140210,coca cola,2018-02-18,64.12,2,Valeant Pharmaceuticals International,2022-02-18
+JY4949482,cilantro,2018-05-20,21.58,8,Keltman Pharmaceuticals Inc.,2022-07-06
+RW8733542,sal,2019-04-22,21.99,5,CVS Pharmacy,2022-03-03
+IE0152979,maiz pozolero,2019-10-14,30.0,8,Publix Super Markets Inc,2020-12-24
+EE7243970,chiles verdes,2020-05-03,98.34,8,"Paddock Laboratories, LLC",2020-09-06
+UN9062845,bolillos,2018-08-17,76.08,8,Aurobindo Pharma Limited,2021-10-21
+WN1844659,lechuga,2020-04-03,44.6,9,American Health Packaging,2021-07-16
+DE6795306,sal,2018-07-03,13.79,1,Unit Dose Services,2020-09-30
+DO1629842,sprite,2018-09-30,20.67,8,"Sun & Skin Care Research, LLC",2020-10-28
+HY6005726,bistec,2019-07-12,38.88,4,"Liberty Pharmaceuticals, Inc.",2021-07-17
+KC7524762,jamaica,2019-08-18,53.15,1,Washington Homeopathic Products,2021-07-16
+QK0574584,perejil,2019-05-14,24.0,5,Unit Dose Services,2022-03-18
+SG7778461,pechuga pollo,2019-11-07,53.51,8,Space Brands Limited,2020-11-11
+SR2409780,chicharrón prensado,2020-06-05,30.85,5,REMEDYREPACK INC.,2022-06-25
+RN6978323,sal,2019-05-11,5.08,7,"Akorn, Inc.",2021-07-29
+VM3207027,tortillas de harina,2019-02-12,97.26,4,"Antigen Laboratories, Inc.",2021-05-07
+OQ1137782,boing de uva,2018-10-06,78.64,9,Procter & Gamble Manufacturing Co.,2021-06-05
+VH8037928,electricidad,2018-01-24,17.49,4,"DAVA Pharmaceuticals, Inc.",2021-12-17
+PV5839302,sidral,2018-02-22,48.83,2,STAT RX USA LLC,2021-01-01
+WJ1310656,carne de puerco,2019-02-27,77.9,4,Macleods Pharmaceuticals Limited,2020-08-31
+WP8184208,cebolla,2019-09-03,72.07,10,STI Pharma LLC,2022-07-01
+SF8005906,coca cola,2018-03-09,22.78,10,Lake Erie Medical DBA Quality Care Products LLC,2022-06-02
+LF3502537,rabanos,2019-10-30,89.58,7,J. A. Cosmetics U.S. INC,2021-11-20
+XU7985163,agua,2018-05-28,26.41,5,Duane Reade,2020-08-17
+DB4379022,chiles verdes,2019-04-08,98.0,2,MEGASOL COSMETIC GMBH,2020-11-15
+PH1116636,chile serrano,2020-07-08,70.03,7,H E B,2020-12-13
+EY0562103,tripas,2018-11-16,72.79,5,"EQUATE (Walmart Stores, Inc.)",2021-04-29
+EV3078798,chicharrón prensado,2018-10-19,66.2,7,Chi Research Inc,2021-09-01
+LK2753221,cubiertos,2019-05-09,98.6,2,SHISEIDO AMERICAS CORPORATION,2021-01-01
+OM2483238,carne de puerco,2020-05-22,49.86,8,"Aphena Pharma Solutions - Tennessee, LLC",2021-05-10
+HC9172078,sillas,2019-06-20,4.55,2,Dyax Corp.,2020-09-12
+NJ3667899,tomates verdes,2018-01-10,84.67,4,"Antigen Laboratories, Inc.",2021-01-30
+UW0678347,arrachera,2019-07-09,3.02,2,"WOONSOCKET PRESCRIPTION CENTER,INCORPORATED",2022-02-09
+XI8262278,jamon,2019-02-17,10.72,4,CVS Pharmacy,2020-12-13
+FX1340645,tostadas,2018-11-16,52.68,9,Eli Lilly and Company,2022-03-18
+IO7037725,longaniza,2018-12-04,8.64,10,"Panrosa Enterprises, Inc.",2021-07-06
+ZQ4556594,laurel,2018-08-31,5.39,3,PharmWest Inc.,2020-12-28
+YG7401081,bistec,2019-04-10,38.04,5,Empack Spraytech Inc,2021-11-13
+BV8135612,aceite vegetal,2018-01-07,98.26,3,Demoulas Super Markets,2021-04-29
+EU4248852,chicharrón prensado,2018-11-23,64.1,7,Bryant Ranch Prepack,2020-09-24
+LH4386647,electricidad,2020-07-12,63.53,3,Rite Aid Corporation,2022-01-05
+CC2107628,zanahorias,2018-02-19,49.62,5,Cardinal Health,2021-02-19
+HI4390466,tortillas de harina,2020-07-13,83.01,10,Mylan Pharmaceuticals Inc.,2021-11-28
+UM6862541,chile guajillo,2019-11-16,49.27,8,Cantrell Drug Company,2021-01-29
+NU4088385,tortillas de maiz,2019-09-30,54.5,7,"Chattem, Inc.",2021-10-04
+YO7763789,sprite,2019-02-02,97.06,7,Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC,2021-01-20
+ID8619004,mesas,2019-12-06,20.66,9,Aurolife Pharma LLC,2022-03-17
+YT5936527,cebolla,2018-04-17,34.53,7,Laboratoires Clarins S.A.,2021-01-29
+PI9287211,frijol,2019-11-01,96.21,1,ENCHANTE ACCESSORIES INC.,2020-08-18
+WU7069326,adobo,2020-04-13,81.88,9,Teva Pharmaceuticals USA Inc,2020-11-03
+RU1872569,yerba santa,2019-03-08,59.25,8,KVG Group Inc,2021-09-11
+RI5790263,tomates verdes,2020-05-16,7.58,1,Freds Inc,2021-10-15
+PV4808119,frijol,2018-06-02,30.58,2,Jubilant HollisterStier LLC,2022-06-20
+QM4482643,servilletas,2020-04-08,58.53,5,Sandoz Inc,2020-07-29
+NP8691978,perejil,2018-12-08,30.28,7,L. Perrigo Company,2022-04-12
+LH6811461,perejil,2020-01-12,78.43,1,"Nelco Laboratories, Inc.",2022-05-07
+SG7787477,tortillas de maiz,2019-11-21,8.27,2,Qualitest Pharmaceuticals,2021-01-22
+HD8348976,epazote,2018-02-10,70.07,9,Sagent Pharmaceuticals,2020-10-01
+RW8152875,jamon,2020-07-11,43.09,3,"Allergy Laboratories, Inc.",2020-08-05
+OW6333094,arrachera,2020-02-25,40.57,5,American Health Packaging,2021-05-30
+CV7275780,carne de puerco,2019-12-18,87.31,8,"Nelco Laboratories, Inc.",2021-12-28
+HB6444543,bolillos,2019-10-26,92.14,9,"Roxane Laboratories, Inc.",2020-12-25
+MY0400228,longaniza,2019-04-01,51.55,7,"MSD Consumer Care, Inc.",2021-12-24
+TT7608971,bistec,2019-07-11,98.73,8,Rebel Distributors Corp,2021-02-15
+TJ5308513,platos,2018-09-22,19.8,9,Purdue Pharma LP,2020-12-14
+BI4507928,perejil,2020-02-21,76.19,1,McKesson,2021-08-24
+KN5203550,costilla,2018-04-09,37.84,4,"Gent-l-kleen Products, Inc.",2021-12-20
+MW0385053,tocino,2019-04-09,4.78,2,"Peaceful Mountain, Inc.",2022-03-17
+LJ7266713,boing de guayaba,2020-06-21,69.85,5,HART Health,2021-08-21
+NQ0631928,huevos,2019-11-19,38.95,5,"MSD Consumer Care, Inc.",2021-08-11
+JE0768787,cafe,2019-06-24,72.37,2,"Physicians Total Care, Inc.",2022-06-10
+TQ1372792,cubiertos,2018-10-24,79.02,4,"Nelco Laboratories, Inc.",2020-10-14
+SD9239851,tomates verdes,2018-03-18,45.2,9,Advance Pharmaceutical Inc.,2021-03-09
+AH8980015,queso panela,2019-09-03,46.45,5,"Nelco Laboratories, Inc.",2021-01-22
+BG3678370,maiz pozolero,2018-01-19,89.55,9,Perrigo New York Inc,2021-07-05
+DJ7702487,agua,2019-12-07,48.01,7,Apotex Corp.,2020-09-12
+RE9157331,sidral,2018-11-01,54.62,10,Rebel Distributors Corp.,2022-03-14
+OC9481118,pierna pollo,2018-08-07,26.32,1,Major Pharmaceuticals,2020-12-09
+FG5621570,cafe,2019-04-05,92.38,7,Precision Dose Inc.,2021-01-26
+WG8028338,muslo pollo,2018-01-29,26.82,4,"DOLGENCORP,LLC",2021-02-08
+UO3240581,refrigeradores,2018-09-19,62.53,3,State of Florida DOH Central Pharmacy,2020-09-07
+QI4365629,tortillas de harina,2020-01-24,99.32,10,Wakefern Food Corporation,2020-08-19
+SD1067838,fanta,2018-09-06,80.57,1,Baxter Healthcare Corporation,2020-10-08
+BE5857841,piña,2018-11-30,34.48,3,"HANLIM PHARM. CO., LTD.",2021-03-06
+WJ5386441,cebolla,2018-07-18,29.0,9,"Allergy Laboratories, Inc.",2021-09-26
+FU1591704,bistec,2018-04-16,38.44,6,"Libertas Pharma, Inc.",2022-04-08
+KL2644718,queso panela,2018-01-23,6.27,10,Neutrogena Corporation,2022-06-01
+IE9471048,sidral,2020-03-10,86.83,4,REMEDYREPACK INC.,2021-09-30
+SH5761510,cubiertos,2019-10-02,98.94,8,New Sun Inc.,2020-12-25
+OU2216816,sprite,2018-06-17,55.29,7,Cadila Healthcare Limited,2021-09-26
+EX8122231,refrigeradores,2018-01-22,97.54,2,Mylan Institutional Inc.,2021-02-22
+LP7275436,ajo,2019-09-20,93.5,2,"Fresenius Kabi USA, LLC",2021-09-21
+VW8804319,agua,2019-09-28,19.0,3,BCM Ltd,2022-07-10
+YF3013349,gas,2019-01-19,60.56,2,"Preferred Pharmaceuticals, Inc",2021-04-26
+SR1939840,servilletas,2020-06-21,41.43,2,Rite Aid Corporation,2020-08-25
+NJ4588105,frijol,2020-06-24,57.1,10,Clinical Solutions Wholesale,2022-02-25
+FN8162539,perejil,2018-10-05,92.34,3,BluePoint Laboratories,2022-03-21
+FN6875299,rabanos,2018-08-18,17.14,6,"Happy Sonic Global Co., Ltd.",2021-04-09
+KG0952239,chile serrano,2019-06-15,36.04,3,REMEDYREPACK INC.,2022-04-23
+CN1488562,chicharrón prensado,2019-05-18,76.79,1,"Watson Laboratories, Inc.",2021-11-20
+OM0211069,chile guajillo,2018-06-07,89.2,9,Apotex Corp.,2020-08-16
+UW5738806,suadero,2019-06-26,25.32,4,Sam's West Inc,2022-07-12
+WM3668693,bistec,2018-06-15,18.95,3,Lake Erie Medical DBA Quality Care Products LLC,2021-08-05
+DX0364409,sesos,2019-11-29,45.35,3,"Smith & Nephew, Inc.",2020-11-15
+ZR9395274,servilletas,2018-01-12,91.7,10,"Physicians Total Care, Inc.",2021-11-24
+OH2929335,epazote,2020-07-10,19.84,4,"H.J. Harkins Company, Inc.",2021-07-21
+TC2553679,nopales,2018-03-11,5.6,8,"Dolgencorp, LLC",2022-01-27
+FU9730674,chile guajillo,2018-12-28,56.85,9,"SPIRIT PHARMACEUTICALS,LLC",2021-12-28
+XU3917872,zanahorias,2019-08-23,41.63,4,"Nelco Laboratories, Inc.",2021-10-05
+LB0116248,limon,2019-04-06,79.06,9,"THEFACESHOP CO., LTD.",2022-02-12
+PM0078937,horchata,2019-05-01,23.81,9,"Zhejiang Jingwei Pharmaceutical Co., Ltd.",2021-04-10
+QU2636475,adobo,2018-04-30,30.07,9,REMEDYREPACK INC.,2021-10-27
+IU6583217,suadero,2018-11-29,44.8,8,"EMD Serono, Inc.",2021-11-21
+BT0315530,cilantro,2019-09-13,32.39,3,NorthStar Rx LLC,2021-07-14
+DT0047588,pierna,2018-07-21,8.75,8,China Ningbo Shangge Cosmetic Technology Corp,2020-08-23
+SF6111296,arrachera,2018-09-24,48.23,4,CVS Pharmacy,2020-10-28
+NR4843009,boing de uva,2019-11-29,92.04,4,Cardinal Health,2021-09-05
+LO8256111,aguacate,2019-07-29,2.5,10,REMEDYREPACK INC.,2021-11-05
+XC3971061,fanta,2020-03-30,43.72,8,"Nelco Laboratories, Inc.",2021-08-02
+KG6589611,sillas,2018-03-16,88.19,8,"Dava Pharmaceuticals, Inc.",2020-08-06
+RB8889453,milanesa,2018-03-16,6.92,3,Mylan Institutional Inc.,2021-08-03
+MS3897111,huevos,2019-04-06,75.84,8,Access Business Group LLC,2021-02-20
+XY3743811,longaniza,2018-07-09,2.26,7,"Antigen Laboratories, Inc.",2021-12-27
+DP3750283,tostadas,2018-10-11,91.08,6,Teva Pharmaceuticals USA Inc,2021-03-18
+TD3406735,oregano,2018-07-07,72.59,2,Pfizer Consumer Healthcare,2021-12-22
+HU7995462,sal,2018-12-03,25.96,7,Ranbaxy Pharmaceuticals Inc.,2021-11-16
+GS6681536,horchata,2018-04-22,37.98,1,H E B,2021-09-16
+DR6592306,jamaica,2018-03-23,3.9,4,State of Florida DOH Central Pharmacy,2022-04-14
+WJ4618974,fanta,2018-11-13,83.91,2,SUPERVALU INC.,2022-03-21
+HY7286024,piña,2019-04-28,83.65,1,UniShield,2022-04-02
+QZ0868960,tripas,2018-11-29,24.53,10,Uriel Pharmacy Inc.,2021-10-10
+AZ9272871,pierna pollo,2019-12-15,6.04,8,"Holston Gases, Inc",2020-12-23
+JO3487293,epazote,2018-11-23,98.21,3,Procter & Gamble Manufacturing Co.,2022-06-27
+JL4814515,mesas,2018-07-08,9.61,9,Landy International,2020-12-08
+IR8845922,tostadas,2020-07-04,6.68,9,"Shopko Stores Operating Co., LLC",2021-07-30
+ZD9083130,milanesa,2019-08-08,22.02,7,Actavis Mid Atlantic LLC,2022-02-09
+AW7625418,gas,2018-07-16,94.13,7,"Liddell Laboratories, Inc.",2021-06-22
+XY2219788,sprite,2020-06-16,7.25,9,Harmon Stores Inc.,2020-09-20
+CS9348067,tostadas,2019-07-05,43.05,7,"Nelco Laboratories, Inc.",2021-04-18
+UH7479989,refrigeradores,2019-10-27,23.19,1,AvPAK,2021-03-06
+LU4954254,bistec,2020-01-06,26.02,8,Cadila Healthcare Limited,2021-02-16
+FV3006917,crema,2019-01-17,84.15,2,"Physicians Total Care, Inc.",2022-04-18
+FJ2843494,longaniza,2018-02-13,22.52,10,Cantrell Drug Company,2021-11-26
+ND3617363,platos,2019-05-04,56.2,5,"Hospira, Inc.",2021-08-31
+KJ6430631,pierna,2018-05-14,73.71,1,"CorePharma, LLC",2021-04-26
+OY6812395,perejil,2018-11-26,52.93,10,Cardinal Health,2020-08-21
+CH2324061,manteles,2019-12-16,21.43,7,"Wal-Mart Stores, Inc",2022-07-02
+GK7324148,epazote,2019-04-19,3.06,8,REMEDYREPACK INC.,2020-10-22
+IP0368567,leche,2020-05-22,28.57,6,"True Botanica, LLC",2021-10-13
+YE2223215,tortillas de maiz,2019-12-22,59.01,10,"Watson Pharma, Inc.",2021-08-24
+BR2524461,chiles verdes,2019-09-30,77.44,3,A-S Medication Solutions LLC,2021-02-03
+MV5077595,sesos,2019-05-08,54.43,2,Uriel Pharmacy Inc.,2020-10-23
+EC1636128,tomates rojos,2020-02-25,40.92,7,"Paddock Laboratories, LLC",2022-01-16
+DO4979034,sidral,2020-02-22,82.88,6,"Allermed Laboratories, Inc.",2021-07-06
+DE0004343,chile serrano,2018-09-15,99.86,1,"Allergy Laboratories, Inc.",2020-08-06
+WA0211167,cilantro,2019-03-15,46.36,7,Dynamic Pharmaceuticals Inc.,2021-07-24
+GL8567045,jamon,2020-07-01,83.05,3,Dr. Reddy's Laboratories Limited,2021-12-26
+XA2650786,maiz pozolero,2018-12-25,47.61,10,Uriel Pharmacy Inc.,2021-09-06
+AD7005279,yerba santa,2018-03-09,26.75,7,Lake Erie Medical DBA Quality Care Products LLC,2021-07-30
+SZ7223860,carne de puerco,2018-04-29,61.83,6,"NEW WORLD IMPORTS, INC.",2021-02-03
+JX3345008,aguacate,2020-02-02,2.66,4,Aurobindo Pharma Limited,2020-09-05
+XE9735025,maiz pozolero,2018-04-09,85.19,8,AMERICAN SALES COMPANY,2020-10-28
+RU8436758,aguacate,2019-07-13,54.58,6,Topco Associates LLC,2021-12-19
+LG3185677,sesos,2018-02-07,33.19,9,Contract Pharmacy Services-PA,2020-10-01
+YZ1781077,muslo pollo,2019-09-18,14.48,10,Apotex Corp,2020-12-20
+UG4675407,tortillas de harina,2020-01-28,2.14,4,"Physicians Total Care, Inc.",2021-01-31
+PL9304206,chiles verdes,2019-08-30,99.8,1,"Jangin Pharm Co., Ltd.",2021-09-29
+XK2234752,chile serrano,2020-04-10,94.69,1,"Newton Laboratories, Inc.",2021-09-18
+WY6627713,electricidad,2019-08-02,82.82,5,Ventura Corporation LTD.,2021-03-18
+HV1616858,sal,2020-02-18,80.31,5,Family Dollar,2022-01-12
+PK8204585,leche,2018-01-29,29.31,10,The Medicines Company,2021-01-15
+FP2056199,mesas,2018-06-26,66.32,5,"LG Household and Healthcare, Inc.",2021-10-23
+IS0849352,pimiento verde,2018-11-29,83.42,10,"American Sales Company, Inc.",2022-03-26
+WL1829123,suadero,2019-11-24,82.89,9,Kmart Corporation,2022-04-20
+LA2504060,mesas,2019-12-03,3.24,3,Teva Pharmaceuticals USA Inc,2020-07-21
+SC3071262,arrachera,2019-01-22,39.34,8,Publix Super Markets Inc,2021-08-13
+AK1741064,cebolla,2018-12-23,57.35,5,Medicine Shoppe International Inc,2021-04-26
+MB2157298,carne de puerco,2018-03-15,48.71,7,Cleansia Co Ltd,2021-09-02
+LE1424557,platos,2018-06-18,61.79,5,"General Injectables and Vaccines, Inc.",2020-07-19
+GH3280252,tomates rojos,2019-11-17,20.63,3,Cardinal Health,2022-03-18
+KB8245755,pierna,2019-10-03,69.67,10,Barr Laboratories Inc.,2020-08-08
+FL3630064,piña,2018-12-08,95.93,8,Darby Dental Supply LLC,2021-09-22
+OB0060120,frijol,2019-07-30,89.25,4,"Melaleuca, Inc.",2021-09-02
+QH8063949,boing de guayaba,2018-02-20,51.33,2,Cardinal Health,2021-03-29
+JE7081000,piña,2019-10-20,50.04,6,H E B,2022-01-24
+HF7398012,crema,2018-10-25,8.13,9,"Boca Pharmacal, LLC",2022-07-10
+UV9287901,cubiertos,2019-11-12,13.94,1,"Physicians Total Care, Inc.",2020-11-29
+TX6684816,queso oaxaca,2019-03-13,55.6,7,"GM Pharmaceuticals, Inc.",2021-08-22
+KU7559652,pierna pollo,2018-10-30,51.27,4,"Elizabeth Arden, Inc",2020-11-02
+FM6584360,tortillas de harina,2020-04-17,84.18,7,"Physicians Total Care, Inc.",2021-10-09
+AI2722825,tomates rojos,2019-09-15,10.43,3,"Nelco Laboratories, Inc.",2021-08-09

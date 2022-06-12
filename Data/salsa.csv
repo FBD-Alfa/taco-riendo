@@ -1,0 +1,16 @@
+idProducto,idPlatillo,nivelPicor,presentacion
+1,28,dulce,250
+2,22,bajo,250
+3,26,medio,250
+4,13,alto,250
+5,18,extremo,250
+6,10,dulce,500
+7,25,bajo,500
+8,11,medio,500
+9,3,alto,500
+10,3,extremo,500
+11,3,dulce,1000
+12,26,bajo,1000
+13,15,medio,1000
+14,18,alto,1000
+15,19,extremo,1000

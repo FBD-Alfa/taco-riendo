@@ -9,8 +9,8 @@ CREATE SCHEMA public;
  * =================================[ Tabla de persona ]===================================
  */
 CREATE TABLE persona(
-    idPersona VARCHAR(10) NOT NULL UNIQUE,
-    idSucursal VARCHAR(10),
+    idPersona INT NOT NULL UNIQUE,
+    idSucursal INT,
     nombre VARCHAR(50) NOT NULL,
     apellidoP VARCHAR(50) NOT NULL,
     apellidoM VARCHAR(50) NOT NULL,
@@ -79,7 +79,7 @@ COMMENT ON COLUMN persona.fechaIngreso IS 'La fecha de ingreso de la persona a l
  * =================================[ Tabla de sucursal ]===================================
  */
 CREATE TABLE sucursal(
-    idSucursal VARCHAR(10) NOT NULL UNIQUE,
+    idSucursal INT NOT NULL UNIQUE,
     nombreSucursal VARCHAR(40) NOT NULL,
     rfc VARCHAR(10) NOT NULL,
     correo VARCHAR(50) NOT NULL,
@@ -134,9 +134,9 @@ COMMENT ON COLUMN transporte.noLicencia IS 'Número de licencia para manejar el 
  */
 CREATE TABLE ticket(
     idTicket VARCHAR(10) NOT NULL UNIQUE,
-    idSucursal VARCHAR(10) NOT NULL,
-    idPersona VARCHAR(10) NOT NULL,
-	idMesero VARCHAR(13),
+    idSucursal INT NOT NULL,
+    idPersona INT NOT NULL,
+	idMesero INT,
     fecha DATE NOT NULL,
     aDomicilio BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL CHECK (tipoPago IN ('Efectivo','Tarjeta','Puntos'))
@@ -249,7 +249,7 @@ COMMENT ON COLUMN insumo.caducidad IS 'La caducidad del insumo';
  * =================================[ Tabla de manejar ]===================================
  */
 CREATE TABLE manejar(
-    idPersona VARCHAR(10) NOT NULL UNIQUE,
+    idPersona INT NOT NULL UNIQUE,
     noPlacas VARCHAR(10) NOT NULL UNIQUE
 );
 
@@ -265,7 +265,7 @@ COMMENT ON COLUMN manejar.noPlacas IS 'Identificador del transporte que es manej
  */
 CREATE TABLE proveer(
     idInsumo VARCHAR(12) NOT NULL UNIQUE,
-    idProveedor VARCHAR(10) NOT NULL
+    idProveedor INT NOT NULL
 );
 
 /*
