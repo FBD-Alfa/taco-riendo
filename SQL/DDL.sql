@@ -9,24 +9,24 @@ CREATE SCHEMA public;
  * =================================[ Tabla de persona ]===================================
  */
 CREATE TABLE persona(
-    idPersona INT NOT NULL UNIQUE,
+    idPersona BIGINT NOT NULL UNIQUE,
     idSucursal INT,
-    nombre VARCHAR(50) NOT NULL,
-    apellidoP VARCHAR(50) NOT NULL,
-    apellidoM VARCHAR(50) NOT NULL,
-    correo VARCHAR(50) NOT NULL,
-    telefono BIGINT NOT NULL,
-    estado VARCHAR(50) NOT NULL,
-    calle VARCHAR(50) NOT NULL,
-    municipio VARCHAR(50) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    apellidoP VARCHAR(100) NOT NULL,
+    apellidoM VARCHAR(100) NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono CHAR(10) CHECK(telefono ~ '^[0-9]') NOT NULL,
+    estado VARCHAR(100) NOT NULL,
+    calle VARCHAR(100) NOT NULL,
+    municipio VARCHAR(100) NOT NULL,
     numero INT NOT NULL,
-    cp INT NOT NULL,
+    cp CHAR(5) CHECK(cp ~ '^[0-9]') NOT NULL,
     rfc VARCHAR(13) NOT NULL,
     esEmpleado BOOLEAN NOT NULL,
     edad INT,
     salario float,
     antiguedad INT,
-    nss BIGINT, 
+    nss CHAR(10) CHECK(nss ~ '^[0-9]'), 
     esCliente BOOLEAN NOT NULL,
     curp CHAR(18),
     noPuntos INT,
@@ -79,9 +79,9 @@ COMMENT ON COLUMN persona.fechaIngreso IS 'La fecha de ingreso de la persona a l
  * =================================[ Tabla de sucursal ]===================================
  */
 CREATE TABLE sucursal(
-    idSucursal INT NOT NULL UNIQUE,
+    idSucursal BIGINT NOT NULL UNIQUE,
     nombreSucursal VARCHAR(40) NOT NULL,
-    rfc VARCHAR(10) NOT NULL,
+    rfc VARCHAR(13) NOT NULL,
     correo VARCHAR(50) NOT NULL,
     telefono BIGINT NOT NULL,
     estado VARCHAR(50) NOT NULL,
@@ -135,8 +135,8 @@ COMMENT ON COLUMN transporte.noLicencia IS 'Número de licencia para manejar el 
 CREATE TABLE ticket(
     idTicket VARCHAR(10) NOT NULL UNIQUE,
     idSucursal INT NOT NULL,
-    idPersona INT NOT NULL,
-	idMesero INT,
+    idPersona BIGINT NOT NULL,
+	idMesero BIGINT,
     fecha DATE NOT NULL,
     aDomicilio BOOLEAN NOT NULL,
     tipoPago VARCHAR(20) NOT NULL CHECK (tipoPago IN ('Efectivo','Tarjeta','Puntos'))
