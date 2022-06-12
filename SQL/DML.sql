@@ -4922,3 +4922,57 @@ INSERT INTO transporte(noPlacas,marca,modelo,esMotocicleta,esBicicleta,noLicenci
 INSERT INTO transporte(noPlacas,marca,modelo,esMotocicleta,esBicicleta,noLicencia) VALUES ('695ZMZ','Hyundai','harley-davison',true,false,'JLEHQRWEIY');
 INSERT INTO transporte(noPlacas,marca,modelo,esMotocicleta,esBicicleta,noLicencia) VALUES ('013SJK','Mercury','italika',true,true,'RAAAIGXSZU');
 INSERT INTO transporte(noPlacas,marca,modelo,esMotocicleta,esBicicleta,noLicencia) VALUES ('303CRH','Bentley','yamaha',false,true,NULL);
+
+
+
+
+/*-----------------------------------------------------------------------
+ ---------------------[ Datos de Manejar]----------------------
+ ----------------------------------------------------------------------*/
+
+
+INSERT INTO manejar(idPersona,noPlacas) VALUES (89859717,'276BHJ');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2904319393,'871UUJ');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6177835138,'501JZY');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (732357583,'512NXB');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (9940256031,'365STG');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (7084676391,'582SBQ');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (966675254,'079FVY');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (270385581,'290JXM');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6452993458,'066RYN');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (3344604514,'774TVL');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (3241339201,'106GRB');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (7332536809,'758ATN');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (1332119756,'277UDL');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2683577435,'507KUI');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2897541330,'211ZJG');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2160057164,'902NMF');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (5277893130,'425YAL');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (859577501,'693YBS');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (7678826123,'917TVS');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6540307150,'955DUR');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (4833689890,'067VUA');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (4284753104,'774RBH');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (8103847467,'960ITA');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2001345257,'522SDI');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (1887443984,'546OBJ');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (5359230600,'419ASA');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2679837720,'122KJM');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6935275585,'543HUF');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (7798302957,'460PSU');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (4675768550,'322ZNH');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (8494015849,'608MVC');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (1240527778,'412KLY');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (4608088326,'887XSV');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (1181873554,'241SYA');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (9713347057,'773NJV');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6611469620,'754RST');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (2258224145,'311AHW');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (9660116645,'317GQT');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (9770279408,'105FAV');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (466159214,'167YAV');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (5490309280,'956JKS');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (1819451701,'119LUR');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (8951574021,'853TTF');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (4943423479,'564WUN');
+INSERT INTO manejar(idPersona,noPlacas) VALUES (6063150911,'706ENE');

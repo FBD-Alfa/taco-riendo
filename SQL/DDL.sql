@@ -249,7 +249,7 @@ COMMENT ON COLUMN insumo.caducidad IS 'La caducidad del insumo';
  * =================================[ Tabla de manejar ]===================================
  */
 CREATE TABLE manejar(
-    idPersona INT NOT NULL UNIQUE,
+    idPersona BIGINT NOT NULL UNIQUE,
     noPlacas VARCHAR(10) NOT NULL UNIQUE
 );
 
