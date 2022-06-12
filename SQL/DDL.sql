@@ -264,8 +264,8 @@ COMMENT ON COLUMN manejar.noPlacas IS 'Identificador del transporte que es manej
  * =================================[ Tabla de proveer ]===================================
  */
 CREATE TABLE proveer(
-    idInsumo VARCHAR(12) NOT NULL UNIQUE,
-    idProveedor INT NOT NULL
+    idInsumo VARCHAR(12) NOT NULL,
+    idProveedor BIGINT NOT NULL
 );
 
 /*
