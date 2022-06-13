@@ -5281,3 +5281,4 @@ INSERT INTO proveer(idInsumo,idProveedor) VALUES ('ZB6466414',4263287800);
 INSERT INTO proveer(idInsumo,idProveedor) VALUES ('UP4753161',329825151);
 INSERT INTO proveer(idInsumo,idProveedor) VALUES ('WA0211167',1181873554);
 INSERT INTO proveer(idInsumo,idProveedor) VALUES ('OY6812395',1360439518);
+
