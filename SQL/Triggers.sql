@@ -102,3 +102,76 @@ CREATE TRIGGER comida_gratis
 AFTER INSERT ON ticket
 FOR EACH ROW
 EXECUTE PROCEDURE free_meal();
+
+-- LIZ
+
+CREATE OR REPLACE FUNCTION es_mesero() RETURNS TRIGGER
+AS
+$$
+DECLARE
+    idPosibleMesero BIGINT;
+    esMeseroP BOOLEAN;
+    BEGIN
+    IF (TG_OP = 'INSERT') THEN
+    SELECT idMesero INTO idPosibleMesero FROM ticket
+    WHERE idTicket = NEW.idTicket;
+    SELECT esMesero INTO esMeseroP FROM persona
+    WHERE idPersona = idPosibleMesero;
+       IF NOT esMeseroP THEN
+          RAISE EXCEPTION 'El id no pertenece a un mesero.';
+       END IF;
+    END IF;
+    IF (TG_OP = 'UPDATE') THEN
+    SELECT idMesero INTO idPosibleMesero FROM ticket
+    WHERE idTicket = NEW.idTicket;
+    SELECT esMesero INTO esMeseroP FROM persona
+    WHERE idPersona = idPosibleMesero;
+       IF NOT esMeseroP THEN
+          RAISE EXCEPTION 'El id no pertenece a un mesero';
+       END IF;
+    END IF;
+RETURN null;
+END
+$$
+LANGUAGE plpgsql;
+-- Triger que verifica que los tickets sean atendidos por un mesero.
+CREATE OR REPLACE TRIGGER atendio_mesero
+AFTER INSERT OR UPDATE ON ticket
+FOR EACH ROW
+EXECUTE PROCEDURE es_mesero();
+
+-- Funcion que es llamada por el trigger proveido_proveedor.
+CREATE OR REPLACE FUNCTION es_proveedor() RETURNS TRIGGER
+AS 
+$$
+BEGIN
+  IF (SELECT 1 FROM persona WHERE idPersona=NEW.idProveedor AND esProveedor='False') THEN
+      RAISE EXCEPTION 'La persona que se desea agregar o actualizar no es un proveedor';
+  END IF;
+  RETURN null;
+  END;
+  $$
+LANGUAGE plpgsql;
+-- Triger que verifica que los insumos sean vendidos por un proveedor.
+CREATE OR REPLACE TRIGGER proveido_proveedor
+BEFORE INSERT OR UPDATE ON proveer
+FOR EACH ROW
+EXECUTE PROCEDURE es_proveedor();
+
+ -- Funcion que es llamada por el trigger empleado_sucursal.
+CREATE OR REPLACE FUNCTION es_empleado() RETURNS TRIGGER
+AS 
+$$
+BEGIN
+  IF NEW.idSucursal IS NOT NULL AND New.esEmpleado='False' THEN
+   RAISE EXCEPTION 'Solo los empleados pueden tener una sucursal asociada';
+ END IF;
+  RETURN null;
+  END;
+  $$
+LANGUAGE plpgsql;
+-- Triger que verifica que solo los empleados tengan sucursal.
+CREATE OR REPLACE TRIGGER empleado_sucursal
+BEFORE INSERT OR UPDATE ON persona
+FOR EACH ROW
+EXECUTE PROCEDURE es_empleado();
