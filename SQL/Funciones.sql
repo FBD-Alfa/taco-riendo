@@ -11,7 +11,7 @@ CREATE OR REPLACE FUNCTION subtotalTicket(idTicketP varchar)
         sumaSalsa := SELECT SUM(precio)
                         FROM (incluirPlatillo, precioActualSalsa(idProducto) AS precio)
                         WHERE idTicket = idTicketP;
-		return resultado;
+		return sumaPlatillo + sumaSalsa;
 	END;
 	$$
 	Language plpgsql;
@@ -25,7 +25,7 @@ CREATE OR REPLACE FUNCTION precioActualPlatillo(idPlatillo varchar)
 		precio := SELECT SUM(precio)
                   FROM precioPlatillo, 
                   WHERE idProducto = idPlatillo AND fecha = MAX(fecha);
-		return resultado;
+		return precio;
 	END;
 	$$
 	Language plpgsql;
@@ -39,7 +39,7 @@ CREATE OR REPLACE FUNCTION precioActualSalsa(idSalsa varchar)
 		precio := SELECT SUM(precio)
                   FROM precioPlatillo, 
                   WHERE idProducto = idPlatillo AND fecha = MAX(fecha);
-		return resultado;
+		return precio;
 	END;
 	$$
 	Language plpgsql;
