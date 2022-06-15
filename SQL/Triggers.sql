@@ -14,7 +14,7 @@ BEGIN
   $$
 LANGUAGE plpgsql;
 --Trigger persona_repartidor
-CREATE TRIGGER persona_repartidor
+CREATE OR REPLACE TRIGGER persona_repartidor
 BEFORE INSERT OR UPDATE ON manejar
 FOR EACH ROW
 EXECUTE PROCEDURE preventins_man();
@@ -36,7 +36,7 @@ BEGIN
  $$
 LANGUAGE plpgsql;
 --Trigger persona_repartidor
-CREATE TRIGGER motocicleta_licencia
+CREATE OR REPLACE TRIGGER motocicleta_licencia
 BEFORE INSERT OR UPDATE ON transporte
 FOR EACH ROW
 EXECUTE PROCEDURE preventinsup_trans();
@@ -66,7 +66,7 @@ DECLARE
     $$
 LANGUAGE plpgsql;
 --Creación del disparador
-CREATE TRIGGER chequeo_puntos
+CREATE OR REPLACE TRIGGER chequeo_puntos
 AFTER INSERT ON ticket
 FOR EACH ROW
 EXECUTE PROCEDURE effective_payment();
@@ -98,49 +98,34 @@ DECLARE
     $$
 LANGUAGE plpgsql;
 --Creación del disparador
-CREATE TRIGGER comida_gratis
+CREATE OR REPLACE TRIGGER comida_gratis
 AFTER INSERT ON ticket
 FOR EACH ROW
 EXECUTE PROCEDURE free_meal();
 
 -- LIZ
-
+-- Función es_mesero, manda una excepción en caso de que la persona que se quiere agregar como
+-- mesero al ticket no este registrado como tal.
 CREATE OR REPLACE FUNCTION es_mesero() RETURNS TRIGGER
 AS
 $$
-DECLARE
-    idPosibleMesero BIGINT;
-    esMeseroP BOOLEAN;
-    BEGIN
-    IF (TG_OP = 'INSERT') THEN
-    SELECT idMesero INTO idPosibleMesero FROM ticket
-    WHERE idTicket = NEW.idTicket;
-    SELECT esMesero INTO esMeseroP FROM persona
-    WHERE idPersona = idPosibleMesero;
-       IF NOT esMeseroP THEN
-          RAISE EXCEPTION 'El id no pertenece a un mesero.';
-       END IF;
-    END IF;
-    IF (TG_OP = 'UPDATE') THEN
-    SELECT idMesero INTO idPosibleMesero FROM ticket
-    WHERE idTicket = NEW.idTicket;
-    SELECT esMesero INTO esMeseroP FROM persona
-    WHERE idPersona = idPosibleMesero;
-       IF NOT esMeseroP THEN
-          RAISE EXCEPTION 'El id no pertenece a un mesero';
-       END IF;
-    END IF;
+BEGIN
+  IF (SELECT 1 FROM persona WHERE idPersona=NEW.idMesero AND esMesero='False') THEN
+      RAISE EXCEPTION 'La persona que se desea agregar al ticket no es un mesero';
+  END IF;   
 RETURN null;
 END
 $$
 LANGUAGE plpgsql;
--- Triger que verifica que los tickets sean atendidos por un mesero.
+-- Triger que verifica que los tickets sean atendidos por un mesero llamdo
+-- a la función es_mesero.
 CREATE OR REPLACE TRIGGER atendio_mesero
 AFTER INSERT OR UPDATE ON ticket
 FOR EACH ROW
 EXECUTE PROCEDURE es_mesero();
-
--- Funcion que es llamada por el trigger proveido_proveedor.
+ -- Funcion que es llamada por proveido_proveedor, se encarga de que la 
+ -- persona que se agregue a la relación proveer sea un proveedor, en 
+ -- caso contrario lanza una excepción.
 CREATE OR REPLACE FUNCTION es_proveedor() RETURNS TRIGGER
 AS 
 $$
@@ -152,13 +137,15 @@ BEGIN
   END;
   $$
 LANGUAGE plpgsql;
--- Triger que verifica que los insumos sean vendidos por un proveedor.
+-- Triger que verifica que los insumos sean vendidos por un proveedor,
+-- manda a llamar a la función es_proveedor.
 CREATE OR REPLACE TRIGGER proveido_proveedor
 BEFORE INSERT OR UPDATE ON proveer
 FOR EACH ROW
 EXECUTE PROCEDURE es_proveedor();
 
- -- Funcion que es llamada por el trigger empleado_sucursal.
+ -- Funcion que es llamada por el trigger empleado_sucursal, se encarga de que 
+ -- solo los empleados tengan una sucursal asignada.
 CREATE OR REPLACE FUNCTION es_empleado() RETURNS TRIGGER
 AS 
 $$
@@ -170,7 +157,8 @@ BEGIN
   END;
   $$
 LANGUAGE plpgsql;
--- Triger que verifica que solo los empleados tengan sucursal.
+-- Triger que verifica que solo los empleados tengan sucursal, 
+-- manda a llamar a la función es_empleado.
 CREATE OR REPLACE TRIGGER empleado_sucursal
 BEFORE INSERT OR UPDATE ON persona
 FOR EACH ROW
