@@ -23,8 +23,6 @@ INSERT INTO manejar(idPersona,noPlacas) VALUES (6063150911,'744UZM6777');
 UPDATE manejar
 SET idPersona = 6063150911
 
-
-
 --Funcion que manda una excepcion si se agrega o actualiza un transporte que es motocicleta y no
 -- tiene datos de la licencia que le debe acompañar 
 CREATE OR REPLACE FUNCTION preventinsup_trans() RETURNS TRIGGER
@@ -54,7 +52,6 @@ VALUES ('078AAC','Subaru','italika',true,false,NULL);
 ---Pruebas para ver que se mande la excepción cuando se quiera actualizar asignando un no de licencia a los repartidores q usan bicicleta
 UPDATE transporte
 SET noLicencia =NULL WHERE noPlacas='069AMB' AND esMotocicleta='True';
-
 
 select * from transporte
 where esMotocicleta='true';
