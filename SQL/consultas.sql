@@ -1,4 +1,4 @@
-/* Consulta que regresa el nombre de la sucursal y la persona que atendió en el segundo trimistre
+/* Consulta que regresa el nombre de la sucursal y la persona que atendió en el segundo trimestre
 cuando el pago fue con Tarjeta y el consumo fue en la sucursal*/
 SELECT nombresucursal, nombre,apellidop,apellidom,fecha
 FROM ticket,persona,sucursal
@@ -15,3 +15,10 @@ SELECT  tipoplatillo,contenerplatillo.porcion as porcion_platillo, nivelpicor, a
 FROM platillo,contenerplatillo, contenersalsa,salsa
 WHERE contenerplatillo.idproducto= contenersalsa.idproducto and contenerplatillo.idproducto = platillo.idproducto and contenersalsa.idproducto = salsa.idproducto
 GROUP BY tipoplatillo, contenerplatillo.porcion, nivelpicor ;
+
+--Precio promedio anual por idProducto
+SELECT a.precio, a.fecha, b.idProducto, b.idTicket,c.idSucursal,c.aDomicilio, c.tipoPago
+FROM precioPlatillo a JOIN incluirPlatillo b ON a.idProducto=b.idProducto
+JOIN ticket c ON c.idTicket=b.idTicket ;
+
+--
