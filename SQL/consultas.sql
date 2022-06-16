@@ -94,3 +94,12 @@ JOIN incluirPlatillo c ON c.idProducto=b.idProducto
 JOIN ticket d ON c.idTicket=d.idTicket
 GROUP BY a.idProducto, anio
 ORDER BY mpre DESC;
+
+--Proveedores a los que más se les compra
+SELECT  b.idProveedor, sum(precio) sp
+       FROM insumo a JOIN proveer b ON a.idInsumo=a.idInsumo
+        JOIN persona c ON b.idProveedor=c.idPersona
+        WHERE esProveedor=TRUE
+        GROUP BY b.idProveedor, a.nombre
+        ORDER by sp DESC
+        LIMIT 15;
