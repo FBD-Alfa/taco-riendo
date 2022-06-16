@@ -92,6 +92,5 @@ SELECT a.idProducto, a.tipoPlatillo, date_part('year', b.fecha) as anio, max(b.p
 FROM platillo a INNER JOIN precioPlatillo b ON a.idProducto=b.idProducto
 JOIN incluirPlatillo c ON c.idProducto=b.idProducto
 JOIN ticket d ON c.idTicket=d.idTicket
---WHERE a.tipoPlatillo like 'Taco%'
 GROUP BY a.idProducto, anio
 ORDER BY mpre DESC;
