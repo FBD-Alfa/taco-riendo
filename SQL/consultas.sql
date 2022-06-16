@@ -110,7 +110,7 @@ SELECT  b.idProveedor, sum(precio) sp
         LIMIT 15;
         
   --EDad promedio por marca de los trabajadores que manejan motocicleta 
-  SELECT t.marca, avg(p.edad,2) as salp FROM manejar m 
+  SELECT t.marca, avg(p.edad) as salp FROM manejar m 
           JOIN persona p ON m.idPersona=p.idPersona
           JOIN transporte t ON t.noPlacas=m.noPlacas
           WHERE esMotocicleta=true

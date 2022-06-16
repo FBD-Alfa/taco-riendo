@@ -115,9 +115,5 @@ CREATE OR REPLACE FUNCTION clientenull() RETURNS TRIGGER
 	 END;
 	 $$
 	 Language plpgsql;
- select * FROM persona WHERE idPersona= 0;
---trigger que dispara la funcion de clienenull();
-CREATE OR REPLACE TRIGGER nullcliente
-BEFORE INSERT ON persona
-FOR EACH ROW
-EXECUTE PROCEDURE clientenull();
+-- select * FROM persona WHERE idPersona= 0;
+

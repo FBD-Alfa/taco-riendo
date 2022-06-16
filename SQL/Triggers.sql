@@ -163,3 +163,9 @@ CREATE OR REPLACE TRIGGER empleado_sucursal
 BEFORE INSERT OR UPDATE ON persona
 FOR EACH ROW
 EXECUTE PROCEDURE es_empleado();
+
+--trigger que dispara la funcion de clienenull();
+CREATE OR REPLACE TRIGGER nullcliente
+BEFORE INSERT ON persona
+FOR EACH ROW
+EXECUTE PROCEDURE clientenull();
