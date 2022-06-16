@@ -1,3 +1,20 @@
+--------------------------------------------------------
+CREATE OR REPLACE FUNCTION precioActualPlatillo(idPlatillo varchar)
+	RETURNS FLOAT
+	AS $$
+	DECLARE
+		precio FLOAT;
+	BEGIN
+		RETURN(SELECT SUM(pp.precio) 
+                  FROM precioPlatillo pp
+                  WHERE idProducto = idPlatillo AND fecha = (SELECT MAX(fecha) FROM precioPlatillo WHERE idProducto=idPlatillo));
+	END;
+	$$
+	Language plpgsql;
+
+--SELECT precioActualPlatillo('1');
+
+
 CREATE OR REPLACE FUNCTION subtotalTicket(idTicketP varchar)
 	RETURNS FLOAT
 	AS $$
@@ -5,41 +22,32 @@ CREATE OR REPLACE FUNCTION subtotalTicket(idTicketP varchar)
 		sumaPlatillo FLOAT;
         sumaSalsa FLOAT;
 	BEGIN
-		sumaPlatillo := SELECT SUM(precio)
-                        FROM (incluirPlatillo, precioActualPlatillo(idProducto) AS precio)
-                        WHERE idTicket = idTicketP;
-        sumaSalsa := SELECT SUM(precio)
-                        FROM (incluirPlatillo, precioActualSalsa(idProducto) AS precio)
-                        WHERE idTicket = idTicketP;
-		return sumaPlatillo + sumaSalsa;
+		RETURN( SELECT SUM(precio) FROM (SELECT sum(precioActualPlatillo(IP.idProducto)) AS precio 
+                        FROM incluirPlatillo IP 
+                        WHERE idTicket =idTicketP
+          UNION 
+                    SELECT sum(precioActualSalsa(IP.idProducto)) AS precio 
+                        FROM incluirSalsa IP
+                        WHERE idTicket =idTicketP) as subcons   
+                        );
 	END;
 	$$
 	Language plpgsql;
 
-CREATE OR REPLACE FUNCTION precioActualPlatillo(idPlatillo varchar)
-	RETURNS FLOAT
-	AS $$
-	DECLARE
-		precio FLOAT;
-	BEGIN
-		precio := SELECT SUM(precio)
-                  FROM precioPlatillo, 
-                  WHERE idProducto = idPlatillo AND fecha = MAX(fecha);
-		return precio;
-	END;
-	$$
-	Language plpgsql;
-
+--SELECT subtotalTicket('25795865')
+             
+--------------------------------------
 CREATE OR REPLACE FUNCTION precioActualSalsa(idSalsa varchar)
 	RETURNS FLOAT
 	AS $$
 	DECLARE
 		precio FLOAT;
 	BEGIN
-		precio := SELECT SUM(precio)
-                  FROM precioPlatillo, 
-                  WHERE idProducto = idPlatillo AND fecha = MAX(fecha);
-		return precio;
+		RETURN( SELECT SUM(pp.precio)
+                  FROM precioSalsa pp
+                  WHERE idProducto = idSalsa AND fecha = (SELECT MAX(fecha) FROM precioSalsa WHERE idProducto=idSalsa));
 	END;
 	$$
 	Language plpgsql;
+    
+--SELECT precioActualSalsa('1');

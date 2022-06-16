@@ -16,9 +16,32 @@ FROM platillo,contenerplatillo, contenersalsa,salsa
 WHERE contenerplatillo.idproducto= contenersalsa.idproducto and contenerplatillo.idproducto = platillo.idproducto and contenersalsa.idproducto = salsa.idproducto
 GROUP BY tipoplatillo, contenerplatillo.porcion, nivelpicor ;
 
---Precio promedio anual por idProducto
-SELECT a.precio, a.fecha, b.idProducto, b.idTicket,c.idSucursal,c.aDomicilio, c.tipoPago
-FROM precioPlatillo a JOIN incluirPlatillo b ON a.idProducto=b.idProducto
-JOIN ticket c ON c.idTicket=b.idTicket ;
+--Precio promedio anual por platillo y sucursal
+SELECT a.idProducto, d.idSucursal, a.tipoPlatillo, avg(b.precio) as pprom, date_part('year', b.fecha) as anio
+FROM platillo a INNER JOIN precioPlatillo b ON a.idProducto=b.idProducto
+JOIN incluirPlatillo c ON c.idProducto=b.idProducto
+JOIN ticket d ON c.idTicket=d.idTicket
+GROUP BY anio, a.idProducto, a.tipoPlatillo, d.idSucursal
+ORDER BY d.idSucursal DESC;
 
---
+--Precio promedio de los tacos vendidos en 2019 
+SELECT a.idProducto, a.tipoPlatillo, date_part('year', b.fecha) as anio, avg(b.precio) as pprom
+FROM platillo a INNER JOIN precioPlatillo b ON a.idProducto=b.idProducto
+JOIN incluirPlatillo c ON c.idProducto=b.idProducto
+JOIN ticket d ON c.idTicket=d.idTicket
+WHERE date_part('year', b.fecha) IN (2019) AND a.tipoPlatillo like 'Taco%'
+GROUP BY anio, a.idProducto, a.tipoPlatillo
+ORDER BY pprom DESC;
+
+--Numero de tickets que compraron tacos por año
+SELECT a.idProducto, a.tipoPlatillo, date_part('year', b.fecha) as anio, count(a.idProducto) as numplat
+FROM platillo a INNER JOIN precioPlatillo b ON a.idProducto=b.idProducto
+JOIN incluirPlatillo c ON c.idProducto=b.idProducto
+JOIN ticket d ON c.idTicket=d.idTicket
+WHERE a.tipoPlatillo like 'Taco%'
+GROUP BY anio, a.idProducto, a.tipoPlatillo
+ORDER BY anio, numplat DESC;
+
+
+
+
