@@ -42,6 +42,20 @@ WHERE a.tipoPlatillo like 'Taco%'
 GROUP BY anio, a.idProducto, a.tipoPlatillo
 ORDER BY anio, numplat DESC;
 
+-- El nombre de todos los empleados de Taco-Riendo y la sucursal donde trabajan.
+SELECT nombre,apellidoP,apellidoM,idSucursal
+FROM persona
+WHERE esEmpleado = True;
+
+-- Los meseros y los tickets que atendieron
+SELECT nombre,apellidoP,apellidoM,idTicket,idMesero
+FROM ticket cross join persona
+WHERE esMesero = True and persona.idPersona=idMesero;
+
+-- El nombre completo, la dirección y el número de ticket de los clientes que han pedido a domicilio
+SELECT nombre,apellidoP,apellidoM,estado,calle,municipio,numero,cp,idTicket
+FROM ticket cross join persona
+WHERE aDomicilio = True and persona.idPersona = ticket.idPersona;
 
 
 
