@@ -811,1006 +811,507 @@ INSERT INTO persona(idPersona,esEmpleado,esCliente,esProveedor,idSucursal,nombre
 /*-----------------------------------------------------------------------
  -------------------------[ Datos de Ticket ]----------------------------
  ----------------------------------------------------------------------*/
- INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22708954,67,1985335434,'2018-08-09',3241981965,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (63580303,78,89859717,'2021-06-07',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (42298862,1,4284753104,'2018-12-17',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (44242493,62,7055707031,'2020-12-05',2897541330,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49864875,61,8494015849,'2018-01-25',2898922803,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98049838,84,6216334768,'2018-01-18',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89902537,95,389450281,'2021-07-20',8344786324,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (66377315,81,5936199493,'2019-01-14',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88849114,73,8911258812,'2019-09-12',2898922803,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11618060,65,1819451701,'2021-07-10',2897541330,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85605870,35,8988114759,'2018-01-13',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34018014,16,5697995127,'2021-05-18',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08892813,52,1360039078,'2020-02-27',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (39207211,41,8131402920,'2020-01-14',3266169129,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28992390,3,3805224239,'2020-02-08',2898922803,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57309450,74,1600605085,'2020-10-11',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (07172655,65,329825151,'2018-05-13',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08849600,65,9968579265,'2019-02-01',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22837973,68,1889390120,'2022-06-08',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57669946,96,4649430798,'2018-09-24',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (95775037,96,1512269663,'2020-11-26',2898922803,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (70372032,13,2970957881,'2021-05-13',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (19805081,77,5053860298,'2021-08-19',5682280513,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (63416206,59,9704793735,'2020-04-13',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (76221889,79,7055707031,'2018-08-21',3266169129,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34908895,87,9210122320,'2020-01-13',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (95118198,91,7445195339,'2019-06-10',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (07570116,11,1968274558,'2018-11-09',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88614249,61,263502618,'2018-07-31',5647567179,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74538783,5,361692480,'2020-02-14',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (06043738,5,1024625709,'2018-04-16',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (96373467,8,4111505148,'2022-07-12',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62077135,57,1819451701,'2018-03-27',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (17113656,53,4921704866,'2021-04-07',9927443485,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (44758827,94,4535694681,'2018-06-21',5196244432,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (30428659,86,8948853576,'2021-11-12',3754345212,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (44247293,81,5238841168,'2021-05-22',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91227672,19,3805224239,'2020-08-18',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55088015,7,7946191977,'2019-12-04',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85862652,55,4584325207,'2020-03-09',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55701681,7,8160240655,'2021-06-29',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (44187727,50,4675768550,'2022-02-01',2669740263,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57307744,82,8193630594,'2019-09-21',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21343999,98,9467139113,'2021-06-01',5647567179,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62807945,5,5022587215,'2022-06-05',3714859906,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25598057,67,5697995127,'2018-07-13',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (32742933,47,2359755788,'2022-05-31',5682280513,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (14180816,45,8131402920,'2020-09-15',5647567179,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (20279360,61,7443380397,'2019-11-27',7445195339,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74359291,57,9210122320,'2020-05-28',9927443485,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (94657057,87,5918667099,'2021-05-04',1982826289,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (10778914,60,5359230600,'2021-01-15',4824390409,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88447407,62,9124372689,'2022-02-24',8344786324,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59216930,96,3277409555,'2018-06-02',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (00238192,89,4685253514,'2019-07-01',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86380237,58,7101829993,'2022-03-23',2897541330,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85069387,8,4450805932,'2021-09-25',3241981965,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86583549,48,3805224239,'2021-10-18',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97636368,32,1181873554,'2021-10-13',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77939739,23,2072125457,'2020-02-16',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18280299,87,3754345212,'2021-01-27',2898922803,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34306883,49,4336199507,'2019-04-21',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (73117245,38,8540079398,'2018-09-25',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (43918293,33,389140275,'2018-03-01',4824390409,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (99103975,80,3277409555,'2018-10-21',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98274770,47,8160240655,'2022-07-10',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (60608548,64,2970957881,'2018-02-11',9324630994,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (07768344,70,3270748967,'2022-04-12',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (48768762,84,4048060101,'2020-10-11',8344786324,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79054142,40,5359230600,'2021-07-06',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (63166102,24,8988114759,'2022-02-04',3241981965,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (63895645,79,4048060101,'2018-07-19',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (76966893,92,7798302957,'2020-11-09',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (00468668,6,4608088326,'2019-06-10',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (06658935,21,5359230600,'2018-08-03',4824390409,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (16433908,57,1024625709,'2020-12-31',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26200752,63,4049744431,'2019-03-25',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (67016620,38,7967170438,'2020-02-28',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04996632,23,6148690049,'2020-03-30',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77608497,87,5208743413,'2020-10-08',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64742379,88,1540233358,'2022-06-24',5647567179,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93204141,22,8193630594,'2018-09-09',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (56466875,65,2237167889,'2018-10-31',3714859906,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18158734,91,5697995127,'2021-12-24',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (23235953,31,8065477932,'2020-09-15',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62521150,7,361692480,'2020-03-07',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (66553696,4,1374067615,'2018-08-21',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (53923557,71,9704793735,'2019-12-03',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68056881,83,3714859906,'2019-12-17',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11888270,52,9166327661,'2022-04-01',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86144579,6,8494015849,'2020-10-06',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28171970,6,3714859906,'2020-02-29',2898922803,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (31752925,57,2237167889,'2018-02-20',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49153667,38,1648288540,'2018-05-12',3714859906,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79493380,13,4535694681,'2018-11-21',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87568205,79,8988114759,'2018-10-24',8344786324,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (50329010,82,9704793735,'2022-07-02',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57445441,99,367730965,'2019-04-07',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87051573,69,9166327661,'2020-06-26',2305944553,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (27629779,55,1374067615,'2020-06-11',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04403473,96,1887443984,'2021-05-24',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36659235,59,389450281,'2021-04-28',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85682478,100,9770279408,'2018-04-13',2898922803,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26693787,79,2359755788,'2020-09-29',7445195339,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77855585,31,2970957881,'2019-02-13',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36912882,64,9968579265,'2018-10-05',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91618932,85,9147665522,'2018-11-02',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61887633,7,2068139578,'2022-01-07',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (37195012,97,5560899485,'2021-10-26',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08033301,54,9940256031,'2021-02-10',7666518894,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21873342,23,4466047455,'2019-10-13',3754345212,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77527996,82,5918667099,'2022-06-11',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (46839943,57,4326672560,'2022-03-17',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24576047,58,361692480,'2019-09-16',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97670139,62,9937506562,'2020-08-23',5647567179,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97873810,40,9404104552,'2018-06-08',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (51632479,35,2904319393,'2021-05-05',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (29212777,24,7055707031,'2020-11-13',5647567179,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (73535986,79,790523475,'2021-04-21',9324630994,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22996716,10,6540181853,'2019-04-22',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64489698,33,4450805932,'2020-03-06',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11925698,79,5560899485,'2021-03-28',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85237627,25,4675768550,'2018-07-31',5196244432,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (92974247,14,1819451701,'2019-09-19',5682280513,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49882321,10,3657392180,'2021-06-25',2305944553,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11138734,24,430044046,'2021-03-15',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (42447956,95,828926605,'2021-03-05',3754345212,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (51382795,18,9770279408,'2022-03-25',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (23788730,84,6063150911,'2019-10-24',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55664624,39,2258224145,'2021-01-12',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (52187301,62,8540079398,'2022-04-29',3754345212,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74770898,2,7812901983,'2021-10-11',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (35808988,40,5912515854,'2022-02-27',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68912498,81,3805224239,'2021-06-08',9324630994,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79110611,42,5560899485,'2022-02-15',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21699450,46,7055707031,'2020-07-05',9927443485,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82317391,18,4921704866,'2019-07-29',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (13640833,37,3925971380,'2018-06-20',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (16653682,78,3277409555,'2020-09-28',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (02562580,36,7752320700,'2021-10-14',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86897300,43,7798302957,'2022-06-27',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (02225530,25,1540233358,'2021-03-23',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (43554792,35,4921704866,'2019-12-03',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57606323,35,611449146,'2019-11-06',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21515787,62,9770279408,'2021-07-21',4824390409,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91015431,63,5918667099,'2019-04-22',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (32899114,25,2064619302,'2022-05-05',4824390409,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68416489,73,4199776163,'2018-01-06',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62122996,18,8103847467,'2022-04-28',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (27169037,29,9885879646,'2019-01-30',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (52307875,25,7946191977,'2019-04-13',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18177348,39,4569441766,'2020-04-09',5682280513,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82475949,41,4336199507,'2020-08-24',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (40759597,36,2090377515,'2018-10-21',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (58694039,19,9324630994,'2022-03-25',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (46347936,11,6063150911,'2018-11-25',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (09532994,44,9208531485,'2018-01-25',5196244432,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28853867,50,4474238046,'2021-05-03',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (32330907,5,4474238046,'2022-04-15',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65469631,88,8879203287,'2021-03-09',3714859906,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (54496605,65,4284753104,'2018-12-29',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08221938,49,2904319393,'2018-12-14',3754345212,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08797522,75,5912515854,'2020-03-30',4824390409,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (29698558,49,9404104552,'2021-08-11',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (19900217,56,263502618,'2021-01-20',9927443485,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74579722,62,4153370542,'2019-06-03',3754345212,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (50690995,79,4448788363,'2020-04-09',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34958433,14,2898922803,'2018-08-09',7445195339,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (23759776,45,578430369,'2019-11-29',3241981965,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (81597622,34,7812901983,'2021-04-09',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88745888,49,9404104552,'2018-07-12',466159214,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (27760685,40,389140275,'2018-06-21',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26339606,97,263502618,'2018-12-10',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (71950812,78,5918667099,'2018-10-29',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79957690,63,4990640057,'2019-12-27',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85106469,85,9885879646,'2019-04-04',8344786324,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98538604,47,2258224145,'2022-07-14',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (53472661,28,5912515854,'2020-08-18',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22244703,36,3600161760,'2018-03-17',5647567179,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59938306,62,9210122320,'2019-11-07',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85518231,54,7445195339,'2019-01-25',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61403517,54,7967170438,'2020-01-30',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49971674,8,2090377515,'2020-04-20',1982826289,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11312096,77,5912515854,'2019-03-29',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08451346,83,9966131850,'2020-12-06',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97072045,2,7666518894,'2021-05-12',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61449492,85,1512269663,'2019-06-22',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26162743,100,6148690049,'2019-01-16',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (67878750,78,9826239206,'2022-01-06',2898922803,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61202576,6,9937506562,'2018-11-20',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (38339109,47,1895109845,'2020-10-16',9324630994,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59784804,15,8193630594,'2018-04-10',2897541330,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28483894,77,4921704866,'2018-11-18',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (10094739,3,361692480,'2020-10-01',1982826289,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (33903650,31,4322605480,'2019-10-21',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28840759,12,3270748967,'2021-10-19',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57496099,67,2304353832,'2018-10-08',3266169129,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (72370827,87,4111505148,'2018-06-22',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91540474,18,2064619302,'2020-08-17',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62751726,92,9963395855,'2018-05-14',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (69286043,20,7752320700,'2022-03-16',9927443485,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68491604,2,790523475,'2020-05-08',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (69800051,79,7104153278,'2018-07-26',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (69369221,31,9770279408,'2021-03-23',4824390409,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86340219,33,9770279408,'2019-12-07',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64664075,85,9467139113,'2022-06-18',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68824601,36,372242028,'2018-06-18',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (33702013,17,2068139578,'2019-12-25',4824390409,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86231115,85,6216334768,'2019-03-30',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34260994,18,9963395855,'2019-07-23',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (41261491,10,4111505148,'2020-06-12',3241981965,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (37553165,88,5936199493,'2019-11-30',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77794034,60,4649430798,'2019-04-24',8344786324,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65933717,26,1985335434,'2019-11-12',2669740263,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (13472241,14,5022587215,'2018-01-30',8344786324,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74168070,4,5682280513,'2018-03-20',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (71312908,73,1600605085,'2021-11-01',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21800025,86,2072125457,'2021-11-13',3714859906,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65969548,89,8540079398,'2020-07-05',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04499329,61,6540181853,'2019-08-26',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85342123,74,8948853576,'2021-03-29',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87290103,33,1630148845,'2021-09-02',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93036259,95,3925971380,'2018-04-04',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (10578771,13,389140275,'2019-07-12',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59437828,94,7630311281,'2018-10-15',9927443485,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28719934,62,1919461831,'2018-02-08',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (83555854,89,9966131850,'2020-10-01',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87641697,29,5682280513,'2020-05-22',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59466132,22,263502618,'2018-05-19',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (35388752,6,5579040262,'2021-05-02',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (83249312,66,9713347057,'2019-01-12',7445195339,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (42887406,88,1504195635,'2022-04-01',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25214358,19,6540181853,'2019-06-01',1982826289,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26377035,21,5208743413,'2018-06-29',9324630994,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49630943,39,3714859906,'2019-11-26',9324630994,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (40099092,65,8103847467,'2019-02-16',7445195339,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08179522,16,4038903146,'2022-07-06',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86795239,100,9210122320,'2020-11-26',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (99211239,10,4921704866,'2022-02-26',3266169129,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (80524831,26,263502618,'2021-03-19',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (45734624,36,5238841168,'2021-04-25',8344786324,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (46191842,62,4685253514,'2021-07-14',2897541330,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (02829861,77,9147665522,'2021-09-09',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (76225989,79,7443380397,'2021-09-18',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57394936,12,9166327661,'2020-12-19',3714859906,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (39424873,19,263502618,'2020-10-05',3754345212,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (47224005,51,4608088326,'2019-05-09',7666518894,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98947165,28,7443380397,'2022-02-01',5682280513,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (53810197,98,9940256031,'2021-01-20',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (75983683,97,1540233358,'2020-11-08',3754345212,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88203891,74,89859717,'2021-11-11',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49254066,24,2258224145,'2020-06-06',3714859906,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93646049,17,89859717,'2018-07-08',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (56632226,7,1919461831,'2019-09-14',5682280513,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (45019980,69,1895109845,'2019-01-05',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (67815487,99,7443380397,'2021-12-10',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (29986559,87,8494015849,'2018-04-26',3714859906,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65987876,19,1982826289,'2018-06-20',2897541330,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (41665862,77,9948274677,'2021-07-06',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26417498,65,8085446868,'2018-01-31',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87260156,23,3714859906,'2021-03-10',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04758141,56,8193630594,'2022-03-26',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (20174052,13,3754345212,'2018-01-24',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (92865025,26,5053860298,'2020-08-01',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (51285448,99,8254347204,'2022-01-21',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04608917,3,611449146,'2018-02-11',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (37956933,25,5238841168,'2018-11-25',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34127649,53,4322605480,'2021-09-01',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (17837861,23,1887443984,'2019-12-08',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (99554781,11,2072125457,'2019-05-08',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (83517313,17,4153370542,'2019-07-07',5196244432,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82747665,20,8155724838,'2018-10-16',3241981965,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (30151442,68,1985335434,'2022-02-26',3754345212,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (19073183,74,5697995127,'2022-02-19',3241981965,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64005713,35,7798302957,'2019-10-16',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (37476902,12,1968274558,'2019-08-16',5682280513,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (43647246,48,8879203287,'2020-05-01',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (42205010,90,1985335434,'2019-07-30',8344786324,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (13574400,98,1889390120,'2019-07-26',2897541330,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36566737,7,430044046,'2019-05-07',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (58630628,23,6063150911,'2018-11-09',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87593482,22,1512269663,'2022-01-30',1982826289,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18366897,41,5682280513,'2019-05-06',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (14241812,87,9124372689,'2020-02-15',3714859906,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (15573092,13,4153370542,'2022-03-09',7445195339,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (01250674,82,2064619302,'2018-05-07',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (44515515,21,6148690049,'2022-03-24',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25795865,100,4450805932,'2021-08-28',8344786324,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87734931,77,5238841168,'2022-04-19',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08569890,7,2237167889,'2020-08-03',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04200096,7,7666518894,'2021-05-26',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88270609,13,4326672560,'2018-12-06',1982826289,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (40163009,44,4048060101,'2019-07-18',3266169129,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59586448,60,8494015849,'2021-03-22',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25563495,48,4990640057,'2018-06-11',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86645012,71,7055707031,'2020-08-26',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08927881,12,8160240655,'2022-03-19',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (58741160,12,2237167889,'2021-11-20',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (41134763,59,6063150911,'2021-11-30',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82932874,3,2064619302,'2021-07-27',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24988003,39,2970957881,'2020-05-02',9927443485,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (20539373,7,2258224145,'2019-03-20',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25095597,6,9713347057,'2018-08-05',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79657883,20,9770279408,'2021-10-26',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (30624826,94,4474238046,'2022-04-23',1982826289,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (50279794,19,8226214329,'2021-04-04',5647567179,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (17460269,65,611449146,'2022-03-08',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93145730,85,6540181853,'2022-04-23',7666518894,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04913605,34,9966131850,'2019-04-14',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24014138,56,2359755788,'2018-09-07',2898922803,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77382991,44,4448788363,'2020-02-25',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (41748115,20,966675254,'2020-10-06',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89993546,86,5359230600,'2018-09-11',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (83353403,77,5208743413,'2018-03-31',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57419754,98,1968274558,'2018-02-10',1982826289,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (00515660,49,9147665522,'2019-05-14',3241981965,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98365960,80,9948274677,'2018-07-07',2669740263,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (05601736,55,466159214,'2021-01-28',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21657209,58,9968579265,'2019-07-22',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (35344576,33,4111505148,'2019-01-11',7445195339,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (33959138,45,9966131850,'2018-06-08',5647567179,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68649176,53,5208743413,'2018-12-18',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (12550847,77,3277409555,'2019-01-05',2669740263,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18344521,20,4685253514,'2019-06-24',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (09479606,17,5579040262,'2018-10-28',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (66728108,30,3925971380,'2020-10-05',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08779932,2,6148690049,'2022-01-17',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59644174,53,1630148845,'2022-03-03',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (90453874,69,2898922803,'2019-09-15',8344786324,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (92018397,39,5363349456,'2019-06-17',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97997716,16,466159214,'2019-09-10',3714859906,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03788776,87,5697995127,'2018-04-02',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68820752,94,8879203287,'2020-09-28',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (70211794,54,7104153278,'2021-02-25',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88042754,68,2072125457,'2018-03-10',8344786324,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (54244119,97,59055071,'2018-09-02',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (81317527,29,1504195635,'2018-07-17',5196244432,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (13322181,100,1504195635,'2018-10-28',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36767494,96,5359230600,'2020-11-29',2669740263,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (31539943,65,372242028,'2021-11-19',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88426910,47,5918667099,'2022-06-17',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82822298,11,2898922803,'2021-05-04',2897541330,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93347143,47,5762667793,'2019-08-25',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (52132057,18,4535694681,'2021-06-27',2305944553,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55666949,52,1540233358,'2018-04-10',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34600340,4,9937506562,'2022-07-06',3714859906,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11477723,81,1887443984,'2018-04-07',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18063437,11,1887443984,'2019-08-12',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (98994821,29,7798302957,'2022-07-08',2669740263,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (86707087,37,5238841168,'2018-10-30',2897541330,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88232680,33,2258224145,'2018-05-31',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (16469815,85,4675768550,'2022-06-24',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22239418,17,5053860298,'2020-12-24',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (78167130,17,4322605480,'2020-11-10',2898922803,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57404733,70,389140275,'2022-06-14',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (73681759,16,9968579265,'2021-08-05',1982826289,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24287361,97,5918667099,'2020-03-05',3266169129,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (28164667,18,8540079398,'2022-05-16',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79632082,51,7967170438,'2021-10-26',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36310844,2,4685253514,'2021-12-08',2897541330,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85015000,56,4111505148,'2019-12-22',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57840800,31,6063150911,'2022-03-22',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (56529532,17,2304353832,'2020-01-02',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74127204,10,4048060101,'2022-06-11',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (09776603,56,5682280513,'2021-12-10',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (96968668,92,4649430798,'2022-03-12',8344786324,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (51237868,88,578430369,'2020-08-01',2669740263,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (10806971,18,7752320700,'2022-03-02',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (70497437,87,9937506562,'2021-01-29',1982826289,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (60625656,66,5022587215,'2021-02-14',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62144352,51,5762667793,'2018-08-05',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (37014420,61,2904319393,'2019-05-16',2897541330,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (76318921,43,4326672560,'2022-05-18',466159214,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (09465892,81,6148690049,'2022-04-07',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (68518434,35,1630148845,'2021-08-30',5647567179,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03407292,76,4197988907,'2021-06-21',7666518894,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (80987680,71,5022587215,'2019-01-13',3266169129,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (35801568,79,4474238046,'2018-01-24',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65892257,24,4921704866,'2020-09-22',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (78518765,66,4048060101,'2022-06-14',2897541330,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04220391,44,9166327661,'2020-04-12',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (01272611,32,8103847467,'2018-02-17',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (54769734,73,7666518894,'2019-05-15',8344786324,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77372570,93,2970957881,'2021-12-21',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (81096431,44,790523475,'2021-08-09',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (87232780,41,1889390120,'2021-08-13',9324630994,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (47740328,19,4584325207,'2019-02-15',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (59901502,50,5053860298,'2018-01-09',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (90561306,9,7812901983,'2018-07-31',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (75746960,37,8540079398,'2018-10-01',2898922803,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55061145,18,367730965,'2018-06-13',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03187815,36,263502618,'2019-03-30',7445195339,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85113633,68,1985335434,'2021-07-11',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (79954515,47,611449146,'2020-09-25',4824390409,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (10551814,54,4474238046,'2020-11-01',2897541330,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (14815271,60,9467139113,'2018-11-14',5196244432,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88186207,30,3600161760,'2018-08-15',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (40327149,73,9060297274,'2021-09-13',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (09971483,42,7798302957,'2021-07-06',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (46410699,38,1512269663,'2022-01-10',2305944553,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (50161765,56,6063150911,'2019-01-27',9324630994,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18223109,2,4466047455,'2020-08-28',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (99872802,13,7666518894,'2019-06-28',5682280513,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (78570778,50,9948274677,'2022-04-08',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (12483849,31,4943423479,'2021-09-02',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (15674664,18,9966131850,'2021-04-18',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03639566,21,1648288540,'2018-06-19',466159214,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91376505,60,2090377515,'2021-04-26',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (00905283,29,7055707031,'2019-11-21',7666518894,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (06688532,10,9963395855,'2021-11-30',3714859906,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (45981087,60,8085446868,'2020-12-10',3241981965,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (63802718,98,2064619302,'2020-12-09',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (73480692,46,3754345212,'2018-10-07',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (88785269,26,389450281,'2018-07-16',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11256483,55,966675254,'2019-11-17',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (06851962,68,1889390120,'2018-06-26',9324630994,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61663466,46,8226214329,'2022-03-27',8344786324,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (66099664,12,4943423479,'2022-07-07',3754345212,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34941534,5,2304353832,'2022-06-16',5647567179,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (38922740,13,1540233358,'2022-03-10',3266169129,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (43445916,6,9060297274,'2020-02-12',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (45133630,34,389140275,'2021-06-26',5647567179,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (80869555,3,6148690049,'2021-12-30',2305944553,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (97292949,96,1889390120,'2021-05-12',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (04805348,91,7101829993,'2020-12-25',5682280513,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (75275367,79,3805224239,'2018-08-22',2897541330,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (02980057,77,2940815592,'2021-07-14',9927443485,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (95888737,69,9124372689,'2020-08-29',2669740263,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (57910571,30,1540233358,'2019-08-16',2898922803,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (55268875,75,1985335434,'2021-04-23',5647567179,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (46239794,11,1887443984,'2018-09-11',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (17634673,49,1985335434,'2020-05-28',7666518894,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (93790917,67,1889390120,'2019-06-19',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89188713,80,4153370542,'2022-03-13',2669740263,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (25842472,82,9940256031,'2021-02-11',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (74166973,25,828926605,'2019-01-10',2669740263,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24477246,26,7445195339,'2019-07-26',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (21515821,97,5912515854,'2022-06-06',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (62048547,1,5697995127,'2021-12-01',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (81978749,28,8948853576,'2019-06-10',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (48479119,31,4326672560,'2021-03-17',4824390409,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (33182028,22,2258224145,'2018-02-12',3754345212,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (51344901,2,1985335434,'2021-11-06',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (27088031,34,9940256031,'2022-04-11',5647567179,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03164324,31,329825151,'2019-01-25',2305944553,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82790506,43,5682280513,'2021-12-28',2305944553,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (90453292,62,2904319393,'2020-10-11',2305944553,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (95076070,74,1374067615,'2021-05-10',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (03373922,9,1512269663,'2021-02-12',9927443485,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (60336965,15,4649430798,'2018-02-04',7445195339,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89476879,86,7967170438,'2018-12-09',5647567179,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (83040665,6,4569441766,'2019-04-05',3714859906,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36702098,55,5053860298,'2019-12-27',3266169129,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64759708,66,361692480,'2018-07-05',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (34182234,69,4263287800,'2022-05-03',3714859906,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (24345164,90,4921704866,'2021-11-01',1982826289,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (53706190,69,4448788363,'2018-01-19',7445195339,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (39729585,91,9713347057,'2021-08-30',8344786324,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (64330481,94,3754345212,'2020-12-24',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (96044639,20,8131402920,'2019-03-08',9927443485,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (22050842,41,3657392180,'2019-09-07',1982826289,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (01686426,86,8193630594,'2021-04-23',5647567179,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (17901566,69,4649430798,'2019-12-13',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89442383,82,4569441766,'2019-03-12',9324630994,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (70389984,39,5363349456,'2019-08-31',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91777385,32,6216334768,'2019-01-01',3266169129,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (42481007,73,7812901983,'2020-12-26',466159214,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (08628652,70,2683577435,'2021-08-04',7445195339,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (56889997,2,578430369,'2019-12-29',3241981965,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (82066408,23,4450805932,'2021-09-03',2305944553,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (29229937,86,7630311281,'2021-05-01',2305944553,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (49481393,64,4649430798,'2021-01-11',5682280513,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (71792893,55,8540079398,'2020-10-18',8344786324,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (54192938,10,1181873554,'2021-03-06',4824390409,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (07919768,63,1512269663,'2019-12-09',5682280513,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (61975250,4,7812901983,'2019-10-09',2898922803,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (90601104,2,1512269663,'2021-12-07',3266169129,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (02737279,36,9324630994,'2019-03-28',7666518894,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (71928648,69,3277409555,'2019-11-15',466159214,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91931504,6,5682280513,'2020-06-12',3241981965,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (91900510,2,5053860298,'2018-08-11',1982826289,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (26954239,16,1919461831,'2019-02-16',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (60255786,74,5363349456,'2021-12-12',2898922803,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (11895697,30,3270748967,'2020-01-29',5196244432,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (00448266,22,5579040262,'2020-03-15',4824390409,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (77419558,44,7666518894,'2018-03-28',5196244432,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (84734077,64,4049744431,'2018-07-27',3754345212,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (18088448,95,372242028,'2018-02-06',5682280513,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (75435505,91,9937506562,'2020-12-29',3266169129,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (19311484,33,1985335434,'2020-03-01',9324630994,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (29552470,41,389450281,'2021-04-03',5647567179,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (85592813,86,5022587215,'2018-02-10',2305944553,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (32089059,32,8193630594,'2020-04-16',7445195339,true,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (80742295,11,7630311281,'2018-12-21',9927443485,true,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (13129522,75,2970957881,'2022-04-21',5196244432,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (38347074,79,1895109845,'2019-05-16',9324630994,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (36769110,73,4649430798,'2018-05-23',3266169129,false,'Tarjeta');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (65681948,49,4322605480,'2018-10-14',4824390409,false,'Efectivo');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (89372417,87,5363349456,'2019-01-07',5682280513,false,'Puntos');
-INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago)
-  VALUES (66174882,47,4992115234,'2018-05-19',4824390409,true,'Efectivo');
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22708954,67,1985335434,'2018-08-09',3241981965,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (63580303,78,89859717,'2021-06-07',3714859906,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (42298862,1,4284753104,'2018-12-17',4824390409,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (44242493,62,7055707031,'2020-12-05',2897541330,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49864875,61,8494015849,'2018-01-25',2898922803,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98049838,84,6216334768,'2018-01-18',9324630994,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89902537,95,389450281,'2021-07-20',8344786324,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (66377315,81,5936199493,'2019-01-14',3754345212,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88849114,73,8911258812,'2019-09-12',2898922803,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11618060,65,1819451701,'2021-07-10',2897541330,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85605870,35,8988114759,'2018-01-13',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34018014,16,5697995127,'2021-05-18',5647567179,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8892813,52,1360039078,'2020-02-27',7445195339,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (39207211,41,8131402920,'2020-01-14',3266169129,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28992390,3,3805224239,'2020-02-08',2898922803,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57309450,74,1600605085,'2020-10-11',466159214,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (7172655,65,329825151,'2018-05-13',7666518894,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8849600,65,9968579265,'2019-02-01',3754345212,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22837973,68,1889390120,'2022-06-08',3754345212,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57669946,96,4649430798,'2018-09-24',9927443485,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (95775037,96,1512269663,'2020-11-26',2898922803,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (70372032,13,2970957881,'2021-05-13',466159214,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (19805081,77,5053860298,'2021-08-19',5682280513,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (63416206,59,9704793735,'2020-04-13',3754345212,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (76221889,79,7055707031,'2018-08-21',3266169129,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34908895,87,9210122320,'2020-01-13',7666518894,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (95118198,91,7445195339,'2019-06-10',9927443485,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (7570116,11,1968274558,'2018-11-09',466159214,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88614249,61,263502618,'2018-07-31',5647567179,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74538783,5,361692480,'2020-02-14',3754345212,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (6043738,5,1024625709,'2018-04-16',7445195339,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (96373467,8,4111505148,'2022-07-12',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62077135,57,1819451701,'2018-03-27',3241981965,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (17113656,53,4921704866,'2021-04-07',9927443485,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (44758827,94,4535694681,'2018-06-21',5196244432,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (30428659,86,8948853576,'2021-11-12',3754345212,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (44247293,81,5238841168,'2021-05-22',2669740263,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91227672,19,3805224239,'2020-08-18',9927443485,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55088015,7,7946191977,'2019-12-04',466159214,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85862652,55,4584325207,'2020-03-09',9927443485,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55701681,7,8160240655,'2021-06-29',8344786324,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (44187727,50,4675768550,'2022-02-01',2669740263,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57307744,82,8193630594,'2019-09-21',3241981965,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21343999,98,9467139113,'2021-06-01',5647567179,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62807945,5,5022587215,'2022-06-05',3714859906,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25598057,67,5697995127,'2018-07-13',3241981965,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (32742933,47,2359755788,'2022-05-31',5682280513,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (14180816,45,8131402920,'2020-09-15',5647567179,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (20279360,61,7443380397,'2019-11-27',7445195339,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74359291,57,9210122320,'2020-05-28',9927443485,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (94657057,87,5918667099,'2021-05-04',1982826289,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (10778914,60,5359230600,'2021-01-15',4824390409,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88447407,62,9124372689,'2022-02-24',8344786324,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59216930,96,3277409555,'2018-06-02',4824390409,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (238192,89,4685253514,'2019-07-01',3754345212,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86380237,58,7101829993,'2022-03-23',2897541330,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85069387,8,4450805932,'2021-09-25',3241981965,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86583549,48,3805224239,'2021-10-18',2669740263,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97636368,32,1181873554,'2021-10-13',7445195339,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77939739,23,2072125457,'2020-02-16',9324630994,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18280299,87,3754345212,'2021-01-27',2898922803,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34306883,49,4336199507,'2019-04-21',2669740263,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (73117245,38,8540079398,'2018-09-25',7666518894,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (43918293,33,389140275,'2018-03-01',4824390409,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (99103975,80,3277409555,'2018-10-21',7666518894,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98274770,47,8160240655,'2022-07-10',8344786324,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (60608548,64,2970957881,'2018-02-11',9324630994,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (7768344,70,3270748967,'2022-04-12',3714859906,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (48768762,84,4048060101,'2020-10-11',8344786324,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79054142,40,5359230600,'2021-07-06',5196244432,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (63166102,24,8988114759,'2022-02-04',3241981965,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (63895645,79,4048060101,'2018-07-19',2669740263,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (76966893,92,7798302957,'2020-11-09',7666518894,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (468668,6,4608088326,'2019-06-10',7445195339,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (6658935,21,5359230600,'2018-08-03',4824390409,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (16433908,57,1024625709,'2020-12-31',9927443485,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26200752,63,4049744431,'2019-03-25',4824390409,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (67016620,38,7967170438,'2020-02-28',9324630994,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4996632,23,6148690049,'2020-03-30',9927443485,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77608497,87,5208743413,'2020-10-08',9927443485,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64742379,88,1540233358,'2022-06-24',5647567179,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93204141,22,8193630594,'2018-09-09',2897541330,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (56466875,65,2237167889,'2018-10-31',3714859906,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18158734,91,5697995127,'2021-12-24',7666518894,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (23235953,31,8065477932,'2020-09-15',4824390409,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62521150,7,361692480,'2020-03-07',2669740263,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (66553696,4,1374067615,'2018-08-21',4824390409,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (53923557,71,9704793735,'2019-12-03',3714859906,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68056881,83,3714859906,'2019-12-17',5196244432,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11888270,52,9166327661,'2022-04-01',7445195339,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86144579,6,8494015849,'2020-10-06',2897541330,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28171970,6,3714859906,'2020-02-29',2898922803,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (31752925,57,2237167889,'2018-02-20',5647567179,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49153667,38,1648288540,'2018-05-12',3714859906,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79493380,13,4535694681,'2018-11-21',2305944553,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87568205,79,8988114759,'2018-10-24',8344786324,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (50329010,82,9704793735,'2022-07-02',9324630994,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57445441,99,367730965,'2019-04-07',1982826289,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87051573,69,9166327661,'2020-06-26',2305944553,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (27629779,55,1374067615,'2020-06-11',3754345212,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4403473,96,1887443984,'2021-05-24',3241981965,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36659235,59,389450281,'2021-04-28',466159214,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85682478,100,9770279408,'2018-04-13',2898922803,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26693787,79,2359755788,'2020-09-29',7445195339,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77855585,31,2970957881,'2019-02-13',2897541330,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36912882,64,9968579265,'2018-10-05',5682280513,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91618932,85,9147665522,'2018-11-02',2897541330,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61887633,7,2068139578,'2022-01-07',7666518894,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (37195012,97,5560899485,'2021-10-26',7666518894,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8033301,54,9940256031,'2021-02-10',7666518894,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21873342,23,4466047455,'2019-10-13',3754345212,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77527996,82,5918667099,'2022-06-11',7666518894,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (46839943,57,4326672560,'2022-03-17',4824390409,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24576047,58,361692480,'2019-09-16',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97670139,62,9937506562,'2020-08-23',5647567179,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97873810,40,9404104552,'2018-06-08',466159214,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (51632479,35,2904319393,'2021-05-05',3754345212,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (29212777,24,7055707031,'2020-11-13',5647567179,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (73535986,79,790523475,'2021-04-21',9324630994,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22996716,10,6540181853,'2019-04-22',466159214,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64489698,33,4450805932,'2020-03-06',9927443485,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11925698,79,5560899485,'2021-03-28',7445195339,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85237627,25,4675768550,'2018-07-31',5196244432,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (92974247,14,1819451701,'2019-09-19',5682280513,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49882321,10,3657392180,'2021-06-25',2305944553,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11138734,24,430044046,'2021-03-15',3241981965,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (42447956,95,828926605,'2021-03-05',3754345212,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (51382795,18,9770279408,'2022-03-25',7445195339,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (23788730,84,6063150911,'2019-10-24',466159214,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55664624,39,2258224145,'2021-01-12',2669740263,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (52187301,62,8540079398,'2022-04-29',3754345212,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74770898,2,7812901983,'2021-10-11',2669740263,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (35808988,40,5912515854,'2022-02-27',5196244432,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68912498,81,3805224239,'2021-06-08',9324630994,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79110611,42,5560899485,'2022-02-15',5196244432,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21699450,46,7055707031,'2020-07-05',9927443485,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82317391,18,4921704866,'2019-07-29',3241981965,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (13640833,37,3925971380,'2018-06-20',466159214,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (16653682,78,3277409555,'2020-09-28',8344786324,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (2562580,36,7752320700,'2021-10-14',9927443485,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86897300,43,7798302957,'2022-06-27',466159214,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (2225530,25,1540233358,'2021-03-23',3714859906,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (43554792,35,4921704866,'2019-12-03',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57606323,35,611449146,'2019-11-06',2669740263,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21515787,62,9770279408,'2021-07-21',4824390409,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91015431,63,5918667099,'2019-04-22',9324630994,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (32899114,25,2064619302,'2022-05-05',4824390409,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68416489,73,4199776163,'2018-01-06',5682280513,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62122996,18,8103847467,'2022-04-28',2669740263,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (27169037,29,9885879646,'2019-01-30',2669740263,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (52307875,25,7946191977,'2019-04-13',466159214,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18177348,39,4569441766,'2020-04-09',5682280513,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82475949,41,4336199507,'2020-08-24',7666518894,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (40759597,36,2090377515,'2018-10-21',5682280513,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (58694039,19,9324630994,'2022-03-25',7666518894,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (46347936,11,6063150911,'2018-11-25',5196244432,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (9532994,44,9208531485,'2018-01-25',5196244432,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28853867,50,4474238046,'2021-05-03',3754345212,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (32330907,5,4474238046,'2022-04-15',5647567179,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65469631,88,8879203287,'2021-03-09',3714859906,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (54496605,65,4284753104,'2018-12-29',466159214,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8221938,49,2904319393,'2018-12-14',3754345212,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8797522,75,5912515854,'2020-03-30',4824390409,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (29698558,49,9404104552,'2021-08-11',2669740263,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (19900217,56,263502618,'2021-01-20',9927443485,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74579722,62,4153370542,'2019-06-03',3754345212,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (50690995,79,4448788363,'2020-04-09',9324630994,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34958433,14,2898922803,'2018-08-09',7445195339,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (23759776,45,578430369,'2019-11-29',3241981965,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (81597622,34,7812901983,'2021-04-09',2669740263,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88745888,49,9404104552,'2018-07-12',466159214,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (27760685,40,389140275,'2018-06-21',4824390409,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26339606,97,263502618,'2018-12-10',3754345212,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (71950812,78,5918667099,'2018-10-29',2669740263,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79957690,63,4990640057,'2019-12-27',2897541330,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85106469,85,9885879646,'2019-04-04',8344786324,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98538604,47,2258224145,'2022-07-14',2669740263,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (53472661,28,5912515854,'2020-08-18',9927443485,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22244703,36,3600161760,'2018-03-17',5647567179,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59938306,62,9210122320,'2019-11-07',2897541330,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85518231,54,7445195339,'2019-01-25',466159214,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61403517,54,7967170438,'2020-01-30',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49971674,8,2090377515,'2020-04-20',1982826289,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11312096,77,5912515854,'2019-03-29',9324630994,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8451346,83,9966131850,'2020-12-06',4824390409,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97072045,2,7666518894,'2021-05-12',2897541330,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61449492,85,1512269663,'2019-06-22',2305944553,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26162743,100,6148690049,'2019-01-16',4824390409,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (67878750,78,9826239206,'2022-01-06',2898922803,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61202576,6,9937506562,'2018-11-20',466159214,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (38339109,47,1895109845,'2020-10-16',9324630994,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59784804,15,8193630594,'2018-04-10',2897541330,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28483894,77,4921704866,'2018-11-18',7666518894,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (10094739,3,361692480,'2020-10-01',1982826289,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (33903650,31,4322605480,'2019-10-21',7445195339,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28840759,12,3270748967,'2021-10-19',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57496099,67,2304353832,'2018-10-08',3266169129,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (72370827,87,4111505148,'2018-06-22',5196244432,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91540474,18,2064619302,'2020-08-17',5647567179,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62751726,92,9963395855,'2018-05-14',466159214,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (69286043,20,7752320700,'2022-03-16',9927443485,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68491604,2,790523475,'2020-05-08',3266169129,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (69800051,79,7104153278,'2018-07-26',7666518894,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (69369221,31,9770279408,'2021-03-23',4824390409,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86340219,33,9770279408,'2019-12-07',3241981965,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64664075,85,9467139113,'2022-06-18',3266169129,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68824601,36,372242028,'2018-06-18',7666518894,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (33702013,17,2068139578,'2019-12-25',4824390409,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86231115,85,6216334768,'2019-03-30',8344786324,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34260994,18,9963395855,'2019-07-23',5196244432,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (41261491,10,4111505148,'2020-06-12',3241981965,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (37553165,88,5936199493,'2019-11-30',3714859906,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77794034,60,4649430798,'2019-04-24',8344786324,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65933717,26,1985335434,'2019-11-12',2669740263,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (13472241,14,5022587215,'2018-01-30',8344786324,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74168070,4,5682280513,'2018-03-20',5196244432,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (71312908,73,1600605085,'2021-11-01',3241981965,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21800025,86,2072125457,'2021-11-13',3714859906,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65969548,89,8540079398,'2020-07-05',7666518894,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4499329,61,6540181853,'2019-08-26',9927443485,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85342123,74,8948853576,'2021-03-29',2305944553,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87290103,33,1630148845,'2021-09-02',3754345212,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93036259,95,3925971380,'2018-04-04',8344786324,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (10578771,13,389140275,'2019-07-12',7666518894,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59437828,94,7630311281,'2018-10-15',9927443485,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28719934,62,1919461831,'2018-02-08',7666518894,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (83555854,89,9966131850,'2020-10-01',3266169129,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87641697,29,5682280513,'2020-05-22',2897541330,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59466132,22,263502618,'2018-05-19',5196244432,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (35388752,6,5579040262,'2021-05-02',7666518894,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (83249312,66,9713347057,'2019-01-12',7445195339,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (42887406,88,1504195635,'2022-04-01',3714859906,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25214358,19,6540181853,'2019-06-01',1982826289,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26377035,21,5208743413,'2018-06-29',9324630994,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49630943,39,3714859906,'2019-11-26',9324630994,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (40099092,65,8103847467,'2019-02-16',7445195339,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8179522,16,4038903146,'2022-07-06',3266169129,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86795239,100,9210122320,'2020-11-26',7666518894,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (99211239,10,4921704866,'2022-02-26',3266169129,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (80524831,26,263502618,'2021-03-19',1982826289,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (45734624,36,5238841168,'2021-04-25',8344786324,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (46191842,62,4685253514,'2021-07-14',2897541330,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (2829861,77,9147665522,'2021-09-09',7666518894,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (76225989,79,7443380397,'2021-09-18',7445195339,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57394936,12,9166327661,'2020-12-19',3714859906,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (39424873,19,263502618,'2020-10-05',3754345212,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (47224005,51,4608088326,'2019-05-09',7666518894,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98947165,28,7443380397,'2022-02-01',5682280513,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (53810197,98,9940256031,'2021-01-20',466159214,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (75983683,97,1540233358,'2020-11-08',3754345212,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88203891,74,89859717,'2021-11-11',3754345212,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49254066,24,2258224145,'2020-06-06',3714859906,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93646049,17,89859717,'2018-07-08',2897541330,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (56632226,7,1919461831,'2019-09-14',5682280513,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (45019980,69,1895109845,'2019-01-05',3754345212,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (67815487,99,7443380397,'2021-12-10',9927443485,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (29986559,87,8494015849,'2018-04-26',3714859906,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65987876,19,1982826289,'2018-06-20',2897541330,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (41665862,77,9948274677,'2021-07-06',2305944553,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26417498,65,8085446868,'2018-01-31',5196244432,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87260156,23,3714859906,'2021-03-10',9324630994,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4758141,56,8193630594,'2022-03-26',9927443485,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (20174052,13,3754345212,'2018-01-24',5196244432,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (92865025,26,5053860298,'2020-08-01',3714859906,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (51285448,99,8254347204,'2022-01-21',466159214,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4608917,3,611449146,'2018-02-11',3241981965,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (37956933,25,5238841168,'2018-11-25',3754345212,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34127649,53,4322605480,'2021-09-01',4824390409,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (17837861,23,1887443984,'2019-12-08',2669740263,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (99554781,11,2072125457,'2019-05-08',7666518894,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (83517313,17,4153370542,'2019-07-07',5196244432,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82747665,20,8155724838,'2018-10-16',3241981965,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (30151442,68,1985335434,'2022-02-26',3754345212,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (19073183,74,5697995127,'2022-02-19',3241981965,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64005713,35,7798302957,'2019-10-16',2305944553,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (37476902,12,1968274558,'2019-08-16',5682280513,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (43647246,48,8879203287,'2020-05-01',1982826289,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (42205010,90,1985335434,'2019-07-30',8344786324,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (13574400,98,1889390120,'2019-07-26',2897541330,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36566737,7,430044046,'2019-05-07',2669740263,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (58630628,23,6063150911,'2018-11-09',3754345212,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87593482,22,1512269663,'2022-01-30',1982826289,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18366897,41,5682280513,'2019-05-06',4824390409,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (14241812,87,9124372689,'2020-02-15',3714859906,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (15573092,13,4153370542,'2022-03-09',7445195339,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (1250674,82,2064619302,'2018-05-07',3754345212,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (44515515,21,6148690049,'2022-03-24',5647567179,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25795865,100,4450805932,'2021-08-28',8344786324,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87734931,77,5238841168,'2022-04-19',2897541330,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8569890,7,2237167889,'2020-08-03',9927443485,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4200096,7,7666518894,'2021-05-26',466159214,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88270609,13,4326672560,'2018-12-06',1982826289,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (40163009,44,4048060101,'2019-07-18',3266169129,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59586448,60,8494015849,'2021-03-22',1982826289,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25563495,48,4990640057,'2018-06-11',5196244432,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86645012,71,7055707031,'2020-08-26',5196244432,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8927881,12,8160240655,'2022-03-19',7666518894,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (58741160,12,2237167889,'2021-11-20',466159214,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (41134763,59,6063150911,'2021-11-30',5196244432,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82932874,3,2064619302,'2021-07-27',2669740263,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24988003,39,2970957881,'2020-05-02',9927443485,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (20539373,7,2258224145,'2019-03-20',1982826289,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25095597,6,9713347057,'2018-08-05',7666518894,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79657883,20,9770279408,'2021-10-26',2669740263,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (30624826,94,4474238046,'2022-04-23',1982826289,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (50279794,19,8226214329,'2021-04-04',5647567179,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (17460269,65,611449146,'2022-03-08',466159214,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93145730,85,6540181853,'2022-04-23',7666518894,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4913605,34,9966131850,'2019-04-14',3266169129,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24014138,56,2359755788,'2018-09-07',2898922803,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77382991,44,4448788363,'2020-02-25',7445195339,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (41748115,20,966675254,'2020-10-06',2897541330,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89993546,86,5359230600,'2018-09-11',9324630994,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (83353403,77,5208743413,'2018-03-31',466159214,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57419754,98,1968274558,'2018-02-10',1982826289,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (515660,49,9147665522,'2019-05-14',3241981965,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98365960,80,9948274677,'2018-07-07',2669740263,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (5601736,55,466159214,'2021-01-28',5196244432,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21657209,58,9968579265,'2019-07-22',466159214,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (35344576,33,4111505148,'2019-01-11',7445195339,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (33959138,45,9966131850,'2018-06-08',5647567179,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68649176,53,5208743413,'2018-12-18',7666518894,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (12550847,77,3277409555,'2019-01-05',2669740263,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18344521,20,4685253514,'2019-06-24',1982826289,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (9479606,17,5579040262,'2018-10-28',9324630994,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (66728108,30,3925971380,'2020-10-05',7666518894,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8779932,2,6148690049,'2022-01-17',7666518894,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59644174,53,1630148845,'2022-03-03',466159214,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (90453874,69,2898922803,'2019-09-15',8344786324,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (92018397,39,5363349456,'2019-06-17',466159214,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97997716,16,466159214,'2019-09-10',3714859906,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3788776,87,5697995127,'2018-04-02',7666518894,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68820752,94,8879203287,'2020-09-28',7666518894,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (70211794,54,7104153278,'2021-02-25',5682280513,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88042754,68,2072125457,'2018-03-10',8344786324,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (54244119,97,59055071,'2018-09-02',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (81317527,29,1504195635,'2018-07-17',5196244432,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (13322181,100,1504195635,'2018-10-28',5196244432,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36767494,96,5359230600,'2020-11-29',2669740263,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (31539943,65,372242028,'2021-11-19',4824390409,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88426910,47,5918667099,'2022-06-17',7666518894,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82822298,11,2898922803,'2021-05-04',2897541330,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93347143,47,5762667793,'2019-08-25',7666518894,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (52132057,18,4535694681,'2021-06-27',2305944553,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55666949,52,1540233358,'2018-04-10',4824390409,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34600340,4,9937506562,'2022-07-06',3714859906,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11477723,81,1887443984,'2018-04-07',3714859906,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18063437,11,1887443984,'2019-08-12',466159214,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (98994821,29,7798302957,'2022-07-08',2669740263,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (86707087,37,5238841168,'2018-10-30',2897541330,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88232680,33,2258224145,'2018-05-31',7666518894,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (16469815,85,4675768550,'2022-06-24',2669740263,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22239418,17,5053860298,'2020-12-24',3714859906,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (78167130,17,4322605480,'2020-11-10',2898922803,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57404733,70,389140275,'2022-06-14',3241981965,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (73681759,16,9968579265,'2021-08-05',1982826289,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24287361,97,5918667099,'2020-03-05',3266169129,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (28164667,18,8540079398,'2022-05-16',5682280513,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79632082,51,7967170438,'2021-10-26',2669740263,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36310844,2,4685253514,'2021-12-08',2897541330,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85015000,56,4111505148,'2019-12-22',2669740263,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57840800,31,6063150911,'2022-03-22',7666518894,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (56529532,17,2304353832,'2020-01-02',466159214,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74127204,10,4048060101,'2022-06-11',7666518894,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (9776603,56,5682280513,'2021-12-10',7666518894,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (96968668,92,4649430798,'2022-03-12',8344786324,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (51237868,88,578430369,'2020-08-01',2669740263,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (10806971,18,7752320700,'2022-03-02',2897541330,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (70497437,87,9937506562,'2021-01-29',1982826289,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (60625656,66,5022587215,'2021-02-14',3266169129,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62144352,51,5762667793,'2018-08-05',3714859906,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (37014420,61,2904319393,'2019-05-16',2897541330,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (76318921,43,4326672560,'2022-05-18',466159214,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (9465892,81,6148690049,'2022-04-07',7666518894,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (68518434,35,1630148845,'2021-08-30',5647567179,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3407292,76,4197988907,'2021-06-21',7666518894,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (80987680,71,5022587215,'2019-01-13',3266169129,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (35801568,79,4474238046,'2018-01-24',3714859906,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65892257,24,4921704866,'2020-09-22',4824390409,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (78518765,66,4048060101,'2022-06-14',2897541330,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4220391,44,9166327661,'2020-04-12',9927443485,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (1272611,32,8103847467,'2018-02-17',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (54769734,73,7666518894,'2019-05-15',8344786324,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77372570,93,2970957881,'2021-12-21',4824390409,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (81096431,44,790523475,'2021-08-09',3241981965,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (87232780,41,1889390120,'2021-08-13',9324630994,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (47740328,19,4584325207,'2019-02-15',466159214,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (59901502,50,5053860298,'2018-01-09',5682280513,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (90561306,9,7812901983,'2018-07-31',3266169129,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (75746960,37,8540079398,'2018-10-01',2898922803,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55061145,18,367730965,'2018-06-13',2669740263,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3187815,36,263502618,'2019-03-30',7445195339,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85113633,68,1985335434,'2021-07-11',3714859906,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (79954515,47,611449146,'2020-09-25',4824390409,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (10551814,54,4474238046,'2020-11-01',2897541330,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (14815271,60,9467139113,'2018-11-14',5196244432,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88186207,30,3600161760,'2018-08-15',3241981965,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (40327149,73,9060297274,'2021-09-13',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (9971483,42,7798302957,'2021-07-06',4824390409,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (46410699,38,1512269663,'2022-01-10',2305944553,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (50161765,56,6063150911,'2019-01-27',9324630994,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18223109,2,4466047455,'2020-08-28',5682280513,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (99872802,13,7666518894,'2019-06-28',5682280513,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (78570778,50,9948274677,'2022-04-08',9927443485,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (12483849,31,4943423479,'2021-09-02',9927443485,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (15674664,18,9966131850,'2021-04-18',5647567179,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3639566,21,1648288540,'2018-06-19',466159214,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91376505,60,2090377515,'2021-04-26',5196244432,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (905283,29,7055707031,'2019-11-21',7666518894,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (6688532,10,9963395855,'2021-11-30',3714859906,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (45981087,60,8085446868,'2020-12-10',3241981965,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (63802718,98,2064619302,'2020-12-09',5682280513,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (73480692,46,3754345212,'2018-10-07',1982826289,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (88785269,26,389450281,'2018-07-16',2305944553,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11256483,55,966675254,'2019-11-17',4824390409,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (6851962,68,1889390120,'2018-06-26',9324630994,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61663466,46,8226214329,'2022-03-27',8344786324,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (66099664,12,4943423479,'2022-07-07',3754345212,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34941534,5,2304353832,'2022-06-16',5647567179,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (38922740,13,1540233358,'2022-03-10',3266169129,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (43445916,6,9060297274,'2020-02-12',3754345212,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (45133630,34,389140275,'2021-06-26',5647567179,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (80869555,3,6148690049,'2021-12-30',2305944553,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (97292949,96,1889390120,'2021-05-12',2669740263,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (4805348,91,7101829993,'2020-12-25',5682280513,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (75275367,79,3805224239,'2018-08-22',2897541330,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (2980057,77,2940815592,'2021-07-14',9927443485,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (95888737,69,9124372689,'2020-08-29',2669740263,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (57910571,30,1540233358,'2019-08-16',2898922803,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (55268875,75,1985335434,'2021-04-23',5647567179,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (46239794,11,1887443984,'2018-09-11',9324630994,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (17634673,49,1985335434,'2020-05-28',7666518894,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (93790917,67,1889390120,'2019-06-19',5647567179,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89188713,80,4153370542,'2022-03-13',2669740263,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (25842472,82,9940256031,'2021-02-11',7666518894,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (74166973,25,828926605,'2019-01-10',2669740263,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24477246,26,7445195339,'2019-07-26',1982826289,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (21515821,97,5912515854,'2022-06-06',5196244432,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (62048547,1,5697995127,'2021-12-01',5682280513,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (81978749,28,8948853576,'2019-06-10',1982826289,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (48479119,31,4326672560,'2021-03-17',4824390409,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (33182028,22,2258224145,'2018-02-12',3754345212,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (51344901,2,1985335434,'2021-11-06',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (27088031,34,9940256031,'2022-04-11',5647567179,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3164324,31,329825151,'2019-01-25',2305944553,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82790506,43,5682280513,'2021-12-28',2305944553,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (90453292,62,2904319393,'2020-10-11',2305944553,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (95076070,74,1374067615,'2021-05-10',7445195339,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (3373922,9,1512269663,'2021-02-12',9927443485,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (60336965,15,4649430798,'2018-02-04',7445195339,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89476879,86,7967170438,'2018-12-09',5647567179,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (83040665,6,4569441766,'2019-04-05',3714859906,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36702098,55,5053860298,'2019-12-27',3266169129,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64759708,66,361692480,'2018-07-05',5682280513,true,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (34182234,69,4263287800,'2022-05-03',3714859906,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (24345164,90,4921704866,'2021-11-01',1982826289,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (53706190,69,4448788363,'2018-01-19',7445195339,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (39729585,91,9713347057,'2021-08-30',8344786324,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (64330481,94,3754345212,'2020-12-24',4824390409,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (96044639,20,8131402920,'2019-03-08',9927443485,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (22050842,41,3657392180,'2019-09-07',1982826289,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (1686426,86,8193630594,'2021-04-23',5647567179,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (17901566,69,4649430798,'2019-12-13',1982826289,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89442383,82,4569441766,'2019-03-12',9324630994,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (70389984,39,5363349456,'2019-08-31',1982826289,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91777385,32,6216334768,'2019-01-01',3266169129,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (42481007,73,7812901983,'2020-12-26',466159214,false,'Puntos',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (8628652,70,2683577435,'2021-08-04',7445195339,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (56889997,2,578430369,'2019-12-29',3241981965,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (82066408,23,4450805932,'2021-09-03',2305944553,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (29229937,86,7630311281,'2021-05-01',2305944553,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (49481393,64,4649430798,'2021-01-11',5682280513,true,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (71792893,55,8540079398,'2020-10-18',8344786324,false,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (54192938,10,1181873554,'2021-03-06',4824390409,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (7919768,63,1512269663,'2019-12-09',5682280513,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (61975250,4,7812901983,'2019-10-09',2898922803,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (90601104,2,1512269663,'2021-12-07',3266169129,true,'Tarjeta',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (2737279,36,9324630994,'2019-03-28',7666518894,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (71928648,69,3277409555,'2019-11-15',466159214,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91931504,6,5682280513,'2020-06-12',3241981965,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (91900510,2,5053860298,'2018-08-11',1982826289,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (26954239,16,1919461831,'2019-02-16',5196244432,false,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (60255786,74,5363349456,'2021-12-12',2898922803,false,'Tarjeta',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (11895697,30,3270748967,'2020-01-29',5196244432,false,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (448266,22,5579040262,'2020-03-15',4824390409,true,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (77419558,44,7666518894,'2018-03-28',5196244432,true,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (84734077,64,4049744431,'2018-07-27',3754345212,false,'Puntos',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (18088448,95,372242028,'2018-02-06',5682280513,false,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (75435505,91,9937506562,'2020-12-29',3266169129,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (19311484,33,1985335434,'2020-03-01',9324630994,true,'Efectivo',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (29552470,41,389450281,'2021-04-03',5647567179,false,'Efectivo',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (85592813,86,5022587215,'2018-02-10',2305944553,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (32089059,32,8193630594,'2020-04-16',7445195339,true,'Efectivo',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (80742295,11,7630311281,'2018-12-21',9927443485,true,'Tarjeta',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (13129522,75,2970957881,'2022-04-21',5196244432,false,'Puntos',1);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (38347074,79,1895109845,'2019-05-16',9324630994,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (36769110,73,4649430798,'2018-05-23',3266169129,false,'Tarjeta',3);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (65681948,49,4322605480,'2018-10-14',4824390409,false,'Efectivo',0);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (89372417,87,5363349456,'2019-01-07',5682280513,false,'Puntos',2);
+INSERT INTO ticket(idTicket,idSucursal,idPersona,fecha,idMesero,aDomicilio,tipoPago,promocion) VALUES (66174882,47,4992115234,'2018-05-19',4824390409,true,'Efectivo',1);
+
 
 
 /*-----------------------------------------------------------------------

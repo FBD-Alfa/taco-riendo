@@ -139,7 +139,8 @@ CREATE TABLE ticket(
 	idMesero BIGINT,
     fecha DATE NOT NULL,
     aDomicilio BOOLEAN NOT NULL,
-    tipoPago VARCHAR(20) NOT NULL CHECK (tipoPago IN ('Efectivo','Tarjeta','Puntos'))
+    tipoPago VARCHAR(20) NOT NULL CHECK (tipoPago IN ('Efectivo','Tarjeta','Puntos')),
+    promocion INT
 );
 
 /*
@@ -153,6 +154,7 @@ COMMENT ON COLUMN ticket.fecha IS 'Fecha de expedición del ticket';
 COMMENT ON COLUMN ticket.idMesero IS 'Identificador del mesero que atendió el ticket';
 COMMENT ON COLUMN ticket.aDomicilio IS 'Tipo del consumo';
 COMMENT ON COLUMN ticket.tipoPago IS 'El tipo de pago del cliente. Puede ser Efectivo, Tarjeta o Puntos';
+COMMENT ON COLUMN ticket.promocion IS 'Es la promoción que se le aplicó al ticket, 0 cuando no hay promociones.';
 
 /*
  * =================================[ Tabla de salsa ]===================================
