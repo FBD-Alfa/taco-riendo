@@ -51,7 +51,7 @@ CREATE OR REPLACE FUNCTION precioActualSalsa(idSalsa varchar)
 	Language plpgsql;
     
 --SELECT precioActualSalsa('1');
-	
+--funcion que revisa si hay puntos necesarios para pargar la cuenta	
 	
 CREATE OR REPLACE FUNCTION puntoValido() RETURNS TRIGGER
 AS 
@@ -78,7 +78,7 @@ CREATE OR REPLACE PROCEDURE aumentarSueldo()
 	Language plpgsql;
 --ELECT salario , antiguedad,idPersona FROM persona WHERE idPersona=6063150911 OR idPersona=2359755788;
 call aumentarSueldo();
-
+--función que pone los datos del cliente por default
 CREATE OR REPLACE FUNCTION clientenull() RETURNS TRIGGER
  AS $$
  DECLARE 
@@ -116,7 +116,7 @@ CREATE OR REPLACE FUNCTION clientenull() RETURNS TRIGGER
 	 $$
 	 Language plpgsql;
  select * FROM persona WHERE idPersona= 0;
-
+--trigger que dispara la funcion de clienenull();
 CREATE OR REPLACE TRIGGER nullcliente
 BEFORE INSERT ON persona
 FOR EACH ROW
