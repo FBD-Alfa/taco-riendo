@@ -10,6 +10,11 @@ SELECT noplacas, nombre, nombresucursal
 FROM manejar,persona,sucursal
 WHERE persona.idpersona= manejar.idpersona and persona.idsucursal = sucursal.idsucursal ;
 
+-- Los meseros y los tickets que atendieron en el año 2022
+SELECT b.nombre,b.apellidoP,b.apellidoM,a.idTicket,a.idMesero,date_part('year', a.fecha) as anio
+FROM ticket a cross join persona b
+WHERE date_part('year',a.fecha) IN (2022)and b.esMesero = True and b.idPersona=idMesero;
+
 /* Regresa el tipo de platillo con sus porciones junto con el nivel de picor de las salsas y con su promedio de porción que tienen ingredientes en común*/
 SELECT  tipoplatillo,contenerplatillo.porcion as porcion_platillo, nivelpicor, avg(contenersalsa.porcion) as porcion_salsa
 FROM platillo,contenerplatillo, contenersalsa,salsa
